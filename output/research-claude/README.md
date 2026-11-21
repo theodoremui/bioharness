@@ -1,6 +1,6 @@
 # BioHarness proposal series: scores, critiques and reviews
 
-This folder records how the proposal in `output/research-codex/biomechanical_agent_proposal.md` (v0) was graded, critiqued and revised through seven versions, saved in `docs/ideas-claude/`. Each version was reviewed twice: once against the rubric below, and once by Codex through `/codex:adversarial-review`, whose verbatim output is kept alongside a table showing how every finding was handled.
+This folder records how the proposal in `output/research-codex/biomechanical_agent_proposal.md` (v0) was graded, critiqued and revised through seven versions, saved in `notes/claude-brainstorm/ideas-claude/`. Each version was reviewed twice: once against the rubric below, and once by Codex through `/codex:adversarial-review`, whose verbatim output is kept alongside a table showing how every finding was handled.
 
 ## Files
 
@@ -16,15 +16,15 @@ This folder records how the proposal in `output/research-codex/biomechanical_age
 | Version | File | What changed |
 |---|---|---|
 | v0 | `output/research-codex/biomechanical_agent_proposal.md` | Original: learned "evidence contracts" for gait stride variability |
-| v1 | `docs/ideas-claude/v1_stable-tool-agent-reframe.md` | Re-anchored on StaBLE, monocular video and a tool-calling VLM; lab baselines as the ladder |
-| v2 | `docs/ideas-claude/v2_measure-or-guess-evaluation.md` | Measure-or-guess evaluation (rank agreement, skill, calibration slope), data ledger, training-only normalization, expert pipeline, crossed bootstrap |
-| v3 | `docs/ideas-claude/v3_measurement-grounded-rewards.md` | Per-feature rewards from the three-camera reference, executable provenance checks, sealed confirmatory set, tool-feature regressor, cached tool environment |
-| v4 | `docs/ideas-claude/v4_privileged-teacher-and-budgeted-levers.md` | Privileged teacher restricted to student actions, budget tiers with continuation controls, appearance controls, staged journey with gates |
-| v5 | `docs/ideas-claude/v5_world-model-transfer-and-known-answer-verification.md` | Known-answer probes and a shortcut suite, exact reward bound, tool-outcome world model, held-out tasks, time-scaling interventions, 60 sealed participants reserved first, pipeline figure |
-| v6 | `docs/ideas-claude/v6_simplified-reward-what-can-be-checked.md` | Simplification: one thesis, one running example, a worked trajectory, five confirmatory comparisons, per-stage data-shape and leakage table |
-| v7 | `docs/ideas-claude/v7_final_rewarding-what-can-be-checked.md` | Final: unbiased evaluation policy, required-signal check tied to StaBLE's released code, noisy-copy replay, seven paired seeds with a fixed testing order, Codex v5–v7 fixes, title options, style audit |
+| v1 | `notes/claude-brainstorm/ideas-claude/v1_stable-tool-agent-reframe.md` | Re-anchored on StaBLE, monocular video and a tool-calling VLM; lab baselines as the ladder |
+| v2 | `notes/claude-brainstorm/ideas-claude/v2_measure-or-guess-evaluation.md` | Measure-or-guess evaluation (rank agreement, skill, calibration slope), data ledger, training-only normalization, expert pipeline, crossed bootstrap |
+| v3 | `notes/claude-brainstorm/ideas-claude/v3_measurement-grounded-rewards.md` | Per-feature rewards from the three-camera reference, executable provenance checks, sealed confirmatory set, tool-feature regressor, cached tool environment |
+| v4 | `notes/claude-brainstorm/ideas-claude/v4_privileged-teacher-and-budgeted-levers.md` | Privileged teacher restricted to student actions, budget tiers with continuation controls, appearance controls, staged journey with gates |
+| v5 | `notes/claude-brainstorm/ideas-claude/v5_world-model-transfer-and-known-answer-verification.md` | Known-answer probes and a shortcut suite, exact reward bound, tool-outcome world model, held-out tasks, time-scaling interventions, 60 sealed participants reserved first, pipeline figure |
+| v6 | `notes/claude-brainstorm/ideas-claude/v6_simplified-reward-what-can-be-checked.md` | Simplification: one thesis, one running example, a worked trajectory, five confirmatory comparisons, per-stage data-shape and leakage table |
+| v7 | `notes/claude-brainstorm/ideas-claude/v7_final_rewarding-what-can-be-checked.md` | Final: unbiased evaluation policy, required-signal check tied to StaBLE's released code, noisy-copy replay, seven paired seeds with a fixed testing order, Codex v5–v7 fixes, title options, style audit |
 
-Figures: `docs/ideas-claude/figures/training_pipeline.svg` (used by v5 and v6) and `training_pipeline_v7.svg` (final, used by v7). Earlier versions keep their own figure so that no version is overwritten.
+Figures: `notes/claude-brainstorm/ideas-claude/figures/training_pipeline.svg` (used by v5 and v6) and `training_pipeline_v7.svg` (final, used by v7). Earlier versions keep their own figure so that no version is overwritten.
 
 ## Score trajectory
 

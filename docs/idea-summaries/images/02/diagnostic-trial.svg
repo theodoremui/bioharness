@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 324" width="760" height="324" role="img" aria-labelledby="title desc">
+<title id="title">Diagnostic trial under two hypothetical updates</title><desc id="desc">On slow steps both versions have a 5 millisecond error. On fast steps A has a 5 millisecond error and B a 35 millisecond error. The fallback has a 20 millisecond error everywhere.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#375965"/></marker></defs>
+<rect width="760" height="324" rx="10" fill="#F8FAF8"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="27" y="38" font-size="24" font-weight="700" fill="#172D39" text-anchor="start">Which trial separates two possible updates?</text>
+<rect x="27" y="58" width="340" height="213" rx="8" fill="#FFFFFF" stroke="#C3D1D0"/>
+<text x="42" y="93" font-size="22" font-weight="700" fill="#172D39" text-anchor="start">Slow step</text>
+<text x="42" y="137" font-size="16" font-weight="400" fill="#172D39" text-anchor="start">Version A</text>
+<text x="42" y="175" font-size="16" font-weight="400" fill="#172D39" text-anchor="start">Version B</text>
+<text x="42" y="211" font-size="16" font-weight="600" fill="#394F59" text-anchor="start">Fallback</text>
+<line x1="135" x2="345" y1="132" y2="132" stroke="#C3D1D0" stroke-width="1"/>
+<circle cx="161.25" cy="132" r="6" fill="#006B62"/>
+<line x1="135" x2="345" y1="170" y2="170" stroke="#C3D1D0" stroke-width="1"/>
+<circle cx="161.25" cy="170" r="6" fill="#994511"/>
+<line x1="135" x2="345" y1="207" y2="207" stroke="#C3D1D0" stroke-width="1"/>
+<rect x="235.0" y="202" width="10" height="10" fill="#394F59"/>
+<line x1="135.0" x2="135.0" y1="220" y2="225" stroke="#C3D1D0" stroke-width="1"/>
+<text x="135.0" y="248" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">0</text>
+<line x1="240.0" x2="240.0" y1="220" y2="225" stroke="#C3D1D0" stroke-width="1"/>
+<text x="240.0" y="248" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">20</text>
+<line x1="345.0" x2="345.0" y1="220" y2="225" stroke="#C3D1D0" stroke-width="1"/>
+<text x="345.0" y="248" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">40</text>
+<rect x="395" y="58" width="340" height="213" rx="8" fill="#FFFFFF" stroke="#C3D1D0"/>
+<text x="410" y="93" font-size="22" font-weight="700" fill="#172D39" text-anchor="start">Fast step</text>
+<text x="410" y="137" font-size="16" font-weight="400" fill="#172D39" text-anchor="start">Version A</text>
+<text x="410" y="175" font-size="16" font-weight="400" fill="#172D39" text-anchor="start">Version B</text>
+<text x="410" y="211" font-size="16" font-weight="600" fill="#394F59" text-anchor="start">Fallback</text>
+<line x1="503" x2="713" y1="132" y2="132" stroke="#C3D1D0" stroke-width="1"/>
+<circle cx="529.25" cy="132" r="6" fill="#006B62"/>
+<line x1="503" x2="713" y1="170" y2="170" stroke="#C3D1D0" stroke-width="1"/>
+<circle cx="686.75" cy="170" r="6" fill="#994511"/>
+<line x1="503" x2="713" y1="207" y2="207" stroke="#C3D1D0" stroke-width="1"/>
+<rect x="603.0" y="202" width="10" height="10" fill="#394F59"/>
+<line x1="503.0" x2="503.0" y1="220" y2="225" stroke="#C3D1D0" stroke-width="1"/>
+<text x="503.0" y="248" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">0</text>
+<line x1="608.0" x2="608.0" y1="220" y2="225" stroke="#C3D1D0" stroke-width="1"/>
+<text x="608.0" y="248" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">20</text>
+<line x1="713.0" x2="713.0" y1="220" y2="225" stroke="#C3D1D0" stroke-width="1"/>
+<text x="713.0" y="248" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">40</text>
+<text x="380" y="303" font-size="17" font-weight="600" fill="#394F59" text-anchor="middle">Timing error (milliseconds late)</text>
+</g></svg>

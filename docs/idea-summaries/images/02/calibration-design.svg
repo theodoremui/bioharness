@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 399" width="760" height="399" role="img" aria-labelledby="title desc">
+<title id="title">Calibration and evaluation use separate people</title><desc id="desc">Calibration clips with known timings are probed to infer the error model. The model and observable recording conditions feed the frozen router. A separate held-out reference and the router result meet only at scoring.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#375965"/></marker></defs>
+<rect width="760" height="399" rx="10" fill="#F8FAF8"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="26" y="38" font-size="24" font-weight="700" fill="#172D39" text-anchor="start">Calibrate on one group, route on another</text>
+<rect x="25" y="66" width="218" height="72" rx="8" fill="#E8F2EF" stroke="none"/>
+<text x="41" y="96" font-size="19" font-weight="700" fill="#172D39" text-anchor="start">Calibration clips</text>
+<text x="41" y="121" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">Known contact times</text>
+<polyline points="244,102 275,102" stroke="#375965" stroke-width="2" fill="none"/><polygon points="266,97 275,102 266,107" fill="#375965"/>
+<rect x="278" y="66" width="208" height="72" rx="8" fill="#E8F2EF" stroke="none"/>
+<text x="294" y="96" font-size="19" font-weight="700" fill="#172D39" text-anchor="start">Probe the update</text>
+<text x="294" y="121" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">Reveal timing errors</text>
+<polyline points="487,102 517,102" stroke="#375965" stroke-width="2" fill="none"/><polygon points="508,97 517,102 508,107" fill="#375965"/>
+<rect x="520" y="66" width="215" height="72" rx="8" fill="#E8F2EF" stroke="none"/>
+<text x="535" y="96" font-size="19" font-weight="700" fill="#172D39" text-anchor="start">Error model</text>
+<text x="535" y="121" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">By route and condition</text>
+<polyline points="626,140 626,193" stroke="#375965" stroke-width="2" fill="none"/><polygon points="621,184 626,193 631,184" fill="#375965"/>
+<text x="26" y="181" font-size="17" font-weight="700" fill="#994511" text-anchor="start">Held-out participants</text>
+<rect x="25" y="199" width="218" height="72" rx="8" fill="#FFFFFF" stroke="#C3D1D0"/>
+<text x="41" y="229" font-size="19" font-weight="700" fill="#172D39" text-anchor="start">New recording</text>
+<text x="41" y="254" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">Prespecified conditions</text>
+<polyline points="244,235 517,235" stroke="#375965" stroke-width="2" fill="none"/><polygon points="508,230 517,235 508,240" fill="#375965"/>
+<text x="379" y="225" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">Visible conditions</text>
+<rect x="520" y="199" width="215" height="72" rx="8" fill="#FFFFFF" stroke="#C3D1D0"/>
+<text x="535" y="229" font-size="19" font-weight="700" fill="#172D39" text-anchor="start">Frozen router</text>
+<text x="535" y="254" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">Run chosen analysis</text>
+<polyline points="626,272 626,307" stroke="#375965" stroke-width="2" fill="none"/><polygon points="621,298 626,307 631,298" fill="#375965"/>
+<rect x="25" y="312" width="218" height="66" rx="8" fill="#FBEEE4" stroke="none"/>
+<text x="41" y="340" font-size="18" font-weight="700" fill="#172D39" text-anchor="start">Scoring reference</text>
+<text x="41" y="363" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">Held-out contact time</text>
+<polyline points="244,344 517,344" stroke="#375965" stroke-width="2" fill="none"/><polygon points="508,339 517,344 508,349" fill="#375965"/>
+<text x="379" y="334" font-size="15" font-weight="400" fill="#394F59" text-anchor="middle">Evaluation only</text>
+<rect x="520" y="312" width="215" height="66" rx="8" fill="#FBEEE4" stroke="none"/>
+<text x="535" y="341" font-size="18" font-weight="700" fill="#172D39" text-anchor="start">Score the choice</text>
+<text x="535" y="364" font-size="16" font-weight="400" fill="#394F59" text-anchor="start">Compare timing loss</text>
+</g></svg>

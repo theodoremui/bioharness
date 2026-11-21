@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 500" width="1300" height="500" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Three ways to get a balance score from video</title>
+<desc id="d">Reconstruct and measure, learn to predict, and learn to conduct the analysis with a tool-calling agent, each with its main strength and weakness.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="498.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<rect x="24.0" y="24.0" width="1252.0" height="142.0" rx="14" fill="#f6f7f9" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="44.0" y="58.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Reconstruct and measure</text>
+<rect x="240.0" y="78.0" width="90.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="285.0" y="112.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Video</text>
+<path d="M332.0,107.0 L352.0,107.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="356.0" y="78.0" width="200.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="456.0" y="102.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">3D skeleton from one</text>
+<text x="456.0" y="124.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">camera</text>
+<path d="M558.0,107.0 L578.0,107.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="582.0" y="78.0" width="200.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="682.0" y="102.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">StaBLE rules compute</text>
+<text x="682.0" y="124.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">features</text>
+<path d="M784.0,107.0 L804.0,107.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="808.0" y="78.0" width="80.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="848.0" y="112.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Score</text>
+<text x="912.0" y="76.0" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">+ every step can be plotted and checked</text>
+<text x="912.0" y="98.4" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">− if one step fails there is no score; slow</text>
+<text x="912.0" y="118.8" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">to compute</text>
+<rect x="24.0" y="182.0" width="1252.0" height="142.0" rx="14" fill="#f6f7f9" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="44.0" y="216.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Learn to predict</text>
+<rect x="240.0" y="236.0" width="90.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="285.0" y="270.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Video</text>
+<path d="M332.0,265.0 L352.0,265.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="356.0" y="236.0" width="400.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="556.0" y="270.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Neural network trained on scores</text>
+<path d="M758.0,265.0 L778.0,265.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="782.0" y="236.0" width="80.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="822.0" y="270.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Score</text>
+<text x="912.0" y="234.0" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">+ always returns a number</text>
+<text x="912.0" y="256.4" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">− cannot show where the number came from;</text>
+<text x="912.0" y="276.8" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">close to a constant guess</text>
+<rect x="24.0" y="340.0" width="1252.0" height="142.0" rx="14" fill="#eaf2fc" stroke="#2a78d6" stroke-width="2"/>
+<text x="44.0" y="374.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Learn to conduct the analysis</text>
+<rect x="44.0" y="388.0" width="113.3" height="23.0" rx="11.489999999999998" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.2"/>
+<text x="100.7" y="404.2" font-size="13.0" font-weight="600" fill="#1c5cab" text-anchor="middle">this proposal</text>
+<rect x="240.0" y="394.0" width="120.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="300.0" y="418.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Video +</text>
+<text x="300.0" y="440.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">task text</text>
+<path d="M362.0,423.0 L382.0,423.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="386.0" y="394.0" width="182.0" height="58.0" rx="10" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="477.0" y="428.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">VLM agent ⇄ tools</text>
+<path d="M570.0,423.0 L590.0,423.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="594.0" y="394.0" width="118.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="653.0" y="418.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Features +</text>
+<text x="653.0" y="440.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">code</text>
+<path d="M714.0,423.0 L734.0,423.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="738.0" y="394.0" width="150.0" height="58.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="813.0" y="418.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">Fixed formula</text>
+<text x="813.0" y="440.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="middle">→ score</text>
+<text x="912.0" y="392.0" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">+ every number traces to code and tool</text>
+<text x="912.0" y="412.4" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">outputs</text>
+<text x="912.0" y="434.8" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">+ can switch tools when one fails</text>
+<text x="912.0" y="457.2" font-size="14.8" font-weight="400" fill="#4b5563" text-anchor="start">? must learn to choose and check tools</text>
+</svg>

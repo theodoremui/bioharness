@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 500" width="1300" height="500" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Opposite feature errors can cancel in the score</title>
+<desc id="d">Attempt A gets the task score exactly right from two wrong features; attempt B has small errors everywhere. A reward on the final score prefers A; a per-feature reward prefers B.</desc>
+<defs></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="498.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<rect x="24.0" y="24.0" width="616.0" height="452.0" rx="14" fill="#f6f7f9" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="44.0" y="56.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Attempt A</text>
+<text x="44.0" y="105.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">peak upward speed</text>
+<line x1="214.0" y1="100.0" x2="604.0" y2="100.0" stroke="#cfd5dc" stroke-width="6" stroke-linecap="round"/>
+<text x="214.0" y="126.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="409.0" y="126.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0.5</text>
+<text x="604.0" y="126.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">1</text>
+<line x1="428.5" y1="100.0" x2="506.5" y2="100.0" stroke="#e34948" stroke-width="6" stroke-linecap="butt"/>
+<path d="M428.5,89 l7,11 l-7,11 l-7,-11 z" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<circle cx="506.5" cy="100.0" r="8" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="44.0" y="171.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">peak plantar flexion</text>
+<line x1="214.0" y1="166.0" x2="604.0" y2="166.0" stroke="#cfd5dc" stroke-width="6" stroke-linecap="round"/>
+<text x="214.0" y="192.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="409.0" y="192.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0.5</text>
+<text x="604.0" y="192.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">1</text>
+<line x1="506.5" y1="166.0" x2="428.5" y2="166.0" stroke="#e34948" stroke-width="6" stroke-linecap="butt"/>
+<path d="M506.5,155 l7,11 l-7,11 l-7,-11 z" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<circle cx="428.5" cy="166.0" r="8" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="44.0" y="237.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">hold time</text>
+<line x1="214.0" y1="232.0" x2="604.0" y2="232.0" stroke="#cfd5dc" stroke-width="6" stroke-linecap="round"/>
+<text x="214.0" y="258.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="409.0" y="258.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0.5</text>
+<text x="604.0" y="258.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">1</text>
+<path d="M604.0,221 l7,11 l-7,11 l-7,-11 z" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<circle cx="604.0" cy="232.0" r="8" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<line x1="44.0" y1="300.0" x2="620.0" y2="300.0" stroke="#d6d9de" stroke-width="1" stroke-linecap="round"/>
+<text x="44.0" y="330.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="start">task score 0.767   (reference 0.767)</text>
+<text x="44.0" y="362.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">error of the final score</text>
+<text x="324.0" y="362.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">0.000</text>
+<text x="44.0" y="392.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">average error per feature</text>
+<text x="324.0" y="392.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">0.133</text>
+<rect x="44.0" y="420.0" width="309.7" height="24.8" rx="12.375" fill="#fdf6e3" stroke="#eda100" stroke-width="1.2"/>
+<text x="198.8" y="437.7" font-size="14.8" font-weight="600" fill="#946400" text-anchor="middle">Final-score reward prefers this one</text>
+<rect x="660.0" y="24.0" width="616.0" height="452.0" rx="14" fill="#f6f7f9" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="680.0" y="56.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Attempt B</text>
+<text x="680.0" y="105.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">peak upward speed</text>
+<line x1="850.0" y1="100.0" x2="1240.0" y2="100.0" stroke="#cfd5dc" stroke-width="6" stroke-linecap="round"/>
+<text x="850.0" y="126.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="1045.0" y="126.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0.5</text>
+<text x="1240.0" y="126.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">1</text>
+<line x1="1064.5" y1="100.0" x2="1084.0" y2="100.0" stroke="#e34948" stroke-width="6" stroke-linecap="butt"/>
+<path d="M1064.5,89 l7,11 l-7,11 l-7,-11 z" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1084.0" cy="100.0" r="8" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="680.0" y="171.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">peak plantar flexion</text>
+<line x1="850.0" y1="166.0" x2="1240.0" y2="166.0" stroke="#cfd5dc" stroke-width="6" stroke-linecap="round"/>
+<text x="850.0" y="192.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="1045.0" y="192.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0.5</text>
+<text x="1240.0" y="192.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">1</text>
+<line x1="1142.5" y1="166.0" x2="1162.0" y2="166.0" stroke="#e34948" stroke-width="6" stroke-linecap="butt"/>
+<path d="M1142.5,155 l7,11 l-7,11 l-7,-11 z" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1162.0" cy="166.0" r="8" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="680.0" y="237.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">hold time</text>
+<line x1="850.0" y1="232.0" x2="1240.0" y2="232.0" stroke="#cfd5dc" stroke-width="6" stroke-linecap="round"/>
+<text x="850.0" y="258.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="1045.0" y="258.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">0.5</text>
+<text x="1240.0" y="258.0" font-size="13.0" font-weight="400" fill="#6b7280" text-anchor="middle">1</text>
+<line x1="1240.0" y1="232.0" x2="1220.5" y2="232.0" stroke="#e34948" stroke-width="6" stroke-linecap="butt"/>
+<path d="M1240.0,221 l7,11 l-7,11 l-7,-11 z" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1220.5" cy="232.0" r="8" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<line x1="680.0" y1="300.0" x2="1256.0" y2="300.0" stroke="#d6d9de" stroke-width="1" stroke-linecap="round"/>
+<text x="680.0" y="330.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="start">task score 0.783   (reference 0.767)</text>
+<text x="680.0" y="362.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">error of the final score</text>
+<text x="960.0" y="362.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">0.017</text>
+<text x="680.0" y="392.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">average error per feature</text>
+<text x="960.0" y="392.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">0.050</text>
+<rect x="680.0" y="420.0" width="309.7" height="24.8" rx="12.375" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.2"/>
+<text x="834.8" y="437.7" font-size="14.8" font-weight="600" fill="#11805a" text-anchor="middle">Per-feature reward prefers this one</text>
+</svg>

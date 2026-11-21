@@ -1,0 +1,9 @@
+### Testing fairly {#bg-fair}
+
+A method is useful only if it works on people it has never seen, so the data are divided into a **development set**, used for every choice and every bit of training, and a **test set**, used once at the end. The division is made by person and never by video. Each participant contributes up to 18 videos, and those videos share the same body, clothing and room; if one were used in training and another in testing, a model could match the person's appearance to their training videos and reproduce their typical score without measuring the movement. Any route by which information about the test people reaches the training process is called **leakage**, and it makes results look better than they will be in practice.
+
+Choices made during development, such as which prompt to keep, are judged by **cross-validation**: the development people are split into five groups called **folds**, each candidate is trained on four folds and checked on the fifth, and the roles rotate so that every fold is checked once.
+
+Finally, a result measured on 43 people could have come out differently with 43 other people. The **bootstrap** [@efron1979] estimates how much. From the 43 test participants, draw 43 at random *with replacement*, so that some people are drawn twice and some not at all, keeping all of each person's tasks together; recompute the difference between two methods on this resampled group; and repeat 10,000 times ({fig:boot}). The middle 95% of the resulting differences is a **95% confidence interval**. If it lies entirely above zero, the advantage is unlikely to be an accident of which people happened to be tested.
+
+@fig boot | figures/fig_bootstrap_people.svg | The bootstrap. Resampling the tested people many times gives a spread of plausible differences between two methods; the middle 95% is the confidence interval. Values are illustrative.

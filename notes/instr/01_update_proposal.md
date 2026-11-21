@@ -1,6 +1,6 @@
 **Role**: You are an expert AI/ML researcher specializing in frontier agent research and vision-language models (VLMs).
 
-**Task**: Based on the latest proposal in `output/research-codex/biomechanical_agent_proposal.md`, fully and systematically analyze and grade it using a thoughtful and appropriate multi-dimensional score, along with specific critiques as well as concrete suggestions on how to improve. The goal is to iterate the paper and make it strongly relevant and compelling to the International Conference on Machine Learning.
+**Task**: Based on the latest proposals in `output/research-claude`, fully and systematically analyze and grade it using a thoughtful and appropriate multi-dimensional score, along with specific critiques as well as concrete suggestions on how to improve. The goal is to iterate the paper and make it strongly relevant and compelling to the International Conference on Machine Learning.
 
 Iteratively create 7 versions of the proposal without overriding by thoughtfully incorporating each of the successive versions' critique and suggestions. Each version must improve upon previous versions by carefully reviewing and selecting the most appropriate techniques, inferences, and experiments using creative and insightful analysis of novel machine learning methods to enhance the capabilities of agent harnesses and tool-calling VLMs, as well as any relevant literature from authoritative sources such as ArXiv, along with the following documents:
 
@@ -12,7 +12,7 @@ Iteratively create 7 versions of the proposal without overriding by thoughtfully
 
 To illustrate the data processing pipeline, thoughtfully create a modern, clean, and simple illustration using vector graphics of the training pipeline. Use best UI/UX design skills for your vector graphics.
 
-Provide 7 suggestions of relevant titles that reflect the objective of the proposal. For the abstract, stay strategic without dwelling on and over-emphasizing numerical or other irrelevant details of different stages of the processing and experiments. Save your scores, suggestions, and critiques of each revision in the file: `output/research-claude`. Each revision of the proposals should also be saved in `docs/ideas-claude` with thoughtfully useful filename with version number.
+Provide 7 suggestions of relevant titles that reflect the objective of the proposal. For the abstract, stay strategic without dwelling on and over-emphasizing numerical or other irrelevant details of different stages of the processing and experiments. Save your scores, suggestions, and critiques of each revision in the file: `output/research-codex`. Each revision of the proposals should also be saved in `docs/ideas-codex` with thoughtfully useful filename with version number.
 
 For each proposed idea, the writeup should be succinct, well-structured, compelling, and specific. It should describe in well-supported detail what the research question is, related works, and potential methods and experiments. The research question must be specific, measurable, achievable, relevant, and time-bound. Ultrathink on how to simplify the language and explanations to make each proposal much, much easier to understand. Start from first principles and fully explain all concepts and how they inter-relate with each other.
 
