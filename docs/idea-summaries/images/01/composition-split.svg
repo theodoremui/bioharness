@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="372" viewBox="0 0 760 372" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Hold out combinations of familiar components</title>
+  <desc id="desc">A grid with three pose estimators and three event rules. Six pairs are used for fitting and three diagonal pairs are held out. Candidate selection uses proxy outcomes on a distinct development group. Independent instrument labels on unused participants score the locked choice.</desc>
+  <rect x="0" y="0" width="760" height="372" fill="#fcfdfc" rx="10" />
+  <text x="28" y="37" fill="#193447" font-size="23" font-weight="650" text-anchor="start">Does the correction transfer to a new combination?</text>
+  <text x="28" y="85" fill="#465d6c" font-size="16" font-weight="650" text-anchor="start">Estimator</text>
+  <text x="243" y="64" fill="#465d6c" font-size="16" font-weight="650" text-anchor="middle">Event rule</text>
+  <text x="176" y="85" fill="#193447" font-size="18" font-weight="650" text-anchor="middle">1</text>
+  <text x="243" y="85" fill="#193447" font-size="18" font-weight="650" text-anchor="middle">2</text>
+  <text x="310" y="85" fill="#193447" font-size="18" font-weight="650" text-anchor="middle">3</text>
+  <text x="28" y="128" fill="#193447" font-size="19" font-weight="400" text-anchor="start">Pose A</text>
+  <rect x="146" y="99" width="60" height="46" fill="#ffefdd" rx="5" stroke="#a9472a" stroke-width="2" stroke-dasharray="5 3" />
+  <text x="176" y="128" fill="#a84830" font-size="17" font-weight="650" text-anchor="middle">Hold</text>
+  <rect x="213" y="99" width="60" height="46" fill="#e7f3f0" rx="5" stroke="#77a59c" stroke-width="1.1" />
+  <text x="243" y="128" fill="#006b65" font-size="17" font-weight="400" text-anchor="middle">Fit</text>
+  <rect x="280" y="99" width="60" height="46" fill="#e7f3f0" rx="5" stroke="#77a59c" stroke-width="1.1" />
+  <text x="310" y="128" fill="#006b65" font-size="17" font-weight="400" text-anchor="middle">Fit</text>
+  <text x="28" y="186" fill="#193447" font-size="19" font-weight="400" text-anchor="start">Pose B</text>
+  <rect x="146" y="157" width="60" height="46" fill="#e7f3f0" rx="5" stroke="#77a59c" stroke-width="1.1" />
+  <text x="176" y="186" fill="#006b65" font-size="17" font-weight="400" text-anchor="middle">Fit</text>
+  <rect x="213" y="157" width="60" height="46" fill="#ffefdd" rx="5" stroke="#a9472a" stroke-width="2" stroke-dasharray="5 3" />
+  <text x="243" y="186" fill="#a84830" font-size="17" font-weight="650" text-anchor="middle">Hold</text>
+  <rect x="280" y="157" width="60" height="46" fill="#e7f3f0" rx="5" stroke="#77a59c" stroke-width="1.1" />
+  <text x="310" y="186" fill="#006b65" font-size="17" font-weight="400" text-anchor="middle">Fit</text>
+  <text x="28" y="244" fill="#193447" font-size="19" font-weight="400" text-anchor="start">Pose C</text>
+  <rect x="146" y="215" width="60" height="46" fill="#e7f3f0" rx="5" stroke="#77a59c" stroke-width="1.1" />
+  <text x="176" y="244" fill="#006b65" font-size="17" font-weight="400" text-anchor="middle">Fit</text>
+  <rect x="213" y="215" width="60" height="46" fill="#e7f3f0" rx="5" stroke="#77a59c" stroke-width="1.1" />
+  <text x="243" y="244" fill="#006b65" font-size="17" font-weight="400" text-anchor="middle">Fit</text>
+  <rect x="280" y="215" width="60" height="46" fill="#ffefdd" rx="5" stroke="#a9472a" stroke-width="2" stroke-dasharray="5 3" />
+  <text x="310" y="244" fill="#a84830" font-size="17" font-weight="650" text-anchor="middle">Hold</text>
+  <line x1="370" x2="370" y1="75" y2="281" stroke="#c7d4d9" stroke-width="1" />
+  <circle cx="397" cy="83" r="4" fill="#006b65" />
+  <text x="411" y="88" fill="#193447" font-size="19" font-weight="650" text-anchor="start">Fit the correction</text>
+  <text x="411" y="112" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Observed combinations</text>
+  <text x="411" y="132" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Audited development participants</text>
+  <circle cx="397" cy="161" r="4" fill="#006b65" />
+  <text x="411" y="166" fill="#193447" font-size="19" font-weight="650" text-anchor="start">Select a policy</text>
+  <text x="411" y="190" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Held-out combinations</text>
+  <text x="411" y="210" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Proxy measurements on fresh cases</text>
+  <circle cx="397" cy="239" r="4" fill="#006b65" />
+  <text x="411" y="244" fill="#193447" font-size="19" font-weight="650" text-anchor="start">Confirm its loss</text>
+  <text x="411" y="268" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Locked policy choice</text>
+  <text x="411" y="288" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Instrumented, untouched participants</text>
+  <text x="28" y="318" fill="#193447" font-size="17" font-weight="650" text-anchor="start">Each pose method and event rule appears during fitting.</text>
+  <text x="28" y="345" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">A withheld cell tests recombination. A new component requires its own calibration.</text>
+</svg>

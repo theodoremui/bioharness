@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 470" width="1300" height="470" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">A model of what each tool will deliver</title>
+<desc id="d">Cheap signals feed a tool-outcome model that predicts, for each tool route, the likely feature error, the chance of failure and the GPU cost, before the expensive call is made.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="468.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<rect x="24.0" y="40.0" width="300.0" height="300.0" rx="12" fill="#f6f7f9" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="42.0" y="70.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Cheap signals (seconds)</text>
+<circle cx="48.0" cy="100.0" r="4" fill="#4b5563" stroke="#4b5563" stroke-width="1.5"/>
+<text x="62.0" y="105.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">2D pose confidence per joint</text>
+<circle cx="48.0" cy="138.0" r="4" fill="#4b5563" stroke="#4b5563" stroke-width="1.5"/>
+<text x="62.0" y="143.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">share of frames with both feet visible</text>
+<circle cx="48.0" cy="176.0" r="4" fill="#4b5563" stroke="#4b5563" stroke-width="1.5"/>
+<text x="62.0" y="181.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">person height in pixels</text>
+<circle cx="48.0" cy="214.0" r="4" fill="#4b5563" stroke="#4b5563" stroke-width="1.5"/>
+<text x="62.0" y="219.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">clip length</text>
+<circle cx="48.0" cy="252.0" r="4" fill="#4b5563" stroke="#4b5563" stroke-width="1.5"/>
+<text x="62.0" y="257.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">overall amount of motion</text>
+<circle cx="48.0" cy="290.0" r="4" fill="#4b5563" stroke="#4b5563" stroke-width="1.5"/>
+<text x="62.0" y="295.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">which task this is</text>
+<path d="M326.0,190.0 L366.0,190.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="370.0" y="90.0" width="270.0" height="200.0" rx="12" fill="#f0eefc" stroke="#6250d6" stroke-width="1.5"/>
+<text x="384.0" y="119.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Tool-outcome model</text>
+<text x="384.0" y="146.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">Gradient-boosted trees.</text>
+<text x="384.0" y="167.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">Learned from development</text>
+<text x="384.0" y="188.4" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">videos, where running each</text>
+<text x="384.0" y="209.6" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">tool and comparing with the</text>
+<text x="384.0" y="230.8" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">three-camera answer gives the</text>
+<text x="384.0" y="252.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">true error.</text>
+<path d="M642.0,190.0 L682.0,190.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="686.0" y="40.0" width="590.0" height="300.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="704.0" y="70.0" font-size="16.5" font-weight="700" fill="#1f2328" text-anchor="start">Predicted for this clip and the feature "peak upward speed"</text>
+<text x="704.0" y="104.0" font-size="14.8" font-weight="600" fill="#6b7280" text-anchor="start">route</text>
+<text x="930.0" y="104.0" font-size="14.8" font-weight="600" fill="#6b7280" text-anchor="start">likely error</text>
+<text x="1060.0" y="104.0" font-size="14.8" font-weight="600" fill="#6b7280" text-anchor="start">fails</text>
+<text x="1160.0" y="104.0" font-size="14.8" font-weight="600" fill="#6b7280" text-anchor="start">GPU time</text>
+<rect x="700.0" y="114.0" width="560.0" height="38.0" rx="8" fill="#f6f7f9" stroke="#d6d9de" stroke-width="1"/>
+<text x="704.0" y="138.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="start">2D pose + tracking</text>
+<text x="930.0" y="138.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">0.12</text>
+<text x="1060.0" y="138.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">2%</text>
+<text x="1160.0" y="138.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">10 s</text>
+<rect x="700.0" y="158.0" width="560.0" height="38.0" rx="8" fill="#f0eefc" stroke="#d6d9de" stroke-width="1"/>
+<text x="704.0" y="182.0" font-size="15.9" font-weight="600" fill="#1f2328" text-anchor="start">3D reconstruction</text>
+<text x="930.0" y="182.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">0.05</text>
+<text x="1060.0" y="182.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">9%</text>
+<text x="1160.0" y="182.0" font-size="15.9" font-weight="400" fill="#1f2328" text-anchor="start">230 s</text>
+<text x="704.0" y="250.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">The agent can call predict_outcome before deciding whether a</text>
+<text x="704.0" y="271.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">four-minute reconstruction is worth it. The predictions describe</text>
+<text x="704.0" y="292.4" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">the expert pipeline’s route; how well they flag errors in the</text>
+<text x="704.0" y="313.6" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">agent’s own features is tested separately.</text>
+<rect x="24.0" y="364.0" width="1252.0" height="82.0" rx="12" fill="#ffffff" stroke="#eb6834" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="42.0" y="392.0" font-size="16.5" font-weight="700" fill="#1f2328" text-anchor="start">Where the training labels come from</text>
+<text x="42.0" y="416.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">For every development video and every cached tool setting, the expert pipeline’s feature code is run on that tool’s output and compared with the</text>
+<text x="42.0" y="437.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">three-camera reference. That error, and whether the call failed, is the label.</text>
+</svg>

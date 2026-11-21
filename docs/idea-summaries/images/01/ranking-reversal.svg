@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="322" viewBox="0 0 760 322" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Reference dependence can reverse the preferred route</title>
+  <desc id="desc">Analytic example. The true squared-loss gap remains positive at 3. The gap against the proxy declines from 3 at correlation zero to minus 1 at correlation one, passing zero at 0.75.</desc>
+  <rect x="0" y="0" width="760" height="322" fill="#fcfdfc" rx="10" />
+  <text x="28" y="34" fill="#193447" font-size="23" font-weight="650" text-anchor="start">Mean squared loss of route A minus route B</text>
+  <text x="28" y="59" fill="#465d6c" font-size="16" font-weight="400" text-anchor="start">Positive values favor B. Both routes keep the same physical errors throughout.</text>
+  <rect x="464.75" y="83" width="130.25" height="189" fill="#faeee6" />
+  <line x1="74" x2="595" y1="269" y2="269" stroke="#c7d4d9" stroke-width="1" />
+  <text x="60" y="275" fill="#465d6c" font-size="16" font-weight="400" text-anchor="end">−1</text>
+  <line x1="74" x2="595" y1="229" y2="229" stroke="#465d6c" stroke-width="1.5" />
+  <text x="60" y="235" fill="#465d6c" font-size="16" font-weight="400" text-anchor="end">0</text>
+  <line x1="74" x2="595" y1="189" y2="189" stroke="#c7d4d9" stroke-width="1" />
+  <text x="60" y="195" fill="#465d6c" font-size="16" font-weight="400" text-anchor="end">1</text>
+  <line x1="74" x2="595" y1="149" y2="149" stroke="#c7d4d9" stroke-width="1" />
+  <text x="60" y="155" fill="#465d6c" font-size="16" font-weight="400" text-anchor="end">2</text>
+  <line x1="74" x2="595" y1="109" y2="109" stroke="#c7d4d9" stroke-width="1" />
+  <text x="60" y="115" fill="#465d6c" font-size="16" font-weight="400" text-anchor="end">3</text>
+  <line x1="74" x2="595" y1="109" y2="109" stroke="#006b65" stroke-width="3" stroke-dasharray="9 5" />
+  <line x1="74" x2="595" y1="109" y2="269" stroke="#a84830" stroke-width="4" />
+  <line x1="464.75" x2="464.75" y1="83" y2="272" stroke="#465d6c" stroke-width="1" stroke-dasharray="4 5" />
+  <circle cx="464.75" cy="229" r="5" fill="#fff" stroke="#a84830" stroke-width="2.5" />
+  <text x="74" y="291" fill="#465d6c" font-size="16" font-weight="400" text-anchor="middle">0</text>
+  <text x="204.25" y="291" fill="#465d6c" font-size="16" font-weight="400" text-anchor="middle">0.25</text>
+  <text x="334.5" y="291" fill="#465d6c" font-size="16" font-weight="400" text-anchor="middle">0.5</text>
+  <text x="464.75" y="291" fill="#465d6c" font-size="16" font-weight="400" text-anchor="middle">0.75</text>
+  <text x="595" y="291" fill="#465d6c" font-size="16" font-weight="400" text-anchor="middle">1</text>
+  <text x="610" y="115" fill="#006b65" font-size="17" font-weight="650" text-anchor="start">Physical target</text>
+  <text x="610" y="273" fill="#a84830" font-size="17" font-weight="650" text-anchor="start">Proxy target</text>
+  <text x="529.875" y="100" fill="#a84830" font-size="14" font-weight="650" text-anchor="middle">A wins on proxy</text>
+  <text x="334.5" y="315" fill="#193447" font-size="17" font-weight="650" text-anchor="middle">Correlation of proxy error with route A error</text>
+</svg>

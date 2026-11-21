@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="744" height="384" viewBox="0 0 744 384" role="img" aria-labelledby="title desc">
+  <title id="title">The same timing offset can mislead a ranking and preserve a change</title>
+  <desc id="desc">Constructed example in milliseconds. On trial one the independent time is 100, a second route reports 103, and the software reference and its related route both report 120. On trial two the independent time is 116 and the related route reports 136. The route is 20 milliseconds late on both trials and recovers the 16 millisecond change.</desc>
+  <rect x="1" y="1" width="742" height="382" rx="12" fill="#fbfaf6" stroke="#cbd4d2"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183347">
+    <text x="22" y="33" font-size="21" font-weight="700">One shared timing error, two different decisions</text>
+    <text x="22" y="59" font-size="16">Constructed event times in ms from a common trial origin</text>
+    <path d="M22 77 H721" stroke="#cbd4d2"/>
+    <text x="22" y="105" font-size="17" font-weight="700">Proposal 1 · Which route is closer on the first trial?</text>
+    <text x="22" y="140" font-size="16">Independent instrument</text>
+    <text x="22" y="167" font-size="16">Route B</text>
+    <text x="22" y="194" font-size="16">Route A and software reference</text>
+    <g stroke="#b8c4c5"><path d="M267 135 H682 M267 162 H682 M267 189 H682"/></g>
+    <circle cx="286" cy="135" r="5" fill="#17756d"/><circle cx="316" cy="162" r="5" fill="#46677e"/>
+    <rect x="481" y="184" width="10" height="10" fill="#99572e"/>
+    <g font-size="16" font-weight="700"><text x="300" y="131">100</text><text x="329" y="158">103</text><text x="500" y="185">120</text></g>
+    <text x="22" y="221" font-size="16">The software reference favors A. The instrument favors B.</text>
+    <path d="M22 237 H721" stroke="#cbd4d2"/>
+    <text x="22" y="264" font-size="17" font-weight="700">Proposal 4 · How much later is contact on the second trial?</text>
+    <g font-size="16"><text x="22" y="302">Independent instrument</text><text x="22" y="331">Route A</text></g>
+    <g fill="none" stroke-width="2"><path d="M286 297 H446" stroke="#17756d"/><path d="M486 326 H646" stroke="#99572e"/></g>
+    <g fill="#17756d"><circle cx="286" cy="297" r="5"/><circle cx="446" cy="297" r="5"/></g>
+    <g fill="#99572e"><rect x="481" y="321" width="10" height="10"/><rect x="641" y="321" width="10" height="10"/></g>
+    <g font-size="15" font-weight="700"><text x="277" y="288">100</text><text x="437" y="288">116</text><text x="477" y="317">120</text><text x="637" y="317">136</text></g>
+    <text x="22" y="363" font-size="16">Both intervals span 16 ms. The 20 ms offset cancels across trials.</text>
+  </g>
+</svg>
