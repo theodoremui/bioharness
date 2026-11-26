@@ -1,0 +1,120 @@
+**Round 2 verdict:** Ship 1, 2, 7, and 8. Fix 3, 4, 5, and 6. All four fixes fit the existing layouts.
+
+Coordinates are approximate and use the native PNG’s top-left origin. Text sizes are estimates at 850 px wide. The five-second calls are my visual judgments.
+
+### 1. `concept-mean-vs-tail.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** The two curves share their origin, and the orange curve crosses the dashed baseline once. Both intersections read cleanly. **(c) Directions and endpoints:** The leader at the orange minimum clearly points to the dot.
+- **(d) Readability:** The axis labels and orange annotations remain readable at roughly 11 px. **(e) Caption:** No cuts. Keep the illustrative badge and the fall-risk group label.
+- **(f) Five-second read:** Yes. Mean error keeps falling while fall-risk-group error reverses and ends worse than it started.
+- **(g) Concrete fix:** Optional wording polish. At the minimum near `(540, 529)`, use “Lowest tail error.” At the crossing near `(1026, 436)`, use “Returns to baseline” if the label is meant to describe the dot itself. The segment to the right already shows error rising above baseline.
+
+### 2. `edit-effect-scatter.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** The blue boundary meets the two dashed zero lines at the origin. Color and stroke distinguish all three. **(c) Directions and endpoints:** The “accepted” and “rejected” labels make the selection direction clear.
+- **(d) Readability:** The title, region labels, and legend hold up at 850 px. The zero ticks are small and legible. **(e) Caption:** The draw correlation could move to the caption if space gets tight. Keep the tail weight beside the plot because it explains the acceptance boundary.
+- **(f) Five-second read:** Yes. The shaded orange region makes it clear that the mean rule accepts edits that harm the tail. The correlation takes a second look.
+- **(g) Concrete fix:** Optional copy edit. Use “accepted, tail harmed” both in the shaded region near `(1070, 1125)` and in the legend. The current wording varies for the same category.
+
+### 3. `drift-sign-map.png` · Fix
+
+- **(a) Text collisions:** None. **(b) Crossings:** The cutoff leader from the equal-spread dot crosses the horizontal zero line near `(648, 640)`. The crossing adds clutter beside the key number. **(c) Directions and endpoints:** The leader still clearly lands on the solid-curve dot. The region labels are more ambiguous than the leader.
+- **(d) Readability:** The threshold values hold up. The subscripts in the spread legend are the weakest text at 850 px. **(e) Caption:** Move the evaluation-noise sentence to the caption and state the model conditions there. Keep the curve-reading instruction in the panel.
+- **(f) Five-second read:** Partial. The reader sees three thresholds and the highlighted −0.143. “Selection raises the tail” leaves the outcome ambiguous, especially for a reader who just saw tail **error** on the first figure. Between curves, the direction also depends on which spread ratio applies.
+- **(g) Concrete fix:** Replace the blue and orange region labels with “Tail performance improves” and “Tail performance worsens,” then place “Read each curve separately” by the legend. Use plain-language legend rows such as “Tail SD = 1× majority SD.” Position the −0.143 callout just right of its dot and below the zero line, with a short leader.
+
+### 4. `timing-regimes-geometry.png` · Fix
+
+- **(a) Text collisions:** None. **(b) Crossings:** Paths 1 and 3 are almost collinear on opposite sides of the mean optimum near `(1220, 680)`, so they can read as one through-route. **(c) Directions and endpoints:** Their mid-path arrowheads point inward, but the reader has to inspect both to establish the shared destination. The diamonds correctly pair ball entry with the peak.
+- **(d) Readability:** The shared “tail gain” label is readable but easy to overlook beside the top mini-plot. **(e) Caption:** Move the “beyond the tail optimum” and “majority side” descriptions to the caption. Keep the regime names and entry marker in the figure.
+- **(f) Five-second read:** Partial. The three curve shapes register quickly. The figure uses “tail gain” for both the local expected change that defines the ball and the cumulative change plotted on the right. That makes the peak-at-entry claim harder to interpret. The middle curve’s eventual crossing below zero is specific to the illustrated seed.
+- **(g) Concrete fix:** Label the ball “Expected tail gain per generation is negative inside” and the three plots “Cumulative tail gain from the seed.” Move seed 3 from roughly `(940, 460)` to `(990, 420)` and redraw its straight path to the mean optimum. Note in the caption that entry determines the peak and that the final level relative to the seed depends on the starting point.
+
+### 5. `guarantee-validity-and-price.png` · Fix
+
+- **(a) Text collisions:** None. **(b) Crossings:** The two green series cross between 5 and 10 people. At 10, the circle and square overlap near `(1813, 705)` and nearly merge at display size. **(c) Directions and endpoints:** There are no directional arrows. The left bars can look like uncertainty intervals before the reader finds the sample-size explanation.
+- **(d) Readability:** The lower-left definition of the breach event is around 10 px and easy to miss. **(e) Caption:** Move the noise distribution and details of how edits challenge the margin to the caption. Keep a short note explaining what the ranges span and define the breach events beside the chart.
+- **(f) Five-second read:** Partial. The 5% line separates the methods visually, and the right panel shows more majority gain retained with more people. The left axis says “ends,” while the footnote counts **any accepted parent** for the gates. Those are different events.
+- **(g) Concrete fix:** Use “Observed tail-margin breach rate” on the left. Put the two event definitions directly beneath it, with “Any accepted parent during the run” for gates and “Deployed checkpoint” for certification. Separate the green markers at 10 with a small horizontal offset or direct numerical labels.
+
+### 6. `instrumented-loop.png` · Fix
+
+- **(a) Text collisions:** None. The last line in the drift-log box is close to the bottom border but clears it. **(b) Crossings:** The feedback and logging routes stay clear of text and each other. **(c) Directions and endpoints:** The existing arrowheads are clear. The sealed-test branch has no incoming arrow showing which saved harnesses it evaluates.
+- **(d) Readability:** Box titles hold up. Body text and connector labels are near 10 px, so shorter copy would help. **(e) Caption:** Move “prompts, tools, code” and the exact `S > τ` decision rule to the caption if space is needed. Keep the guard scores’ isolation and the generation-10 freeze in the diagram.
+- **(f) Five-second read:** Partial. The upper loop and the guard branch are easy to spot. The reader has to infer that sealed-test outcomes come from the same saved trajectory used for the forecast comparison.
+- **(g) Concrete fix:** Add a one-way “Saved harnesses” arrow from the bottom of `Parent harness` near `(330, 456)`, down through the open left margin, then right into the sealed-test box at about `(820, 1168)`. Label the forecast target explicitly so the reader can tell which part of the generation 0–50 trajectory is compared with the frozen forecast.
+
+### 7. `stable-person-splits.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** None. **(c) Directions and endpoints:** There are no arrows. The two diagonals show the test and guard rotations, including the wrap from block 5 back to block 1.
+- **(d) Readability:** The cell labels are clear. The legend descriptions remain readable at roughly 10–11 px. **(e) Caption:** The approximate per-fold counts could move to the caption. Keep the fall-risk stratification visible in the subtitle.
+- **(f) Five-second read:** Yes. Each fold puts one person-level block in sealed test, one in guard, and three in dev.
+- **(g) Concrete fix:** Optional wording polish. Use “stratified by fall-risk status” in the subtitle. It describes the assignment procedure precisely and avoids implying exact equality across blocks.
+
+### 8. `dose-response-design.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** The blue arrow and lower bracket clear the cells and all labels. **(c) Directions and endpoints:** The arrow reads as increasing item count within the π = 0.40 example. The bracket locates the flip between the two tested weights.
+- **(d) Readability:** All cell values are comfortably readable. The units line is smaller but legible. **(e) Caption:** The “cells” note could move into the caption if the title or subtitle carries the units.
+- **(f) Five-second read:** Yes. The sign changes across columns and holds down each column. The blue arrow shows the magnitude change at π = 0.40.
+- **(g) Concrete fix:** Optional precision edit. Label the bracket “Model predicts zero drift near π = 0.23,” and start the side callout with “At π = 0.40.” The grid brackets the crossing between 0.20 and 0.40, while the model supplies the more precise location.
+tokens used
+58,808
+**Round 2 verdict:** Ship 1, 2, 7, and 8. Fix 3, 4, 5, and 6. All four fixes fit the existing layouts.
+
+Coordinates are approximate and use the native PNG’s top-left origin. Text sizes are estimates at 850 px wide. The five-second calls are my visual judgments.
+
+### 1. `concept-mean-vs-tail.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** The two curves share their origin, and the orange curve crosses the dashed baseline once. Both intersections read cleanly. **(c) Directions and endpoints:** The leader at the orange minimum clearly points to the dot.
+- **(d) Readability:** The axis labels and orange annotations remain readable at roughly 11 px. **(e) Caption:** No cuts. Keep the illustrative badge and the fall-risk group label.
+- **(f) Five-second read:** Yes. Mean error keeps falling while fall-risk-group error reverses and ends worse than it started.
+- **(g) Concrete fix:** Optional wording polish. At the minimum near `(540, 529)`, use “Lowest tail error.” At the crossing near `(1026, 436)`, use “Returns to baseline” if the label is meant to describe the dot itself. The segment to the right already shows error rising above baseline.
+
+### 2. `edit-effect-scatter.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** The blue boundary meets the two dashed zero lines at the origin. Color and stroke distinguish all three. **(c) Directions and endpoints:** The “accepted” and “rejected” labels make the selection direction clear.
+- **(d) Readability:** The title, region labels, and legend hold up at 850 px. The zero ticks are small and legible. **(e) Caption:** The draw correlation could move to the caption if space gets tight. Keep the tail weight beside the plot because it explains the acceptance boundary.
+- **(f) Five-second read:** Yes. The shaded orange region makes it clear that the mean rule accepts edits that harm the tail. The correlation takes a second look.
+- **(g) Concrete fix:** Optional copy edit. Use “accepted, tail harmed” both in the shaded region near `(1070, 1125)` and in the legend. The current wording varies for the same category.
+
+### 3. `drift-sign-map.png` · Fix
+
+- **(a) Text collisions:** None. **(b) Crossings:** The cutoff leader from the equal-spread dot crosses the horizontal zero line near `(648, 640)`. The crossing adds clutter beside the key number. **(c) Directions and endpoints:** The leader still clearly lands on the solid-curve dot. The region labels are more ambiguous than the leader.
+- **(d) Readability:** The threshold values hold up. The subscripts in the spread legend are the weakest text at 850 px. **(e) Caption:** Move the evaluation-noise sentence to the caption and state the model conditions there. Keep the curve-reading instruction in the panel.
+- **(f) Five-second read:** Partial. The reader sees three thresholds and the highlighted −0.143. “Selection raises the tail” leaves the outcome ambiguous, especially for a reader who just saw tail **error** on the first figure. Between curves, the direction also depends on which spread ratio applies.
+- **(g) Concrete fix:** Replace the blue and orange region labels with “Tail performance improves” and “Tail performance worsens,” then place “Read each curve separately” by the legend. Use plain-language legend rows such as “Tail SD = 1× majority SD.” Position the −0.143 callout just right of its dot and below the zero line, with a short leader.
+
+### 4. `timing-regimes-geometry.png` · Fix
+
+- **(a) Text collisions:** None. **(b) Crossings:** Paths 1 and 3 are almost collinear on opposite sides of the mean optimum near `(1220, 680)`, so they can read as one through-route. **(c) Directions and endpoints:** Their mid-path arrowheads point inward, but the reader has to inspect both to establish the shared destination. The diamonds correctly pair ball entry with the peak.
+- **(d) Readability:** The shared “tail gain” label is readable but easy to overlook beside the top mini-plot. **(e) Caption:** Move the “beyond the tail optimum” and “majority side” descriptions to the caption. Keep the regime names and entry marker in the figure.
+- **(f) Five-second read:** Partial. The three curve shapes register quickly. The figure uses “tail gain” for both the local expected change that defines the ball and the cumulative change plotted on the right. That makes the peak-at-entry claim harder to interpret. The middle curve’s eventual crossing below zero is specific to the illustrated seed.
+- **(g) Concrete fix:** Label the ball “Expected tail gain per generation is negative inside” and the three plots “Cumulative tail gain from the seed.” Move seed 3 from roughly `(940, 460)` to `(990, 420)` and redraw its straight path to the mean optimum. Note in the caption that entry determines the peak and that the final level relative to the seed depends on the starting point.
+
+### 5. `guarantee-validity-and-price.png` · Fix
+
+- **(a) Text collisions:** None. **(b) Crossings:** The two green series cross between 5 and 10 people. At 10, the circle and square overlap near `(1813, 705)` and nearly merge at display size. **(c) Directions and endpoints:** There are no directional arrows. The left bars can look like uncertainty intervals before the reader finds the sample-size explanation.
+- **(d) Readability:** The lower-left definition of the breach event is around 10 px and easy to miss. **(e) Caption:** Move the noise distribution and details of how edits challenge the margin to the caption. Keep a short note explaining what the ranges span and define the breach events beside the chart.
+- **(f) Five-second read:** Partial. The 5% line separates the methods visually, and the right panel shows more majority gain retained with more people. The left axis says “ends,” while the footnote counts **any accepted parent** for the gates. Those are different events.
+- **(g) Concrete fix:** Use “Observed tail-margin breach rate” on the left. Put the two event definitions directly beneath it, with “Any accepted parent during the run” for gates and “Deployed checkpoint” for certification. Separate the green markers at 10 with a small horizontal offset or direct numerical labels.
+
+### 6. `instrumented-loop.png` · Fix
+
+- **(a) Text collisions:** None. The last line in the drift-log box is close to the bottom border but clears it. **(b) Crossings:** The feedback and logging routes stay clear of text and each other. **(c) Directions and endpoints:** The existing arrowheads are clear. The sealed-test branch has no incoming arrow showing which saved harnesses it evaluates.
+- **(d) Readability:** Box titles hold up. Body text and connector labels are near 10 px, so shorter copy would help. **(e) Caption:** Move “prompts, tools, code” and the exact `S > τ` decision rule to the caption if space is needed. Keep the guard scores’ isolation and the generation-10 freeze in the diagram.
+- **(f) Five-second read:** Partial. The upper loop and the guard branch are easy to spot. The reader has to infer that sealed-test outcomes come from the same saved trajectory used for the forecast comparison.
+- **(g) Concrete fix:** Add a one-way “Saved harnesses” arrow from the bottom of `Parent harness` near `(330, 456)`, down through the open left margin, then right into the sealed-test box at about `(820, 1168)`. Label the forecast target explicitly so the reader can tell which part of the generation 0–50 trajectory is compared with the frozen forecast.
+
+### 7. `stable-person-splits.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** None. **(c) Directions and endpoints:** There are no arrows. The two diagonals show the test and guard rotations, including the wrap from block 5 back to block 1.
+- **(d) Readability:** The cell labels are clear. The legend descriptions remain readable at roughly 10–11 px. **(e) Caption:** The approximate per-fold counts could move to the caption. Keep the fall-risk stratification visible in the subtitle.
+- **(f) Five-second read:** Yes. Each fold puts one person-level block in sealed test, one in guard, and three in dev.
+- **(g) Concrete fix:** Optional wording polish. Use “stratified by fall-risk status” in the subtitle. It describes the assignment procedure precisely and avoids implying exact equality across blocks.
+
+### 8. `dose-response-design.png` · Ship
+
+- **(a) Text collisions:** None. **(b) Crossings:** The blue arrow and lower bracket clear the cells and all labels. **(c) Directions and endpoints:** The arrow reads as increasing item count within the π = 0.40 example. The bracket locates the flip between the two tested weights.
+- **(d) Readability:** All cell values are comfortably readable. The units line is smaller but legible. **(e) Caption:** The “cells” note could move into the caption if the title or subtitle carries the units.
+- **(f) Five-second read:** Yes. The sign changes across columns and holds down each column. The blue arrow shows the magnitude change at π = 0.40.
+- **(g) Concrete fix:** Optional precision edit. Label the bracket “Model predicts zero drift near π = 0.23,” and start the side callout with “At π = 0.40.” The grid brackets the crossing between 0.20 and 0.40, while the model supplies the more precise location.

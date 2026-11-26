@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 372" width="1300" height="372" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Where a reader error comes from</title>
+<desc id="d">A stacked bar splits the reader risk into the tool floor, the information term lost by the encoding, and the perceptual term, itself split into resolution (left after recalibration) and calibration (removed by recalibration).</desc>
+<defs></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="370.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="50.0" font-size="23.6" font-weight="700" fill="#1f2328" text-anchor="start">Where a reader's error comes from</text>
+<text x="40.0" y="80.0" font-size="16.5" font-weight="400" fill="#6b7280" text-anchor="start">Risk grows from left to right; each boundary is a different decoder; widths are schematic</text>
+<rect x="90.0" y="190.0" width="250.0" height="60.0" rx="4" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="215.0" y="226.0" font-size="17.7" font-weight="600" fill="#1f2328" text-anchor="middle">tool floor</text>
+<rect x="340.0" y="190.0" width="260.0" height="60.0" rx="4" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.6"/>
+<text x="470.0" y="226.0" font-size="17.7" font-weight="600" fill="#1f2328" text-anchor="middle">information loss I(r)</text>
+<rect x="600.0" y="190.0" width="310.0" height="60.0" rx="4" fill="#cfe0f7" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="755.0" y="226.0" font-size="17.7" font-weight="600" fill="#1f2328" text-anchor="middle">resolution</text>
+<rect x="910.0" y="190.0" width="240.0" height="60.0" rx="4" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="1030.0" y="226.0" font-size="17.7" font-weight="600" fill="#1f2328" text-anchor="middle">calibration</text>
+<text x="1168.0" y="226.0" font-size="17.7" font-weight="600" fill="#6b7280" text-anchor="start">risk →</text>
+<path d="M600,176 V168 H1150 V176" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="875.0" y="152.0" font-size="17.7" font-weight="700" fill="#1c5cab" text-anchor="middle">perceptual term P<tspan baseline-shift="sub" font-size="15.0">X</tspan>(r)</text>
+<line x1="90.0" y1="250.0" x2="90.0" y2="264.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="90.0" y="290.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="middle">0</text>
+<line x1="340.0" y1="250.0" x2="340.0" y2="264.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="340.0" y="290.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="middle">R(o)</text>
+<text x="340.0" y="324.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">best raw-output decoder</text>
+<line x1="600.0" y1="250.0" x2="600.0" y2="264.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="600.0" y="290.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="middle">R(r)</text>
+<text x="600.0" y="324.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">best image decoder</text>
+<line x1="910.0" y1="250.0" x2="910.0" y2="264.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="910.0" y="290.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="middle">R<tspan baseline-shift="sub" font-size="16.0">h ∘ X</tspan>(r)</text>
+<text x="910.0" y="324.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">recalibrated reader</text>
+<line x1="1150.0" y1="250.0" x2="1150.0" y2="264.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="1150.0" y="290.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="middle">R<tspan baseline-shift="sub" font-size="16.0">X</tspan>(r)</text>
+<text x="1150.0" y="324.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">VLM reader</text>
+</svg>

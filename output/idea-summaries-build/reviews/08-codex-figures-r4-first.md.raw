@@ -1,0 +1,163 @@
+OpenAI Codex v0.171.0
+--------
+workdir: /Users/theodoremui/dev/bioharness
+model: gpt-6.2-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: medium
+reasoning summaries: none
+session id: 01a2150d-8f4d-76f3-8848-b4a90fe9e418
+--------
+user
+You are an adversarial reviewer of scientific figures for a research proposal. The attached PNGs are rendered at 2x from SVG and will be displayed about 850 px wide. Try hard to find reasons each figure should not ship. For EACH image, by file order, report: (a) overlapping or colliding text, (b) lines or arrows that cross text or other arrows confusingly, (c) arrows whose direction or endpoints are ambiguous, (d) text too small to read at display size, (e) excess text that belongs in a caption, (f) the one main point and whether a reader gets it in 5 seconds, (g) concrete fixes with coordinates or element names. Then give a verdict per figure: ship / fix / redraw. Focus: Proposal 08, seven figures in this order. (1) one-video-two-referrals: the same clip under two referral lines follows two defensible paths to a shorter or longer hold time (illustrative). (2) better-measurer-worse-decision: shrinking toward the referral lowers MSE while the blind-calibrated decision penalty rises from zero; the diamond is the Bayes report gamma_B (computed in simulation). (3) calibration-bug-or-information-bug: a one-to-one shift can be recalibrated away, while a cap under the high-risk referral maps different blind values to one report (schematic); below the cap the two referral lines coincide on purpose. (4) path-splicing-factorial: crossing path referral with report referral gives a two-by-two factorial with direct (rightward) and indirect (downward) effects. (5) blind-analysis-harness: measure blind, commit, then reveal the referral to interpretation; the decision uses the referral once as the prior. (6) self-improvement-design: three optimizers by three rewards with 8, 3 and 4 seeds, six checkpoints per run audited on sealed people. (7) predicted-routes-by-optimizer: hypothetical prediction that both optimizer types reach the gamma_B band in total effect but only GEPA and ACE put most of it through the path.. Do not run commands or modify files.
+
+codex
+**Resolve two ambiguities before these figures ship.** Figure 2’s Bayes diamonds sit off both shrinkage curves, so readers need to know whether their heights encode separate results. Figure 7 shows checkpoints 0–6, while Figure 6 says six checkpoints are audited per run. Make the baseline and audit count agree across both figures.
+
+Coordinates below refer to the supplied PNGs, measured from the top-left. At 850 px wide, divide coordinates and text sizes by about three.
+
+## 1. `one-video-two-referrals` — FIX
+
+- **(a) Text collisions.** None. The two long referral headers fit, though the lower one takes longer to scan than the outcome boxes.
+- **(b) Line crossings.** None. The diagonal arrows branch cleanly from the video card and stay clear of the labels.
+- **(c) Arrow direction and endpoints.** The directions are clear. The larger ambiguity is causal. Each outgoing arrow follows two bullets, so the graphic implies that the filter cutoff and timing rule jointly explain the shorter or longer hold time. The figure gives no way to tell which choice drives the result.
+- **(d) Readability.** The body text is roughly 12 px at display size and readable. The gray “single-leg stance” label is among the first elements to lose prominence.
+- **(e) Caption material.** Move the rationale for the 3 Hz and 6 Hz choices into the caption. If the exact cutoffs have no role in the takeaway, move the numbers there too. Keep “illustrative example” visible.
+- **(f) Five-second read.** **Yes.** The same clip produces two hold times. It takes longer to see that the referrals change how the clip is measured, and the basis for calling both paths defensible is still missing.
+- **(g) Fix.** At the outcome-facing bullets around `(784, 306)` and `(784, 786)`, use parallel wording such as “End timing at first large sway” and “Continue timing after recovery.” If both processing choices must remain, label them “Timing rule” and “Filter” so readers can distinguish their roles.
+
+## 2. `better-measurer-worse-decision` — FIX
+
+- **(a) Text collisions.** None at the supplied size. The left minimum annotation and Bayes label crowd the same lower area. On the right, the Bayes label, diamond, curve and `+0.026` annotation have little visual separation at 850 px.
+- **(b) Line crossings.** The dashed guides and curves intersect as intended. The problem is that both diamonds float near their curves without a legend or connector that explains why they are off-curve.
+- **(c) Arrow direction and endpoints.** No arrows. The vertical guides align the two panels at γ*. The diamonds around `(457, 636)` and `(1777, 769)` share the same relative x-position, but a reader cannot tell whether their y-positions are quantitative results or offsets for visibility.
+- **(d) Readability.** Most labels land around 10–12 px. The `B` subscript and gray subtitles are the weakest at display size.
+- **(e) Caption material.** Keep “Simulation” on the graphic. Put the definition of the Bayes report and why it can sit off the plotted shrinkage curves in the caption, with a short marker label or key on the graphic.
+- **(f) Five-second read.** **Mostly.** One curve falls initially while the other rises. The paired result at γ* takes longer to find, and the left panel’s “0.64 at γ*” asks readers to translate a ratio while the right panel gives a change.
+- **(g) Fix.** If the diamonds encode separate Bayes results, label one “Bayes report” with a short leader and use a shared diamond key. If they identify only γ_B, put them on the x-axes and remove the apparent y-values. At the dashed guides near `x=588` and `x=1908`, use parallel callouts like “36% lower MSE” and “+0.026 nats” so the trade-off reads directly.
+
+## 3. `calibration-bug-or-information-bug` — FIX
+
+- **(a) Text collisions.** None. The right-panel annotation fits between the red guides, though it has limited breathing room at display size.
+- **(b) Line crossings.** The orange and purple lines intentionally coincide below the cap. Purple dashes over orange create an alternating stroke that can look like a rendering artifact. At `(2012, 541)`, orange, purple and red converge just as the high-risk series changes color.
+- **(c) Arrow direction and endpoints.** No arrows. The two open circles and their vertical guides convey two inputs with one output. The red plateau has no direct series label, so readers have to infer that it continues the orange high-risk line.
+- **(d) Readability.** The main labels hold up. The `0` subscript and muted “schematic” are less prominent. The first three-tenths of the right plot are easier to read as a line than as two coincident series.
+- **(e) Caption material.** The bottom summaries repeat the panel titles. Keep the space for the condition that makes the left panel work. Recalibration can undo the shift **within each referral**.
+- **(f) Five-second read.** **Yes for the geometry.** The flat line clearly collapses different inputs. Which referral gets capped, and why the rising lines can be recalibrated, take longer.
+- **(g) Fix.** Draw a single neutral segment from roughly `(1600, 796)` to `(2012, 541)` and label it “Both referrals below the cap.” Continue the high-risk line in orange along the plateau, and start the dashed purple continuation at the split. Put “High-risk referral” directly on or above the plateau and keep the two open circles.
+
+## 4. `path-splicing-factorial` — FIX
+
+- **(a) Text collisions.** None. The subscripts are clear in the full PNG. At display size, the arrow labels and their symbols compete for attention.
+- **(b) Line crossings.** No effect arrows cross. The dotted leader from μ(a,b) touches the dashed cell border around `(1760, 330)`, adding a visual connection that looks like a fifth edge of the factorial.
+- **(c) Arrow direction and endpoints.** The arrowheads make the directions clear. The labels are less explicit about the intervention. Readers need to infer that rightward means changing the **report referral with the path fixed**, and downward means changing the **path referral with the report referral fixed**.
+- **(d) Readability.** The cell labels are strong. The explanatory text is around 11 px at display size, and the effect subscripts are smaller. The prose example is readable but slow to scan.
+- **(e) Caption material.** Move the μ(a,b) prose example into the caption. Keep the interaction equation only if the figure is meant to teach how the interaction is calculated.
+- **(f) Five-second read.** **Partial.** A reader sees the two-by-two and the two directions immediately. They may still miss which variable changes along each direction and what a cross-splice does.
+- **(g) Fix.** Replace the generic corner/example area with a compact key, “μ(path referral, report referral).” Label the horizontal arrows near `(1180, 290)` and `(1180, 750)` “Change report referral.” Label the vertical arrows “Change path referral,” retaining the DE and IE symbols if the proposal uses them. Drop the dotted leader.
+
+## 5. `blind-analysis-harness` — FIX
+
+- **(a) Text collisions.** None. All five cards have enough internal space, including the commit card with its lock.
+- **(b) Line crossings.** None. The orange referral input enters Interpretation from above, away from the main flow.
+- **(c) Arrow direction and endpoints.** Every arrow has a clear destination. The chain shows that Interpretation follows Commit, but the branch from Referral depicts an independent input to Interpretation. The post-commit release condition is carried entirely by the card text.
+- **(d) Readability.** The titles and most body lines remain legible at 850 px. The commit and interpretation text is dense enough that the release condition is easier to miss than the box titles.
+- **(e) Caption material.** Move “no face, no cane” and “pre-declared menu only” into the caption if the immediate purpose is to explain the information flow. Keep the frozen measurement and the referral’s role as prior in the figure.
+- **(f) Five-second read.** **Mostly.** The viewer sees blind measurement, lock, interpretation and decision. They may miss that the lock gates referral access and that the referral enters the decision once.
+- **(g) Fix.** In the Referral card starting near `(1560, 80)`, make the first line “Referral unlocked after commit.” Keep the orange arrow aimed only at Interpretation. In the Decision card near `(2140, 380)`, compress the body to “Use referral once, as prior.”
+
+## 6. `self-improvement-design` — FIX
+
+- **(a) Text collisions.** None. The optimizer labels, matrix and audit callout have comfortable separation.
+- **(b) Line crossings.** None. The bracket groups the run matrix, and both arrows into the audit box stay clear of the text.
+- **(c) Arrow direction and endpoints.** Both arrows terminate clearly at the audit box. The vertical arrow makes the sealed cohort look like an input to auditing, as intended. The development banner’s position implies that all nine cells run there, though that relationship takes a moment to parse.
+- **(d) Readability.** The type is mostly readable. The fragile part is encoding 8, 3 and 4 as repeated dots. At 850 px the dots are visible, but readers must count them or decode the equation above the matrix.
+- **(e) Caption material.** The arithmetic line, nine dot patterns and “of each of 45 runs” repeat the same count. Keep the total once and put each seed count where readers choose among the arms.
+- **(f) Five-second read.** **Partial.** Three optimizers, three arms and a sealed audit are visible. The allocation and six-checkpoints-per-run rule require a second pass.
+- **(g) Fix.** Replace the repeated dot strings in the grid around `x=400–1872, y=632–1072` with **8 seeds**, **3 seeds** and **4 seeds**, or put those counts in the three column headers and simplify the cells. Rename the audit box “Audit 6 checkpoints per run” and make its count agree explicitly with Figure 7. Keep “45 runs” once.
+
+## 7. `predicted-routes-by-optimizer` — REDRAW
+
+- **(a) Text collisions.** There are no hard overlaps. At 850 px, the left-panel endpoint labels and the γ_B tag compete in the narrow gutter. The two reward (c) labels also crowd the lower plotting area.
+- **(b) Line crossings.** Both optimizer curves meet the zero line at the origin, and the left curves cross or approach the γ_B reference as intended. The weak separation is semantic. The horizontal dotted line doubles as the zero reference and the prediction for reward (c), so it can look like part of the axes.
+- **(c) Arrow direction and endpoints.** No arrows. The endpoint dots suggest specific checkpoint predictions, while the smooth curves suggest a trajectory between audits. The axis labels seven positions as audited checkpoints, 0–6, against Figure 6’s count of six per run.
+- **(d) Readability.** Endpoint optimizer labels are readable. The long bottom normalization note, small γ_B subscript and closely packed gutter text carry too much of the interpretation at this size.
+- **(e) Caption material.** Move the full normalization sentence and any explanation of the trajectory shapes to the caption. Keep “Hypothetical prediction,” the target band and a short shared scale label in the figure. If the indirect effect corresponds to one of Figure 4’s two contrasts or an average of them, say which in the caption or panel label.
+- **(f) Five-second read.** **No.** The right panel shows GEPA and ACE well above GRPO, but “most of the total effect” requires matching styles across panels and comparing heights. The long headline gives the reader the answer before the graphic makes it apparent.
+- **(g) Fix.** Make the primary comparison two aligned optimizer rows. Preserve the shared scale and the γ_B band for total effect, and show the corresponding indirect effect beside each total so the fraction is apparent. If trajectories are part of the hypothesis, retain them as a secondary view with marks at discrete audited checkpoints. At the axes currently labeled `0–6`, distinguish an unaudited baseline if that is what `0` means. Give reward (c) a distinct labeled control mark so it reads independently of the zero reference.
+tokens used
+48,696
+**Resolve two ambiguities before these figures ship.** Figure 2’s Bayes diamonds sit off both shrinkage curves, so readers need to know whether their heights encode separate results. Figure 7 shows checkpoints 0–6, while Figure 6 says six checkpoints are audited per run. Make the baseline and audit count agree across both figures.
+
+Coordinates below refer to the supplied PNGs, measured from the top-left. At 850 px wide, divide coordinates and text sizes by about three.
+
+## 1. `one-video-two-referrals` — FIX
+
+- **(a) Text collisions.** None. The two long referral headers fit, though the lower one takes longer to scan than the outcome boxes.
+- **(b) Line crossings.** None. The diagonal arrows branch cleanly from the video card and stay clear of the labels.
+- **(c) Arrow direction and endpoints.** The directions are clear. The larger ambiguity is causal. Each outgoing arrow follows two bullets, so the graphic implies that the filter cutoff and timing rule jointly explain the shorter or longer hold time. The figure gives no way to tell which choice drives the result.
+- **(d) Readability.** The body text is roughly 12 px at display size and readable. The gray “single-leg stance” label is among the first elements to lose prominence.
+- **(e) Caption material.** Move the rationale for the 3 Hz and 6 Hz choices into the caption. If the exact cutoffs have no role in the takeaway, move the numbers there too. Keep “illustrative example” visible.
+- **(f) Five-second read.** **Yes.** The same clip produces two hold times. It takes longer to see that the referrals change how the clip is measured, and the basis for calling both paths defensible is still missing.
+- **(g) Fix.** At the outcome-facing bullets around `(784, 306)` and `(784, 786)`, use parallel wording such as “End timing at first large sway” and “Continue timing after recovery.” If both processing choices must remain, label them “Timing rule” and “Filter” so readers can distinguish their roles.
+
+## 2. `better-measurer-worse-decision` — FIX
+
+- **(a) Text collisions.** None at the supplied size. The left minimum annotation and Bayes label crowd the same lower area. On the right, the Bayes label, diamond, curve and `+0.026` annotation have little visual separation at 850 px.
+- **(b) Line crossings.** The dashed guides and curves intersect as intended. The problem is that both diamonds float near their curves without a legend or connector that explains why they are off-curve.
+- **(c) Arrow direction and endpoints.** No arrows. The vertical guides align the two panels at γ*. The diamonds around `(457, 636)` and `(1777, 769)` share the same relative x-position, but a reader cannot tell whether their y-positions are quantitative results or offsets for visibility.
+- **(d) Readability.** Most labels land around 10–12 px. The `B` subscript and gray subtitles are the weakest at display size.
+- **(e) Caption material.** Keep “Simulation” on the graphic. Put the definition of the Bayes report and why it can sit off the plotted shrinkage curves in the caption, with a short marker label or key on the graphic.
+- **(f) Five-second read.** **Mostly.** One curve falls initially while the other rises. The paired result at γ* takes longer to find, and the left panel’s “0.64 at γ*” asks readers to translate a ratio while the right panel gives a change.
+- **(g) Fix.** If the diamonds encode separate Bayes results, label one “Bayes report” with a short leader and use a shared diamond key. If they identify only γ_B, put them on the x-axes and remove the apparent y-values. At the dashed guides near `x=588` and `x=1908`, use parallel callouts like “36% lower MSE” and “+0.026 nats” so the trade-off reads directly.
+
+## 3. `calibration-bug-or-information-bug` — FIX
+
+- **(a) Text collisions.** None. The right-panel annotation fits between the red guides, though it has limited breathing room at display size.
+- **(b) Line crossings.** The orange and purple lines intentionally coincide below the cap. Purple dashes over orange create an alternating stroke that can look like a rendering artifact. At `(2012, 541)`, orange, purple and red converge just as the high-risk series changes color.
+- **(c) Arrow direction and endpoints.** No arrows. The two open circles and their vertical guides convey two inputs with one output. The red plateau has no direct series label, so readers have to infer that it continues the orange high-risk line.
+- **(d) Readability.** The main labels hold up. The `0` subscript and muted “schematic” are less prominent. The first three-tenths of the right plot are easier to read as a line than as two coincident series.
+- **(e) Caption material.** The bottom summaries repeat the panel titles. Keep the space for the condition that makes the left panel work. Recalibration can undo the shift **within each referral**.
+- **(f) Five-second read.** **Yes for the geometry.** The flat line clearly collapses different inputs. Which referral gets capped, and why the rising lines can be recalibrated, take longer.
+- **(g) Fix.** Draw a single neutral segment from roughly `(1600, 796)` to `(2012, 541)` and label it “Both referrals below the cap.” Continue the high-risk line in orange along the plateau, and start the dashed purple continuation at the split. Put “High-risk referral” directly on or above the plateau and keep the two open circles.
+
+## 4. `path-splicing-factorial` — FIX
+
+- **(a) Text collisions.** None. The subscripts are clear in the full PNG. At display size, the arrow labels and their symbols compete for attention.
+- **(b) Line crossings.** No effect arrows cross. The dotted leader from μ(a,b) touches the dashed cell border around `(1760, 330)`, adding a visual connection that looks like a fifth edge of the factorial.
+- **(c) Arrow direction and endpoints.** The arrowheads make the directions clear. The labels are less explicit about the intervention. Readers need to infer that rightward means changing the **report referral with the path fixed**, and downward means changing the **path referral with the report referral fixed**.
+- **(d) Readability.** The cell labels are strong. The explanatory text is around 11 px at display size, and the effect subscripts are smaller. The prose example is readable but slow to scan.
+- **(e) Caption material.** Move the μ(a,b) prose example into the caption. Keep the interaction equation only if the figure is meant to teach how the interaction is calculated.
+- **(f) Five-second read.** **Partial.** A reader sees the two-by-two and the two directions immediately. They may still miss which variable changes along each direction and what a cross-splice does.
+- **(g) Fix.** Replace the generic corner/example area with a compact key, “μ(path referral, report referral).” Label the horizontal arrows near `(1180, 290)` and `(1180, 750)` “Change report referral.” Label the vertical arrows “Change path referral,” retaining the DE and IE symbols if the proposal uses them. Drop the dotted leader.
+
+## 5. `blind-analysis-harness` — FIX
+
+- **(a) Text collisions.** None. All five cards have enough internal space, including the commit card with its lock.
+- **(b) Line crossings.** None. The orange referral input enters Interpretation from above, away from the main flow.
+- **(c) Arrow direction and endpoints.** Every arrow has a clear destination. The chain shows that Interpretation follows Commit, but the branch from Referral depicts an independent input to Interpretation. The post-commit release condition is carried entirely by the card text.
+- **(d) Readability.** The titles and most body lines remain legible at 850 px. The commit and interpretation text is dense enough that the release condition is easier to miss than the box titles.
+- **(e) Caption material.** Move “no face, no cane” and “pre-declared menu only” into the caption if the immediate purpose is to explain the information flow. Keep the frozen measurement and the referral’s role as prior in the figure.
+- **(f) Five-second read.** **Mostly.** The viewer sees blind measurement, lock, interpretation and decision. They may miss that the lock gates referral access and that the referral enters the decision once.
+- **(g) Fix.** In the Referral card starting near `(1560, 80)`, make the first line “Referral unlocked after commit.” Keep the orange arrow aimed only at Interpretation. In the Decision card near `(2140, 380)`, compress the body to “Use referral once, as prior.”
+
+## 6. `self-improvement-design` — FIX
+
+- **(a) Text collisions.** None. The optimizer labels, matrix and audit callout have comfortable separation.
+- **(b) Line crossings.** None. The bracket groups the run matrix, and both arrows into the audit box stay clear of the text.
+- **(c) Arrow direction and endpoints.** Both arrows terminate clearly at the audit box. The vertical arrow makes the sealed cohort look like an input to auditing, as intended. The development banner’s position implies that all nine cells run there, though that relationship takes a moment to parse.
+- **(d) Readability.** The type is mostly readable. The fragile part is encoding 8, 3 and 4 as repeated dots. At 850 px the dots are visible, but readers must count them or decode the equation above the matrix.
+- **(e) Caption material.** The arithmetic line, nine dot patterns and “of each of 45 runs” repeat the same count. Keep the total once and put each seed count where readers choose among the arms.
+- **(f) Five-second read.** **Partial.** Three optimizers, three arms and a sealed audit are visible. The allocation and six-checkpoints-per-run rule require a second pass.
+- **(g) Fix.** Replace the repeated dot strings in the grid around `x=400–1872, y=632–1072` with **8 seeds**, **3 seeds** and **4 seeds**, or put those counts in the three column headers and simplify the cells. Rename the audit box “Audit 6 checkpoints per run” and make its count agree explicitly with Figure 7. Keep “45 runs” once.
+
+## 7. `predicted-routes-by-optimizer` — REDRAW
+
+- **(a) Text collisions.** There are no hard overlaps. At 850 px, the left-panel endpoint labels and the γ_B tag compete in the narrow gutter. The two reward (c) labels also crowd the lower plotting area.
+- **(b) Line crossings.** Both optimizer curves meet the zero line at the origin, and the left curves cross or approach the γ_B reference as intended. The weak separation is semantic. The horizontal dotted line doubles as the zero reference and the prediction for reward (c), so it can look like part of the axes.
+- **(c) Arrow direction and endpoints.** No arrows. The endpoint dots suggest specific checkpoint predictions, while the smooth curves suggest a trajectory between audits. The axis labels seven positions as audited checkpoints, 0–6, against Figure 6’s count of six per run.
+- **(d) Readability.** Endpoint optimizer labels are readable. The long bottom normalization note, small γ_B subscript and closely packed gutter text carry too much of the interpretation at this size.
+- **(e) Caption material.** Move the full normalization sentence and any explanation of the trajectory shapes to the caption. Keep “Hypothetical prediction,” the target band and a short shared scale label in the figure. If the indirect effect corresponds to one of Figure 4’s two contrasts or an average of them, say which in the caption or panel label.
+- **(f) Five-second read.** **No.** The right panel shows GEPA and ACE well above GRPO, but “most of the total effect” requires matching styles across panels and comparing heights. The long headline gives the reader the answer before the graphic makes it apparent.
+- **(g) Fix.** Make the primary comparison two aligned optimizer rows. Preserve the shared scale and the γ_B band for total effect, and show the corresponding indirect effect beside each total so the fraction is apparent. If trajectories are part of the hypothesis, retain them as a secondary view with marks at discrete audited checkpoints. At the axes currently labeled `0–6`, distinguish an unaudited baseline if that is what `0` means. Give reward (c) a distinct labeled control mark so it reads independently of the zero reference.

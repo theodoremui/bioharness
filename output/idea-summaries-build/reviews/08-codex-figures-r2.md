@@ -1,0 +1,136 @@
+**Round 2 verdicts for Proposal 08:** Ship 3 and 6. Fix 1, 2, 4, 7, and 8. Redraw 5 around the factorial grid. The most consequential fixes are to name the likelihood ratio correctly in Figure 2 and show the zero-effect control in both panels of Figure 8.
+
+Coordinates below refer to the original 2,600 px-wide PNGs, measured from the upper-left corner. Type sizes are estimates for display at 850 px wide.
+
+### 1. `one-video-two-referrals` — Fix
+
+- **(a) Text** clears the box edges. **(b) Lines** clear the text and one another. **(c) Arrows** read left to right, though the orange and violet heads blend into the matching result-box borders at x≈1,860.
+- **(d) Size.** The referral headings and hold-time results are readable. The italic “illustrative example,” stance label, and method details are about 10–12 px.
+- **(e) Caption.** Move the 3 Hz and 6 Hz cutoffs to the caption. Giving the filter and stopping rule equal visual weight makes either look like the explanation for the hold-time difference.
+- **(f) Five seconds.** Yes for “same clip, two hold times.” The two plausible timing rules take a second read.
+- **(g) Fix.** In the middle cards, make the timing rules the sole body text: “Stop timing at the first large sway” and “Keep timing if balance recovers.” Use “Shorter hold time” and “Longer hold time” in the result boxes. Leave a small gap between each colored arrowhead and its result box.
+
+### 2. `referral-counted-twice` — Fix
+
+- **(a) Text** clears the boxes and connectors. **(b) Lines.** “Count 2” and “referral-shaped M” each sit near a diagonal, but both have visible clearance. **(c) Arrows.** The two referral branches and their destinations are clear. The second branch shows the agent receiving the referral, while the actual pull toward it is left to a small connector label.
+- **(d) Size.** The node titles read well. “Referral-shaped M” and the combiner’s calibration qualifier are about 11 px and carry more of the argument than their placement suggests.
+- **(e) Caption.** Move the symbolic definitions of H and M to the caption if the surrounding document needs them. Keep the blind calibration assumption in the figure.
+- **(f) Five seconds.** Yes for “the referral reaches the combiner twice.” The reason this produces overconfidence takes longer.
+- **(g) Fix.** In the measurement-agent box at x≈840, say “Reports a hold time pulled toward the referral.” In the combiner at x≈1,540, use “Prior odds × likelihood ratio” and “Calibrated on referral-blind reports.” The ratio is the multiplier in an odds update. In the red box, use “Can be overconfident when the referral is wrong.”
+
+### 3. `better-measurer-worse-decision` — Ship
+
+- **(a) Text** clears curves, markers, and axes. **(b) Lines.** The dashed guides intersect the data where intended, and the baseline dot on the right sits on the origin. **(c) Arrows.** N/A. The matched vertical guides identify the same γ* in both panels.
+- **(d) Size.** The two numerical callouts are readable at about 10–11 px. The simulation qualifier at y≈1,040 is the easiest text to miss.
+- **(e) Caption.** Keep simulation status on the figure. The caption can carry the simulation setup and the definition of the penalty.
+- **(f) Five seconds.** Yes. The left curve dips below the blind baseline while the right curve rises. The callouts give the trade-off at γ* = 0.357: MSE falls to 0.64 of baseline and log loss increases by 0.026 nats.
+- **(g) Fix.** If this gets another pass, move “Simulation” from the bottom edge to a shared heading above the panels. Place “MSE relative to the blind report” directly in the left heading so the dashed line at 1 reads as the reference immediately.
+
+### 4. `calibration-bug-or-information-bug` — Fix
+
+- **(a) Text** clears the plotted lines. The right-hand annotation fits between its dashed guides. **(b) Lines.** The guides terminate at the two open circles and the x-axis as intended. **(c) Arrows.** N/A. The association between the right-panel curves and their labels is weaker than the linework. The violet label at x≈1,890, y≈300 sits far above its curve.
+- **(d) Size.** The headings are readable. The two-line conclusions and the annotation between the guides are about 10–11 px.
+- **(e) Caption.** Move the full recalibration explanation to the caption and state there that recovery is from the reported value and referral. Keep “Schematic” visible.
+- **(f) Five seconds.** A reader sees parallel lines versus a plateau. The distinction between a reversible shift and lost information takes longer because the headings name the mechanisms and the consequences sit below the axes.
+- **(g) Fix.** Use consequence-led panel titles such as “Recalibration can undo a shift” and “Trimming can erase differences.” Move the referral labels next to their respective curves. On the right, retain the two open circles at x≈2,150 and x≈2,430 and label them “Different blind values, same report.”
+
+### 5. `path-splicing-factorial` — Redraw
+
+- **(a) Text** has adequate clearance. **(b) Lines** stay within the gaps between cells and clear the effect labels. **(c) Arrows.** Rightward and downward directions are legible, though the dark arrowheads meet the dashed borders at x≈1,300 and y≈860. The larger ambiguity is which of the top replay strip, the matrix, and the three side cards the reader should follow first.
+- **(d) Size.** Cell symbols are readable. The italic direction key at y≈1,120, the effect subscripts, and the placebo wording are near 10–11 px. That is where the reader has to decode the experiment.
+- **(e) Caption.** Move the two equivalent total-effect sums to the caption. Keep the interaction `DE_b − DE_a` and the self-splice check visible as short annotations.
+- **(f) Five seconds.** A reader sees a 2×2, but probably cannot say what is replayed or which stage is held fixed for each comparison.
+- **(g) Fix.** Make the grid the first and largest element. Label the rows “Referral during path selection” and the columns “Referral during reporting.” Put a short frozen-transcript replay example beside the `μ(a,b)` cell, where it explains a specific cross-splice. Mark horizontal arrows “Direct” and vertical arrows “Indirect,” with the subscripts secondary. Label the diagonal cells “Check against natural run.” Leave a small gap between each arrowhead and destination border.
+
+### 6. `blind-analysis-harness` — Ship
+
+- **(a) Text** clears the boxes and lock icon. **(b) Lines** clear all labels and one another. **(c) Arrows.** The main flow is unambiguous, and the orange branch at x≈1,820 terminates at Interpretation, downstream of Commit.
+- **(d) Size.** The stage headings read readily. The body copy is about 11 px and has room to breathe at display size.
+- **(e) Caption.** Move “no face, no cane” and “agent and tools” to the caption. Keep the masking, the frozen commit, and the pre-declared menu visible.
+- **(f) Five seconds.** Yes. The lock and the placement of the orange branch make the sequence clear: measure blind, commit, then use the referral for interpretation.
+- **(g) Fix.** If trimming copy, put “Hash and freeze the path and measurement” in Commit and “Read-only access to the commit” in Interpretation. This makes the permission boundary explicit at the step where the referral appears.
+
+### 7. `self-improvement-design` — Fix
+
+- **(a) Text** clears the card edges. **(b) Lines.** The bracket near x≈1,896 sits only a few display pixels from the last column, but it clears the cards and the holdout arrow. **(c) Arrows.** Both arrows land on the audit card and are individually clear. The bracket conveys all runs more quickly than the card conveys every checkpoint.
+- **(d) Size.** The optimizer names and “45 runs” read well. The italic “positive control” and the audit details are near 10–11 px. The control role deserves larger type.
+- **(e) Caption.** Move the four audit metrics to the caption. Use the space to make the scope of the audit prominent.
+- **(f) Five seconds.** A reader sees three optimizers, three reward arms, and a held-out audit. “Every checkpoint of all 45 runs” and the positive control are easy to miss.
+- **(g) Fix.** Rename the top boxes “Development participants” and “Held-out test participants.” Put “3 optimizers × 3 rewards × 5 seeds = 45 runs” above the matrix. Put “Positive control” inside the approval-judge card. Shorten the right card to “Audit every checkpoint from all 45 runs,” and give the bracket more clearance from the third column.
+
+### 8. `predicted-routes-by-optimizer` — Fix
+
+- **(a) Text** clears the curves. The rightmost “GEPA, ACE” label ends about 9 display pixels from the frame, so it looks cramped. **(b) Lines.** The solid orange curve crosses the dashed target centerline as intended. The curves share the origin and separate clearly. **(c) Arrows.** N/A. The blue reward (c) curve appears only in the total-effect panel, leaving its indirect-effect prediction unstated visually.
+- **(d) Size.** Optimizer labels are readable. The bottom scale note is about 10 px and carries the information needed to compare the panels. Both y-axes label only zero.
+- **(e) Caption.** Move the H4 identifier and the full normalization definition to the caption. Keep the target band, visible shared ticks, and a compact reward key on the figure.
+- **(f) Five seconds.** A reader sees GEPA/ACE well above GRPO on the indirect effect. It takes longer to see that both reach the target band on total effect, and the figure only shows the zero-control prediction on the left.
+- **(g) Fix.** Add the blue dotted zero line to the right panel at y≈769. Give both y-axes identical labeled ticks so readers can compare how much of each optimizer’s total effect travels through the path. Label the band “Target γ_B ± 0.1,” give the right endpoint labels more margin, and keep “Preregistered predictions” prominent.
+tokens used
+55,758
+**Round 2 verdicts for Proposal 08:** Ship 3 and 6. Fix 1, 2, 4, 7, and 8. Redraw 5 around the factorial grid. The most consequential fixes are to name the likelihood ratio correctly in Figure 2 and show the zero-effect control in both panels of Figure 8.
+
+Coordinates below refer to the original 2,600 px-wide PNGs, measured from the upper-left corner. Type sizes are estimates for display at 850 px wide.
+
+### 1. `one-video-two-referrals` — Fix
+
+- **(a) Text** clears the box edges. **(b) Lines** clear the text and one another. **(c) Arrows** read left to right, though the orange and violet heads blend into the matching result-box borders at x≈1,860.
+- **(d) Size.** The referral headings and hold-time results are readable. The italic “illustrative example,” stance label, and method details are about 10–12 px.
+- **(e) Caption.** Move the 3 Hz and 6 Hz cutoffs to the caption. Giving the filter and stopping rule equal visual weight makes either look like the explanation for the hold-time difference.
+- **(f) Five seconds.** Yes for “same clip, two hold times.” The two plausible timing rules take a second read.
+- **(g) Fix.** In the middle cards, make the timing rules the sole body text: “Stop timing at the first large sway” and “Keep timing if balance recovers.” Use “Shorter hold time” and “Longer hold time” in the result boxes. Leave a small gap between each colored arrowhead and its result box.
+
+### 2. `referral-counted-twice` — Fix
+
+- **(a) Text** clears the boxes and connectors. **(b) Lines.** “Count 2” and “referral-shaped M” each sit near a diagonal, but both have visible clearance. **(c) Arrows.** The two referral branches and their destinations are clear. The second branch shows the agent receiving the referral, while the actual pull toward it is left to a small connector label.
+- **(d) Size.** The node titles read well. “Referral-shaped M” and the combiner’s calibration qualifier are about 11 px and carry more of the argument than their placement suggests.
+- **(e) Caption.** Move the symbolic definitions of H and M to the caption if the surrounding document needs them. Keep the blind calibration assumption in the figure.
+- **(f) Five seconds.** Yes for “the referral reaches the combiner twice.” The reason this produces overconfidence takes longer.
+- **(g) Fix.** In the measurement-agent box at x≈840, say “Reports a hold time pulled toward the referral.” In the combiner at x≈1,540, use “Prior odds × likelihood ratio” and “Calibrated on referral-blind reports.” The ratio is the multiplier in an odds update. In the red box, use “Can be overconfident when the referral is wrong.”
+
+### 3. `better-measurer-worse-decision` — Ship
+
+- **(a) Text** clears curves, markers, and axes. **(b) Lines.** The dashed guides intersect the data where intended, and the baseline dot on the right sits on the origin. **(c) Arrows.** N/A. The matched vertical guides identify the same γ* in both panels.
+- **(d) Size.** The two numerical callouts are readable at about 10–11 px. The simulation qualifier at y≈1,040 is the easiest text to miss.
+- **(e) Caption.** Keep simulation status on the figure. The caption can carry the simulation setup and the definition of the penalty.
+- **(f) Five seconds.** Yes. The left curve dips below the blind baseline while the right curve rises. The callouts give the trade-off at γ* = 0.357: MSE falls to 0.64 of baseline and log loss increases by 0.026 nats.
+- **(g) Fix.** If this gets another pass, move “Simulation” from the bottom edge to a shared heading above the panels. Place “MSE relative to the blind report” directly in the left heading so the dashed line at 1 reads as the reference immediately.
+
+### 4. `calibration-bug-or-information-bug` — Fix
+
+- **(a) Text** clears the plotted lines. The right-hand annotation fits between its dashed guides. **(b) Lines.** The guides terminate at the two open circles and the x-axis as intended. **(c) Arrows.** N/A. The association between the right-panel curves and their labels is weaker than the linework. The violet label at x≈1,890, y≈300 sits far above its curve.
+- **(d) Size.** The headings are readable. The two-line conclusions and the annotation between the guides are about 10–11 px.
+- **(e) Caption.** Move the full recalibration explanation to the caption and state there that recovery is from the reported value and referral. Keep “Schematic” visible.
+- **(f) Five seconds.** A reader sees parallel lines versus a plateau. The distinction between a reversible shift and lost information takes longer because the headings name the mechanisms and the consequences sit below the axes.
+- **(g) Fix.** Use consequence-led panel titles such as “Recalibration can undo a shift” and “Trimming can erase differences.” Move the referral labels next to their respective curves. On the right, retain the two open circles at x≈2,150 and x≈2,430 and label them “Different blind values, same report.”
+
+### 5. `path-splicing-factorial` — Redraw
+
+- **(a) Text** has adequate clearance. **(b) Lines** stay within the gaps between cells and clear the effect labels. **(c) Arrows.** Rightward and downward directions are legible, though the dark arrowheads meet the dashed borders at x≈1,300 and y≈860. The larger ambiguity is which of the top replay strip, the matrix, and the three side cards the reader should follow first.
+- **(d) Size.** Cell symbols are readable. The italic direction key at y≈1,120, the effect subscripts, and the placebo wording are near 10–11 px. That is where the reader has to decode the experiment.
+- **(e) Caption.** Move the two equivalent total-effect sums to the caption. Keep the interaction `DE_b − DE_a` and the self-splice check visible as short annotations.
+- **(f) Five seconds.** A reader sees a 2×2, but probably cannot say what is replayed or which stage is held fixed for each comparison.
+- **(g) Fix.** Make the grid the first and largest element. Label the rows “Referral during path selection” and the columns “Referral during reporting.” Put a short frozen-transcript replay example beside the `μ(a,b)` cell, where it explains a specific cross-splice. Mark horizontal arrows “Direct” and vertical arrows “Indirect,” with the subscripts secondary. Label the diagonal cells “Check against natural run.” Leave a small gap between each arrowhead and destination border.
+
+### 6. `blind-analysis-harness` — Ship
+
+- **(a) Text** clears the boxes and lock icon. **(b) Lines** clear all labels and one another. **(c) Arrows.** The main flow is unambiguous, and the orange branch at x≈1,820 terminates at Interpretation, downstream of Commit.
+- **(d) Size.** The stage headings read readily. The body copy is about 11 px and has room to breathe at display size.
+- **(e) Caption.** Move “no face, no cane” and “agent and tools” to the caption. Keep the masking, the frozen commit, and the pre-declared menu visible.
+- **(f) Five seconds.** Yes. The lock and the placement of the orange branch make the sequence clear: measure blind, commit, then use the referral for interpretation.
+- **(g) Fix.** If trimming copy, put “Hash and freeze the path and measurement” in Commit and “Read-only access to the commit” in Interpretation. This makes the permission boundary explicit at the step where the referral appears.
+
+### 7. `self-improvement-design` — Fix
+
+- **(a) Text** clears the card edges. **(b) Lines.** The bracket near x≈1,896 sits only a few display pixels from the last column, but it clears the cards and the holdout arrow. **(c) Arrows.** Both arrows land on the audit card and are individually clear. The bracket conveys all runs more quickly than the card conveys every checkpoint.
+- **(d) Size.** The optimizer names and “45 runs” read well. The italic “positive control” and the audit details are near 10–11 px. The control role deserves larger type.
+- **(e) Caption.** Move the four audit metrics to the caption. Use the space to make the scope of the audit prominent.
+- **(f) Five seconds.** A reader sees three optimizers, three reward arms, and a held-out audit. “Every checkpoint of all 45 runs” and the positive control are easy to miss.
+- **(g) Fix.** Rename the top boxes “Development participants” and “Held-out test participants.” Put “3 optimizers × 3 rewards × 5 seeds = 45 runs” above the matrix. Put “Positive control” inside the approval-judge card. Shorten the right card to “Audit every checkpoint from all 45 runs,” and give the bracket more clearance from the third column.
+
+### 8. `predicted-routes-by-optimizer` — Fix
+
+- **(a) Text** clears the curves. The rightmost “GEPA, ACE” label ends about 9 display pixels from the frame, so it looks cramped. **(b) Lines.** The solid orange curve crosses the dashed target centerline as intended. The curves share the origin and separate clearly. **(c) Arrows.** N/A. The blue reward (c) curve appears only in the total-effect panel, leaving its indirect-effect prediction unstated visually.
+- **(d) Size.** Optimizer labels are readable. The bottom scale note is about 10 px and carries the information needed to compare the panels. Both y-axes label only zero.
+- **(e) Caption.** Move the H4 identifier and the full normalization definition to the caption. Keep the target band, visible shared ticks, and a compact reward key on the figure.
+- **(f) Five seconds.** A reader sees GEPA/ACE well above GRPO on the indirect effect. It takes longer to see that both reach the target band on total effect, and the figure only shows the zero-control prediction on the left.
+- **(g) Fix.** Add the blue dotted zero line to the right panel at y≈769. Give both y-axes identical labeled ticks so readers can compare how much of each optimizer’s total effect travels through the path. Label the band “Target γ_B ± 0.1,” give the right endpoint labels more margin, and keep “Preregistered predictions” prominent.

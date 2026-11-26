@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 656" width="1300" height="656" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Profiles rank who else gains (illustrative)</title>
+<desc id="d">Two illustrative scatters of checkpoint-centered observed gain against forecast gain for held-out VLMs: the registered profile rule ranks readers across and within families, while the family-and-size predictor assigns one value per family and size.</desc>
+<defs></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="654.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="50.0" font-size="23.6" font-weight="700" fill="#1f2328" text-anchor="start">Do battery profiles rank who else gains from a checkpoint?</text>
+<text x="40.0" y="80.0" font-size="16.5" font-weight="400" fill="#6b7280" text-anchor="start">Illustrative, not data; each point is one checkpoint read by one held-out VLM</text>
+<text x="150.0" y="140.0" font-size="18.3" font-weight="700" fill="#1f2328" text-anchor="start">Registered profile rule</text>
+<text x="150.0" y="166.0" font-size="17.7" font-weight="700" fill="#1c5cab" text-anchor="start">within-family Spearman 0.51</text>
+<text x="150.0" y="188.0" font-size="15.9" font-weight="400" fill="#6b7280" text-anchor="start">pooled 0.62</text>
+<line x1="150.0" y1="489.8" x2="590.0" y2="489.8" stroke="#eceef1" stroke-width="1" stroke-linecap="round"/>
+<text x="138.0" y="494.8" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="end">−0.1</text>
+<line x1="186.7" y1="516.0" x2="186.7" y2="522.0" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+<text x="186.7" y="544.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">−0.1</text>
+<line x1="150.0" y1="359.0" x2="590.0" y2="359.0" stroke="#d9dce1" stroke-width="1.4" stroke-linecap="round"/>
+<text x="138.0" y="364.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="end">0</text>
+<line x1="370.0" y1="516.0" x2="370.0" y2="522.0" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+<text x="370.0" y="544.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">0</text>
+<line x1="150.0" y1="228.2" x2="590.0" y2="228.2" stroke="#eceef1" stroke-width="1" stroke-linecap="round"/>
+<text x="138.0" y="233.2" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="end">+0.1</text>
+<line x1="553.3" y1="516.0" x2="553.3" y2="522.0" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+<text x="553.3" y="544.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">+0.1</text>
+<line x1="370.0" y1="202.0" x2="370.0" y2="516.0" stroke="#d9dce1" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="150.0" y1="202.0" x2="150.0" y2="516.0" stroke="#4b5563" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="150.0" y1="516.0" x2="590.0" y2="516.0" stroke="#4b5563" stroke-width="1.4" stroke-linecap="round"/>
+<text x="162.0" y="220.0" font-size="15.9" font-weight="400" fill="#6b7280" text-anchor="start">observed gain, centered</text>
+<text x="370.0" y="578.0" font-size="16.5" font-weight="600" fill="#1f2328" text-anchor="middle">forecast gain, centered (normalized error)</text>
+<circle cx="420.8" cy="347.0" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="411.1" cy="346.7" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="407.2" cy="281.6" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="356.7" cy="291.0" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="357.2" cy="349.3" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="401.6" cy="339.4" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="288.4" cy="431.8" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="392.2" cy="375.1" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="268.4" cy="435.0" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="407.2" cy="422.5" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="368.8" cy="395.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="554.7" cy="293.0" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="392.9" cy="338.5" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="409.0" cy="327.9" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="468.7" cy="324.5" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="520.0" cy="250.3" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="431.2" cy="323.3" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="364.7" cy="365.7" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="256.7" cy="340.2" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="333.3" cy="395.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="266.1" cy="407.7" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="343.0" cy="410.9" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="273.6" cy="434.0" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="317.3" cy="389.4" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="311.4" cy="376.0" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="253.5" cy="337.3" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="359.1" cy="374.9" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="457.8" cy="351.1" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="460.0" cy="323.8" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="381.0" cy="361.9" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="310.6" cy="380.5" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="250.5" cy="405.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="316.4" cy="412.8" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="427.8" cy="279.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="314.0" cy="347.5" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="467.4" cy="356.9" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<text x="760.0" y="140.0" font-size="18.3" font-weight="700" fill="#1f2328" text-anchor="start">Family and size</text>
+<text x="760.0" y="166.0" font-size="17.7" font-weight="700" fill="#334155" text-anchor="start">within-family Spearman −0.07</text>
+<text x="760.0" y="188.0" font-size="15.9" font-weight="400" fill="#6b7280" text-anchor="start">pooled 0.37</text>
+<text x="1192.0" y="504.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="end">x jittered for visibility</text>
+<line x1="760.0" y1="489.8" x2="1200.0" y2="489.8" stroke="#eceef1" stroke-width="1" stroke-linecap="round"/>
+<text x="748.0" y="494.8" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="end">−0.1</text>
+<line x1="796.7" y1="516.0" x2="796.7" y2="522.0" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+<text x="796.7" y="544.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">−0.1</text>
+<line x1="760.0" y1="359.0" x2="1200.0" y2="359.0" stroke="#d9dce1" stroke-width="1.4" stroke-linecap="round"/>
+<text x="748.0" y="364.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="end">0</text>
+<line x1="980.0" y1="516.0" x2="980.0" y2="522.0" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+<text x="980.0" y="544.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">0</text>
+<line x1="760.0" y1="228.2" x2="1200.0" y2="228.2" stroke="#eceef1" stroke-width="1" stroke-linecap="round"/>
+<text x="748.0" y="233.2" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="end">+0.1</text>
+<line x1="1163.3" y1="516.0" x2="1163.3" y2="522.0" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+<text x="1163.3" y="544.0" font-size="15.9" font-weight="400" fill="#4b5563" text-anchor="middle">+0.1</text>
+<line x1="980.0" y1="202.0" x2="980.0" y2="516.0" stroke="#d9dce1" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="760.0" y1="202.0" x2="760.0" y2="516.0" stroke="#4b5563" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="760.0" y1="516.0" x2="1200.0" y2="516.0" stroke="#4b5563" stroke-width="1.4" stroke-linecap="round"/>
+<text x="772.0" y="220.0" font-size="15.9" font-weight="400" fill="#6b7280" text-anchor="start">observed gain, centered</text>
+<text x="980.0" y="578.0" font-size="16.5" font-weight="600" fill="#1f2328" text-anchor="middle">forecast gain, centered (normalized error)</text>
+<circle cx="1017.2" cy="347.0" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1030.1" cy="346.7" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1042.0" cy="281.6" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1051.8" cy="291.0" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="942.1" cy="349.3" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="963.4" cy="339.4" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="963.4" cy="431.8" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="944.9" cy="375.1" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="971.1" cy="435.0" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="933.3" cy="422.5" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="955.8" cy="395.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="975.8" cy="293.0" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="1014.6" cy="338.5" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1022.0" cy="327.9" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1037.9" cy="324.5" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1045.7" cy="250.3" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="930.1" cy="323.3" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="951.8" cy="365.7" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="967.5" cy="340.2" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="952.3" cy="395.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="968.2" cy="407.7" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="925.2" cy="410.9" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="954.0" cy="434.0" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="976.2" cy="389.4" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="1017.1" cy="376.0" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1020.0" cy="337.3" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1028.9" cy="374.9" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="1050.6" cy="351.1" r="5.2" fill="#64748b" stroke="#ffffff" stroke-width="1.4"/>
+<circle cx="933.3" cy="323.8" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="951.8" cy="361.9" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="979.1" cy="380.5" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="951.6" cy="405.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="960.3" cy="412.8" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="938.4" cy="279.6" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="949.8" cy="347.5" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="985.1" cy="356.9" r="5.2" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.8"/>
+<circle cx="160.0" cy="622.0" r="7" fill="#64748b" stroke="#ffffff" stroke-width="1.6"/>
+<text x="176.0" y="627.0" font-size="17.1" font-weight="400" fill="#1f2328" text-anchor="start">Qwen3-VL (same family as reader A)</text>
+<circle cx="560.0" cy="622.0" r="7" fill="#e6f6f0" stroke="#1baf7a" stroke-width="2"/>
+<text x="576.0" y="627.0" font-size="17.1" font-weight="400" fill="#1f2328" text-anchor="start">other-family VLM</text>
+</svg>

@@ -1,0 +1,59 @@
+OpenAI Codex v0.171.0
+--------
+workdir: /Users/theodoremui/dev/bioharness
+model: gpt-6.2-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: medium
+reasoning summaries: none
+session id: 01a214e2-ab6b-7960-893d-191588c9b71d
+--------
+user
+You are an adversarial reviewer of scientific figures for a research proposal. The attached PNGs are rendered at 2x from SVG and will be displayed about 850 px wide. Try hard to find reasons each figure should not ship. For EACH image, by file order, report: (a) overlapping or colliding text, (b) lines or arrows that cross text or other arrows confusingly, (c) arrows whose direction or endpoints are ambiguous, (d) text too small to read at display size, (e) excess text that belongs in a caption, (f) the one main point and whether a reader gets it in 5 seconds, (g) concrete fixes with coordinates or element names. Then give a verdict per figure: ship / fix / redraw. Focus: README overview figure for a collection of four research proposals. Its single point: a self-improving tool-using agent has four places where self-improvement can go wrong, and each proposal (05 to 08) studies one: 08 the referral or hypothesis given to the agent, 05 the harness code the improver edits, 07 the encoding of tool outputs the VLM reads, 06 the acceptance rule that decides which edits survive. The loop runs clockwise: scores on dev people, improver proposes an edit, acceptance rule, accepted edit updates the harness.. Do not run commands or modify files.
+
+codex
+### 1. `four-interfaces.png` — **FIX**
+
+At 850 px wide, the clockwise loop is visible. The four proposals read as colored annotations, so a reader can see how the system works before seeing where self-improvement can go wrong.
+
+**(a) Text collisions.** No visible text overlaps or touches a border. The closest visual association problem is the 07 badge. Its right edge extends about 50 px beyond the Encoding box in the source PNG, putting it close to the VLM agent at display size.
+
+**(b) Line and arrow crossings.** No arrows cross text or one another. Three arrows cross the dashed harness boundary, and the orange return arrow ends just below it. The boundary is therefore doing two jobs visually. It groups the pipeline and marks the scope of editable code, even though the phone video and balance score also sit inside it.
+
+**(c) Ambiguous arrows.** The clockwise direction is clear. The weak link is **Improver proposes an edit → Acceptance rule**. The diagram jumps from proposal to decision without showing where the candidate edit is tested. The orange return arrow also points up beneath **Phone video**, where it can look like the edit updates the input. Finally, **VLM agent · Chooses tools** implies a call back to Tools, while the drawn arrows show only tool outputs flowing toward the VLM.
+
+**(d) Text at 850 px.** Box headings are roughly 13 px and hold up. Secondary copy, proposal badges, and the orange return label are roughly 10–11 px. They’re readable at full display width, but the badges carry the figure’s main point and should be easier to scan than the secondary copy.
+
+**(e) Caption candidates.** Move “One number,” the tool names, and the examples “Diagnosis, fall history” to the caption. Keep “Reported by group” in the figure only if group-level reporting is needed to understand the acceptance rule. Compress “Numbers, plot or overlay” to “Tool-output format” and put the examples in the caption.
+
+**(f) Five-second read.** The intended takeaway is that **four proposals study four places where a self-improving, tool-using agent can go wrong**. In five seconds, a reader is more likely to get “phone video produces a balance score, and scores feed back into the system.” The four numbered labels don’t yet read as a single set of research questions.
+
+**(g) Concrete fixes.** Coordinates refer to the 2480 × 1200 source PNG.
+
+- Use a short heading such as **“Four places self-improvement can go wrong.”** Give all four numbers the same visual treatment and attach them to their targets. Put **05 Editable harness code** on the dashed boundary near its title at `(128, 306)`, **07 Tool-output encoding** inside Encoding at `(1052, 384)`, **08 Referral or hypothesis** inside the purple box at `(1400, 56)`, and **06 Edit acceptance rule** inside the orange box at `(132, 860)`. Promote these labels to heading size.
+- On the lower arrow from the improver to the rule, around `(880, 956)`, show where candidate evaluation occurs if it informs the decision. A compact **“Evaluate candidate on dev set”** step would make the decision legible. Route the orange return from `(448, 852)` to a boundary segment explicitly labeled **Editable harness code**, away from the phone input.
+- In the VLM box at `(1552, 384)`, use a description of the depicted flow, such as **“Reads encoded outputs,”** if tool selection is incidental to this overview. If tool selection is central, draw a separately labeled tool-call arrow. Move **Phone video** and **Balance score** outside the dashed boundary if they are external to the editable harness.
+tokens used
+27,364
+### 1. `four-interfaces.png` — **FIX**
+
+At 850 px wide, the clockwise loop is visible. The four proposals read as colored annotations, so a reader can see how the system works before seeing where self-improvement can go wrong.
+
+**(a) Text collisions.** No visible text overlaps or touches a border. The closest visual association problem is the 07 badge. Its right edge extends about 50 px beyond the Encoding box in the source PNG, putting it close to the VLM agent at display size.
+
+**(b) Line and arrow crossings.** No arrows cross text or one another. Three arrows cross the dashed harness boundary, and the orange return arrow ends just below it. The boundary is therefore doing two jobs visually. It groups the pipeline and marks the scope of editable code, even though the phone video and balance score also sit inside it.
+
+**(c) Ambiguous arrows.** The clockwise direction is clear. The weak link is **Improver proposes an edit → Acceptance rule**. The diagram jumps from proposal to decision without showing where the candidate edit is tested. The orange return arrow also points up beneath **Phone video**, where it can look like the edit updates the input. Finally, **VLM agent · Chooses tools** implies a call back to Tools, while the drawn arrows show only tool outputs flowing toward the VLM.
+
+**(d) Text at 850 px.** Box headings are roughly 13 px and hold up. Secondary copy, proposal badges, and the orange return label are roughly 10–11 px. They’re readable at full display width, but the badges carry the figure’s main point and should be easier to scan than the secondary copy.
+
+**(e) Caption candidates.** Move “One number,” the tool names, and the examples “Diagnosis, fall history” to the caption. Keep “Reported by group” in the figure only if group-level reporting is needed to understand the acceptance rule. Compress “Numbers, plot or overlay” to “Tool-output format” and put the examples in the caption.
+
+**(f) Five-second read.** The intended takeaway is that **four proposals study four places where a self-improving, tool-using agent can go wrong**. In five seconds, a reader is more likely to get “phone video produces a balance score, and scores feed back into the system.” The four numbered labels don’t yet read as a single set of research questions.
+
+**(g) Concrete fixes.** Coordinates refer to the 2480 × 1200 source PNG.
+
+- Use a short heading such as **“Four places self-improvement can go wrong.”** Give all four numbers the same visual treatment and attach them to their targets. Put **05 Editable harness code** on the dashed boundary near its title at `(128, 306)`, **07 Tool-output encoding** inside Encoding at `(1052, 384)`, **08 Referral or hypothesis** inside the purple box at `(1400, 56)`, and **06 Edit acceptance rule** inside the orange box at `(132, 860)`. Promote these labels to heading size.
+- On the lower arrow from the improver to the rule, around `(880, 956)`, show where candidate evaluation occurs if it informs the decision. A compact **“Evaluate candidate on dev set”** step would make the decision legible. Route the orange return from `(448, 852)` to a boundary segment explicitly labeled **Editable harness code**, away from the phone input.
+- In the VLM box at `(1552, 384)`, use a description of the depicted flow, such as **“Reads encoded outputs,”** if tool selection is incidental to this overview. If tool selection is central, draw a separately labeled tool-call arrow. Move **Phone video** and **Balance score** outside the dashed boundary if they are external to the editable harness.

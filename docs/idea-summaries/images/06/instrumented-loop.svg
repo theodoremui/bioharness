@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 680" width="1300" height="680" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Every candidate is scored on hidden guard people</title>
+<desc id="d">Flowchart. A parent harness goes to a proposer that writes K candidate edits per generation. Dev people score each candidate and the gate keeps the best if its score passes the threshold; the kept edit becomes the next parent. All K candidates are also scored on guard people, who are hidden from the proposer and the gate. The guard log pairs each candidate tail effect on guard people with the keep or reject decision. Saved checkpoints go to sealed test people. A forecast fitted on generations 0 to 10 and frozen at generation 10 is compared with the tail change they measure at generation 50.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="m2a78d6" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker><marker id="meb6834" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#eb6834"/></marker><marker id="m1baf7a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1baf7a"/></marker></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="678.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<rect x="40.0" y="120.0" width="250.0" height="108.0" rx="12" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="54.0" y="149.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Parent harness</text>
+<text x="54.0" y="176.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">prompts, tools, code</text>
+<rect x="355.0" y="120.0" width="250.0" height="108.0" rx="12" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="369.0" y="149.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Proposer</text>
+<text x="369.0" y="176.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">writes K candidate edits</text>
+<text x="369.0" y="197.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">per generation</text>
+<rect x="670.0" y="120.0" width="250.0" height="108.0" rx="12" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="684.0" y="149.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Gate on dev people</text>
+<text x="684.0" y="176.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">score S; keep the best</text>
+<text x="684.0" y="197.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">candidate if S &gt; τ</text>
+<path d="M294.0,174.0 L349.0,174.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M609.0,174.0 L664.0,174.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M795.0,116.0 L795.0,66.0 L165.0,66.0 L165.0,114.0" fill="none" stroke="#2a78d6" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#m2a78d6)"/>
+<text x="480.0" y="54.0" font-size="16.5" font-weight="600" fill="#1c5cab" text-anchor="middle">the kept edit, if any, becomes the next parent</text>
+<rect x="670.0" y="320.0" width="250.0" height="108.0" rx="12" fill="#f3f4f6" stroke="#64748b" stroke-width="1.5"/>
+<text x="684.0" y="349.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Guard people</text>
+<text x="684.0" y="376.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">score every candidate;</text>
+<text x="684.0" y="397.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">never shown to the loop</text>
+<rect x="1040.0" y="320.0" width="220.0" height="108.0" rx="12" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.5"/>
+<text x="1054.0" y="349.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Guard log</text>
+<text x="1054.0" y="376.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">pairs each candidate's</text>
+<text x="1054.0" y="397.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">tail effect with its</text>
+<text x="1054.0" y="418.4" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">gate decision</text>
+<path d="M480.0,232.0 L480.0,374.0 L664.0,374.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<text x="494.0" y="362.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">all K candidates</text>
+<path d="M924.0,374.0 L1034.0,374.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<text x="980.0" y="362.0" font-size="15.3" font-weight="600" fill="#4b5563" text-anchor="middle">tail effect</text>
+<path d="M924.0,174.0 L1150.0,174.0 L1150.0,314.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" marker-end="url(#m2a78d6)"/>
+<text x="1138.0" y="284.0" font-size="15.3" font-weight="600" fill="#1c5cab" text-anchor="end">decision for each candidate</text>
+<rect x="1040.0" y="530.0" width="220.0" height="124.0" rx="12" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.5"/>
+<text x="1054.0" y="559.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Forecast</text>
+<text x="1054.0" y="586.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">tail change from</text>
+<text x="1054.0" y="607.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">generation 0 to 50,</text>
+<text x="1054.0" y="628.4" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">frozen at generation 10</text>
+<rect x="410.0" y="530.0" width="300.0" height="124.0" rx="12" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="424.0" y="559.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Sealed test people</text>
+<text x="424.0" y="586.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">opened after the run: tail change</text>
+<text x="424.0" y="607.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">from generation 0 to 50</text>
+<path d="M165.0,232.0 L165.0,592.0 L404.0,592.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<text x="177.0" y="410.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">saved checkpoints</text>
+<path d="M1150.0,432.0 L1150.0,524.0" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" marker-end="url(#meb6834)"/>
+<text x="1138.0" y="485.0" font-size="15.3" font-weight="400" fill="#b9461a" text-anchor="end">fit on generations 0 to 10</text>
+<rect x="795.0" y="564.0" width="150.0" height="56.0" rx="28" fill="#ffffff" stroke="#64748b" stroke-width="1.8"/>
+<text x="870.0" y="598.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="middle">compare</text>
+<path d="M1036.0,592.0 L951.0,592.0" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" marker-end="url(#meb6834)"/>
+<path d="M714.0,592.0 L789.0,592.0" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" marker-end="url(#m1baf7a)"/>
+<path d="M680.4,552.8 V550.0 a4.4,4.4 0 0 1 8.8,0 V552.8" fill="none" stroke="#11805a" stroke-width="1.9800000000000002" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="677.6" y="552.8" width="14.3" height="9.9" rx="2.2" fill="#11805a"/>
+<path d="M890.4,342.8 V340.1 a4.4,4.4 0 0 1 8.8,0 V342.8" fill="none" stroke="#334155" stroke-width="1.9800000000000002" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="887.6" y="342.8" width="14.3" height="9.9" rx="2.2" fill="#334155"/>
+</svg>

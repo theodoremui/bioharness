@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 670" width="1220" height="670" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Accepted edits that harm the tail</title>
+<desc id="d">Illustrative scatter of candidate edits by estimated majority gain and estimated tail gain, drawn with a correlation of minus 0.4. The mean rule with tail weight 0.125 accepts edits to the right of a nearly vertical line. Accepted edits below zero tail gain are orange and lie in a shaded region labelled accepted, tail harmed.</desc>
+<defs></defs>
+<rect x="0.75" y="0.75" width="1218.5" height="668.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="60.0" y="46.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">The mean rule accepts many edits that harm the tail</text>
+<rect x="1060.0" y="26.0" width="122.0" height="25.3" rx="12.67" fill="#f3f4f6" stroke="#64748b" stroke-width="1.2"/>
+<text x="1121.0" y="44.2" font-size="15.3" font-weight="600" fill="#334155" text-anchor="middle">illustrative</text>
+<path d="M435.0,355.0 L475.7,600.0 L720.0,600.0 L720.0,355.0 Z" fill="#fdf0e9" stroke="none"/>
+<rect x="150.0" y="110.0" width="570.0" height="490.0" rx="0" fill="none" stroke="#d6d9de" stroke-width="1.4"/>
+<line x1="150.0" y1="355.0" x2="720.0" y2="355.0" stroke="#64748b" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 5"/>
+<line x1="435.0" y1="110.0" x2="435.0" y2="600.0" stroke="#d6d9de" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 5"/>
+<line x1="394.3" y1="110.0" x2="475.7" y2="600.0" stroke="#2a78d6" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="347.1" cy="336.4" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="560.8" cy="415.1" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="263.1" cy="289.6" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="306.9" cy="236.3" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="396.5" cy="225.6" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="408.3" cy="439.7" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="463.1" cy="292.8" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="468.7" cy="439.9" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="562.9" cy="341.9" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="368.6" cy="395.9" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="541.5" cy="438.8" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="462.9" cy="277.6" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="279.6" cy="185.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="517.0" cy="448.8" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="330.3" cy="427.5" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="509.3" cy="385.1" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="355.8" cy="383.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="385.9" cy="372.5" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="505.3" cy="458.8" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="524.7" cy="329.1" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="396.8" cy="313.3" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="468.2" cy="238.4" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="415.9" cy="376.9" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="318.3" cy="191.3" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="353.1" cy="292.2" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="702.7" cy="236.9" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="491.5" cy="398.3" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="619.6" cy="456.2" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="324.9" cy="472.1" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="251.3" cy="263.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="386.9" cy="338.4" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="419.1" cy="425.5" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="373.8" cy="307.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="213.1" cy="244.4" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="515.7" cy="470.7" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="368.6" cy="343.7" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="284.4" cy="487.8" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="502.5" cy="429.1" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="332.5" cy="285.3" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="581.6" cy="398.3" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="502.1" cy="225.2" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="314.0" cy="326.2" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="502.4" cy="312.4" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="222.6" cy="261.9" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="319.1" cy="416.7" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="546.2" cy="309.0" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="596.8" cy="514.1" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="362.6" cy="471.6" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="569.1" cy="282.2" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="396.0" cy="242.2" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="577.8" cy="368.9" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="457.6" cy="391.5" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="519.3" cy="417.9" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="344.9" cy="412.1" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="478.1" cy="377.6" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="582.3" cy="428.4" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="561.0" cy="451.6" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="415.3" cy="402.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="534.6" cy="389.0" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="466.1" cy="333.5" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="442.5" cy="279.8" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="452.7" cy="316.8" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="392.1" cy="462.7" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="489.2" cy="300.8" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="223.8" cy="367.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="391.8" cy="276.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="390.0" cy="504.3" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="559.3" cy="475.1" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="351.8" cy="451.7" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="360.9" cy="329.1" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="525.4" cy="503.8" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="592.2" cy="303.9" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="631.7" cy="410.2" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="487.5" cy="332.5" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="529.2" cy="217.3" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="325.7" cy="267.6" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<text x="380.3" y="140.0" font-size="16.5" font-weight="700" fill="#334155" text-anchor="end">rejected</text>
+<text x="449.0" y="140.0" font-size="16.5" font-weight="700" fill="#1c5cab" text-anchor="start">accepted</text>
+<text x="610.8" y="563.2" font-size="16.5" font-weight="700" fill="#b9461a" text-anchor="middle">accepted, tail harmed</text>
+<text x="435.0" y="640.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="middle">estimated majority gain of the edit</text>
+<text x="150.0" y="92.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">estimated tail gain of the edit</text>
+<text x="140.0" y="360.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="end">0</text>
+<text x="435.0" y="618.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<text x="790.0" y="118.0" font-size="16.5" font-weight="400" fill="#6b7280" text-anchor="start">tail weight π = 0.125; edits drawn with ρ = −0.4</text>
+<line x1="790.0" y1="170.0" x2="830.0" y2="170.0" stroke="#2a78d6" stroke-width="2.6" stroke-linecap="round"/>
+<text x="844.0" y="175.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">acceptance line (score S = 0)</text>
+<circle cx="810.0" cy="210.0" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="1.2"/>
+<text x="844.0" y="215.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">accepted, tail gains</text>
+<circle cx="810.0" cy="248.0" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="1.2"/>
+<text x="844.0" y="253.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">accepted, tail harmed</text>
+<circle cx="810.0" cy="286.0" r="5.5" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<text x="844.0" y="291.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">rejected</text>
+</svg>

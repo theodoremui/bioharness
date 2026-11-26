@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Mean improves while the tail turns back</title>
+<desc id="d">Illustrative curves of error change since generation 0 for a loop that keeps edits that lower mean error. Mean error falls steadily. Tail error, for the StaBLE fall-risk group, falls for about eight generations, stops gaining, then rises and passes its starting value near generation 24.</desc>
+<defs></defs>
+<rect x="0.75" y="0.75" width="1198.5" height="558.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="60.0" y="58.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">The mean keeps improving while the tail turns back</text>
+<rect x="1000.0" y="36.0" width="122.0" height="25.3" rx="12.67" fill="#f3f4f6" stroke="#64748b" stroke-width="1.2"/>
+<text x="1061.0" y="54.2" font-size="15.3" font-weight="600" fill="#334155" text-anchor="middle">illustrative</text>
+<line x1="150.0" y1="470.0" x2="900.0" y2="470.0" stroke="#64748b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="150.0" y1="110.0" x2="150.0" y2="470.0" stroke="#64748b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="150.0" y1="470.0" x2="150.0" y2="476.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round"/>
+<text x="150.0" y="496.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="300.0" y1="470.0" x2="300.0" y2="476.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round"/>
+<text x="300.0" y="496.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">10</text>
+<line x1="450.0" y1="470.0" x2="450.0" y2="476.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round"/>
+<text x="450.0" y="496.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">20</text>
+<line x1="600.0" y1="470.0" x2="600.0" y2="476.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round"/>
+<text x="600.0" y="496.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">30</text>
+<line x1="750.0" y1="470.0" x2="750.0" y2="476.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round"/>
+<text x="750.0" y="496.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">40</text>
+<line x1="900.0" y1="470.0" x2="900.0" y2="476.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round"/>
+<text x="900.0" y="496.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">50</text>
+<text x="525.0" y="526.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="middle">generation of the self-improvement loop</text>
+<line x1="150.0" y1="218.0" x2="900.0" y2="218.0" stroke="#64748b" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="138.0" y="223.0" font-size="16.5" font-weight="400" fill="#6b7280" text-anchor="end">start</text>
+<text x="138.0" y="120.0" font-size="16.5" font-weight="400" fill="#6b7280" text-anchor="end">worse</text>
+<text x="138.0" y="466.0" font-size="16.5" font-weight="400" fill="#6b7280" text-anchor="end">better</text>
+<text x="160.0" y="96.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">error change since generation 0</text>
+<path d="M150.0,218.0 L157.5,225.6 L165.0,232.9 L172.5,239.9 L180.0,246.8 L187.5,253.3 L195.0,259.7 L202.5,265.8 L210.0,271.7 L217.5,277.4 L225.0,282.9 L232.5,288.2 L240.0,293.3 L247.5,298.2 L255.0,303.0 L262.5,307.6 L270.0,312.0 L277.5,316.3 L285.0,320.4 L292.5,324.4 L300.0,328.3 L307.5,332.0 L315.0,335.5 L322.5,339.0 L330.0,342.3 L337.5,345.6 L345.0,348.7 L352.5,351.6 L360.0,354.5 L367.5,357.3 L375.0,360.0 L382.5,362.6 L390.0,365.1 L397.5,367.5 L405.0,369.9 L412.5,372.1 L420.0,374.3 L427.5,376.4 L435.0,378.4 L442.5,380.4 L450.0,382.2 L457.5,384.1 L465.0,385.8 L472.5,387.5 L480.0,389.1 L487.5,390.7 L495.0,392.2 L502.5,393.7 L510.0,395.1 L517.5,396.5 L525.0,397.8 L532.5,399.1 L540.0,400.3 L547.5,401.5 L555.0,402.6 L562.5,403.7 L570.0,404.8 L577.5,405.8 L585.0,406.8 L592.5,407.7 L600.0,408.7 L607.5,409.5 L615.0,410.4 L622.5,411.2 L630.0,412.0 L637.5,412.8 L645.0,413.5 L652.5,414.3 L660.0,415.0 L667.5,415.6 L675.0,416.3 L682.5,416.9 L690.0,417.5 L697.5,418.1 L705.0,418.6 L712.5,419.2 L720.0,419.7 L727.5,420.2 L735.0,420.7 L742.5,421.1 L750.0,421.6 L757.5,422.0 L765.0,422.4 L772.5,422.9 L780.0,423.2 L787.5,423.6 L795.0,424.0 L802.5,424.3 L810.0,424.7 L817.5,425.0 L825.0,425.3 L832.5,425.6 L840.0,425.9 L847.5,426.2 L855.0,426.5 L862.5,426.7 L870.0,427.0 L877.5,427.2 L885.0,427.5 L892.5,427.7 L900.0,427.9" fill="none" stroke="#2a78d6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150.0,218.0 L157.5,225.0 L165.0,231.2 L172.5,236.8 L180.0,241.6 L187.5,245.9 L195.0,249.7 L202.5,252.9 L210.0,255.7 L217.5,258.0 L225.0,259.9 L232.5,261.5 L240.0,262.7 L247.5,263.6 L255.0,264.2 L262.5,264.6 L270.0,264.7 L277.5,264.6 L285.0,264.3 L292.5,263.8 L300.0,263.2 L307.5,262.4 L315.0,261.5 L322.5,260.4 L330.0,259.3 L337.5,258.0 L345.0,256.7 L352.5,255.3 L360.0,253.8 L367.5,252.2 L375.0,250.6 L382.5,249.0 L390.0,247.3 L397.5,245.6 L405.0,243.8 L412.5,242.1 L420.0,240.3 L427.5,238.5 L435.0,236.7 L442.5,234.9 L450.0,233.0 L457.5,231.2 L465.0,229.4 L472.5,227.6 L480.0,225.8 L487.5,224.0 L495.0,222.2 L502.5,220.5 L510.0,218.7 L517.5,217.0 L525.0,215.2 L532.5,213.5 L540.0,211.8 L547.5,210.2 L555.0,208.5 L562.5,206.9 L570.0,205.3 L577.5,203.7 L585.0,202.1 L592.5,200.5 L600.0,199.0 L607.5,197.5 L615.0,196.0 L622.5,194.5 L630.0,193.1 L637.5,191.6 L645.0,190.2 L652.5,188.8 L660.0,187.4 L667.5,186.1 L675.0,184.7 L682.5,183.4 L690.0,182.1 L697.5,180.8 L705.0,179.5 L712.5,178.3 L720.0,177.1 L727.5,175.8 L735.0,174.6 L742.5,173.4 L750.0,172.3 L757.5,171.1 L765.0,170.0 L772.5,168.8 L780.0,167.7 L787.5,166.6 L795.0,165.5 L802.5,164.5 L810.0,163.4 L817.5,162.3 L825.0,161.3 L832.5,160.3 L840.0,159.3 L847.5,158.2 L855.0,157.2 L862.5,156.3 L870.0,155.3 L877.5,154.3 L885.0,153.4 L892.5,152.4 L900.0,151.5" fill="none" stroke="#eb6834" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="916.0" y="432.9" font-size="17.7" font-weight="700" fill="#1c5cab" text-anchor="start">mean error</text>
+<text x="916.0" y="149.5" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="start">tail error</text>
+<text x="916.0" y="171.5" font-size="15.3" font-weight="400" fill="#b9461a" text-anchor="start">(StaBLE fall-risk group)</text>
+<line x1="270.3" y1="255.7" x2="270.3" y2="208.0" stroke="#eb6834" stroke-width="1.4" stroke-linecap="round"/>
+<circle cx="270.3" cy="264.7" r="5.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.4"/>
+<text x="270.3" y="200.0" font-size="15.3" font-weight="600" fill="#b9461a" text-anchor="middle">tail stops gaining</text>
+<circle cx="513.1" cy="218.0" r="5.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.4"/>
+<text x="527.1" y="244.0" font-size="15.3" font-weight="600" fill="#b9461a" text-anchor="start">back above its start</text>
+</svg>

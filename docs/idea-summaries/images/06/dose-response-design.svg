@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 560" width="1260" height="560" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Tail share sets the sign of drift; tail sample size scales it</title>
+<desc id="d">Global-MMLU design. Grid of twelve cells, tail share pi of 0.05, 0.10, 0.20 and 0.40 by tail evaluation size of 16, 64 and 256 items. Each cell shows the drift per proposal the correlated-response law predicts for an assumed correlation of minus 0.3, equal spreads and zero mean effects. Cells with pi up to 0.20 are predicted to harm the tail, cells with pi 0.40 to help it; a bracket marks the predicted sign change near pi 0.23, where the model predicts zero drift. More tail items raise the gain at pi 0.40 from 0.083 to 0.123 without changing its sign.</desc>
+<defs><marker id="m2a78d6" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker></defs>
+<rect x="0.75" y="0.75" width="1258.5" height="558.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="60.0" y="50.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">Global-MMLU: predicted tail drift per proposal</text>
+<rect x="1010.0" y="30.0" width="217.3" height="25.3" rx="12.67" fill="#f3f4f6" stroke="#64748b" stroke-width="1.2"/>
+<text x="1118.7" y="48.2" font-size="15.3" font-weight="600" fill="#334155" text-anchor="middle">illustrative prediction</text>
+<text x="325.0" y="134.0" font-size="17.7" font-weight="600" fill="#4b5563" text-anchor="middle">π = 0.05</text>
+<text x="485.0" y="134.0" font-size="17.7" font-weight="600" fill="#4b5563" text-anchor="middle">π = 0.10</text>
+<text x="645.0" y="134.0" font-size="17.7" font-weight="600" fill="#4b5563" text-anchor="middle">π = 0.20</text>
+<text x="805.0" y="134.0" font-size="17.7" font-weight="600" fill="#4b5563" text-anchor="middle">π = 0.40</text>
+<text x="565.0" y="98.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="middle">tail share of the objective</text>
+<text x="234.0" y="201.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">16 tail items</text>
+<rect x="250.0" y="150.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="251.0" y="151.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.27"/>
+<text x="325.0" y="192.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="325.0" y="216.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.089</text>
+<rect x="410.0" y="150.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="411.0" y="151.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.22"/>
+<text x="485.0" y="192.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="485.0" y="216.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.068</text>
+<rect x="570.0" y="150.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="571.0" y="151.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.12"/>
+<text x="645.0" y="192.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="645.0" y="216.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.017</text>
+<rect x="730.0" y="150.0" width="150.0" height="92.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.4"/>
+<rect x="731.0" y="151.0" width="148.0" height="90.0" rx="7" fill="#2a78d6" opacity="0.26"/>
+<text x="805.0" y="192.0" font-size="17.7" font-weight="700" fill="#1c5cab" text-anchor="middle">gain</text>
+<text x="805.0" y="216.0" font-size="16.5" font-weight="400" fill="#1c5cab" text-anchor="middle">+0.083</text>
+<text x="234.0" y="303.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">64 tail items</text>
+<rect x="250.0" y="252.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="251.0" y="253.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.27"/>
+<text x="325.0" y="294.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="325.0" y="318.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.089</text>
+<rect x="410.0" y="252.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="411.0" y="253.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.23"/>
+<text x="485.0" y="294.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="485.0" y="318.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.069</text>
+<rect x="570.0" y="252.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="571.0" y="253.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.12"/>
+<text x="645.0" y="294.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="645.0" y="318.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.018</text>
+<rect x="730.0" y="252.0" width="150.0" height="92.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.4"/>
+<rect x="731.0" y="253.0" width="148.0" height="90.0" rx="7" fill="#2a78d6" opacity="0.31"/>
+<text x="805.0" y="294.0" font-size="17.7" font-weight="700" fill="#1c5cab" text-anchor="middle">gain</text>
+<text x="805.0" y="318.0" font-size="16.5" font-weight="400" fill="#1c5cab" text-anchor="middle">+0.111</text>
+<text x="234.0" y="405.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">256 tail items</text>
+<rect x="250.0" y="354.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="251.0" y="355.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.27"/>
+<text x="325.0" y="396.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="325.0" y="420.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.089</text>
+<rect x="410.0" y="354.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="411.0" y="355.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.23"/>
+<text x="485.0" y="396.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="485.0" y="420.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.069</text>
+<rect x="570.0" y="354.0" width="150.0" height="92.0" rx="8" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.4"/>
+<rect x="571.0" y="355.0" width="148.0" height="90.0" rx="7" fill="#eb6834" opacity="0.12"/>
+<text x="645.0" y="396.0" font-size="17.7" font-weight="700" fill="#b9461a" text-anchor="middle">harm</text>
+<text x="645.0" y="420.0" font-size="16.5" font-weight="400" fill="#b9461a" text-anchor="middle">−0.018</text>
+<rect x="730.0" y="354.0" width="150.0" height="92.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.4"/>
+<rect x="731.0" y="355.0" width="148.0" height="90.0" rx="7" fill="#2a78d6" opacity="0.34"/>
+<text x="805.0" y="396.0" font-size="17.7" font-weight="700" fill="#1c5cab" text-anchor="middle">gain</text>
+<text x="805.0" y="420.0" font-size="16.5" font-weight="400" fill="#1c5cab" text-anchor="middle">+0.123</text>
+<path d="M645.0,456.0 L645.0,468.0 L805.0,468.0 L805.0,456.0" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="725.0" y="496.0" font-size="16.5" font-weight="600" fill="#1f2328" text-anchor="middle">model predicts zero drift near π = 0.23</text>
+<text x="250.0" y="532.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="start">cells: drift per proposal, in units of the majority spread</text>
+<path d="M904.0,196.0 L904.0,400.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" marker-end="url(#m2a78d6)"/>
+<text x="920.0" y="260.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">at π = 0.40,</text>
+<text x="920.0" y="282.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">more tail items:</text>
+<text x="920.0" y="304.0" font-size="16.5" font-weight="600" fill="#1c5cab" text-anchor="start">+0.083 → +0.123,</text>
+<text x="920.0" y="326.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">same sign</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 500" width="1240" height="500" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Same outputs, different futures</title>
+<desc id="d">Two harnesses, A and S, produce identical scores on every input. A is a single long function, S is split into typed, logged stages. Under the same optimizer and budget, their illustrative improvement curves start from the same point and diverge; the hypothesized gap comes from how the code is written.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker></defs>
+<rect x="0.75" y="0.75" width="1238.5" height="498.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="50.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">Same outputs today, different futures under self-improvement</text>
+<rect x="40.0" y="110.0" width="360.0" height="112.0" rx="12" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.5"/>
+<text x="54.0" y="140.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Harness A: one function</text>
+<text x="54.0" y="168.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">400 lines, constants inlined, nothing</text>
+<text x="54.0" y="191.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">logged</text>
+<rect x="40.0" y="296.0" width="360.0" height="112.0" rx="12" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="54.0" y="326.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Harness S: typed stages</text>
+<text x="54.0" y="354.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Logged stages, named config with</text>
+<text x="54.0" y="377.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">units, warning-only checks</text>
+<rect x="448.0" y="206.0" width="196.0" height="112.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="462.0" y="236.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Same outputs</text>
+<text x="462.0" y="264.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Identical scores on</text>
+<text x="462.0" y="287.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">every input</text>
+<path d="M404.0,166.0 L442.0,236.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M404.0,352.0 L442.0,290.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<text x="770.0" y="96.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Same optimizer, same budget (illustrative)</text>
+<line x1="770.0" y1="420.0" x2="1070.0" y2="420.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="770.0" y1="420.0" x2="770.0" y2="128.0" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="780.0" y="142.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="start">sealed-test improvement</text>
+<text x="1070.0" y="450.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="end">labelled candidate evaluations</text>
+<text x="778.0" y="450.0" font-size="15.3" font-weight="600" fill="#4b5563" text-anchor="end">same starting score</text>
+<path d="M770.0,420.0 L774.7,406.5 L779.3,393.6 L784.0,381.5 L788.7,369.9 L793.3,359.0 L798.0,348.6 L802.7,338.8 L807.3,329.5 L812.0,320.6 L816.7,312.3 L821.3,304.3 L826.0,296.8 L830.7,289.7 L835.3,282.9 L840.0,276.5 L844.7,270.4 L849.3,264.6 L854.0,259.2 L858.7,254.0 L863.3,249.1 L868.0,244.4 L872.7,240.0 L877.3,235.8 L882.0,231.8 L886.7,228.1 L891.3,224.5 L896.0,221.1 L900.7,217.9 L905.3,214.9 L910.0,212.0 L914.7,209.3 L919.3,206.7 L924.0,204.2 L928.7,201.9 L933.3,199.7 L938.0,197.6 L942.7,195.6 L947.3,193.7 L952.0,191.9 L956.7,190.2 L961.3,188.6 L966.0,187.1 L970.7,185.7 L975.3,184.3 L980.0,183.0 L984.7,181.8 L989.3,180.6 L994.0,179.5 L998.7,178.5 L1003.3,177.5 L1008.0,176.5 L1012.7,175.7 L1017.3,174.8 L1022.0,174.0 L1026.7,173.2 L1031.3,172.5 L1036.0,171.8 L1040.7,171.2 L1045.3,170.6 L1050.0,170.0" fill="none" stroke="#2a78d6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M770.0,420.0 L774.7,416.2 L779.3,412.5 L784.0,409.0 L788.7,405.6 L793.3,402.2 L798.0,399.0 L802.7,395.9 L807.3,392.9 L812.0,390.0 L816.7,387.2 L821.3,384.5 L826.0,381.9 L830.7,379.3 L835.3,376.9 L840.0,374.5 L844.7,372.2 L849.3,370.0 L854.0,367.8 L858.7,365.7 L863.3,363.7 L868.0,361.8 L872.7,359.9 L877.3,358.1 L882.0,356.3 L886.7,354.6 L891.3,353.0 L896.0,351.4 L900.7,349.8 L905.3,348.3 L910.0,346.9 L914.7,345.5 L919.3,344.2 L924.0,342.8 L928.7,341.6 L933.3,340.4 L938.0,339.2 L942.7,338.0 L947.3,336.9 L952.0,335.9 L956.7,334.8 L961.3,333.8 L966.0,332.9 L970.7,331.9 L975.3,331.0 L980.0,330.2 L984.7,329.3 L989.3,328.5 L994.0,327.7 L998.7,326.9 L1003.3,326.2 L1008.0,325.5 L1012.7,324.8 L1017.3,324.1 L1022.0,323.5 L1026.7,322.8 L1031.3,322.2 L1036.0,321.6 L1040.7,321.1 L1045.3,320.5 L1050.0,320.0" fill="none" stroke="#eb6834" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="770.0" cy="420.0" r="5" fill="#1f2328" stroke="#1f2328" stroke-width="1.5"/>
+<text x="1062.0" y="175.0" font-size="16.5" font-weight="700" fill="#1c5cab" text-anchor="start">S, typed stages</text>
+<text x="1062.0" y="325.0" font-size="16.5" font-weight="700" fill="#b9461a" text-anchor="start">A, one function</text>
+<line x1="1036.0" y1="171.8" x2="1036.0" y2="321.6" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="1030.0" y1="171.8" x2="1042.0" y2="171.8" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="1030.0" y1="321.6" x2="1042.0" y2="321.6" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
+<text x="1024.0" y="251.7" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="end">hypothesized gap</text>
+</svg>

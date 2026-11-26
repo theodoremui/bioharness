@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 750" width="1360" height="750" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Two tiers: many cheap edits, fewer loops</title>
+<desc id="d">Top: the eight-cell resolution IV half fraction over modularity, observability, parameters and checks (I = MOPT), crossed with 20 base harnesses and three proposers; cells 1 and 8 also get naming and control arms. Bottom: three of the 20 bases give 96 configurations (32 settings each, naming opaque or physical). Each gets a profile forecast and a clade estimate from 300 evaluations each, and each predictor is correlated within base with the observed sealed-test gain of its validation loops.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker></defs>
+<rect x="0.75" y="0.75" width="1358.5" height="748.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="50.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">Tier 1 measures profiles cheaply; tier 2 checks them against full loops</text>
+<text x="40.0" y="100.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Tier 1: single-edit profiles</text>
+<text x="40.0" y="128.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Eight-cell half fraction (I = MOPT) x 20 bases x 3 proposers</text>
+<rect x="243.0" y="150.0" width="54.0" height="204.0" rx="10" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+<rect x="705.0" y="150.0" width="54.0" height="204.0" rx="10" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="270.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">1</text>
+<text x="336.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">2</text>
+<text x="402.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">3</text>
+<text x="468.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">4</text>
+<text x="534.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">5</text>
+<text x="600.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">6</text>
+<text x="666.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">7</text>
+<text x="732.0" y="174.0" font-size="15.3" font-weight="600" fill="#6b7280" text-anchor="middle">8</text>
+<text x="224.0" y="174.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="end">cell</text>
+<text x="224.0" y="221.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="end">modularity</text>
+<text x="224.0" y="261.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="end">observability</text>
+<text x="224.0" y="301.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="end">parameters</text>
+<text x="224.0" y="341.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="end">checks</text>
+<circle cx="270.0" cy="216.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="270.0" cy="256.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="270.0" cy="296.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="270.0" cy="336.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="336.0" cy="216.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="336.0" cy="256.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="336.0" cy="296.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="336.0" cy="336.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="402.0" cy="216.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="402.0" cy="256.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="402.0" cy="296.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="402.0" cy="336.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="468.0" cy="216.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="468.0" cy="256.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="468.0" cy="296.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="468.0" cy="336.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="534.0" cy="216.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="534.0" cy="256.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="534.0" cy="296.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="534.0" cy="336.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="600.0" cy="216.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="600.0" cy="256.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="600.0" cy="296.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="600.0" cy="336.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="666.0" cy="216.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="666.0" cy="256.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="666.0" cy="296.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="666.0" cy="336.0" r="11" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<circle cx="732.0" cy="216.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="732.0" cy="256.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="732.0" cy="296.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="732.0" cy="336.0" r="11" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<circle cx="851.0" cy="220.0" r="9" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="872.0" y="225.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">structured</text>
+<circle cx="851.0" cy="260.0" r="9" fill="#ffffff" stroke="#eb6834" stroke-width="2"/>
+<text x="872.0" y="265.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">degraded</text>
+<rect x="840.0" y="288.0" width="22.0" height="22.0" rx="5" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="872.0" y="305.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">cells 1 and 8 also get naming</text>
+<text x="872.0" y="326.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">and control arms</text>
+<line x1="40.0" y1="378.0" x2="1320.0" y2="378.0" stroke="#d6d9de" stroke-width="1.5" stroke-linecap="round"/>
+<text x="40.0" y="416.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Tier 2: loop validation</text>
+<rect x="40.0" y="512.0" width="270.0" height="136.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="54.0" y="541.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">96 configurations</text>
+<text x="54.0" y="568.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">3 of the 20 bases</text>
+<text x="54.0" y="596.1" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">x 32 settings (naming</text>
+<text x="54.0" y="624.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">opaque or physical)</text>
+<rect x="410.0" y="444.0" width="330.0" height="74.0" rx="12" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="424.0" y="473.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Profile forecast</text>
+<text x="424.0" y="500.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">300 edit evaluations</text>
+<rect x="410.0" y="544.0" width="330.0" height="74.0" rx="12" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="424.0" y="573.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Clade estimate (HGM)</text>
+<text x="424.0" y="600.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">3 loops x 100 evaluations</text>
+<rect x="410.0" y="644.0" width="330.0" height="74.0" rx="12" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="424.0" y="673.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Observed sealed-test gain</text>
+<text x="424.0" y="700.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">10 loops, B = 100 each</text>
+<line x1="360.0" y1="481.0" x2="360.0" y2="681.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.0" y1="580.0" x2="360.0" y2="580.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<path d="M360.0,481.0 L404.0,481.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M360.0,581.0 L404.0,581.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M360.0,681.0 L404.0,681.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="930.0" y="536.0" width="390.0" height="90.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="944.0" y="565.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Correlate within base</text>
+<text x="944.0" y="592.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">each predictor with the observed gain</text>
+<line x1="840.0" y1="481.0" x2="840.0" y2="681.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<line x1="744.0" y1="481.0" x2="840.0" y2="481.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<line x1="744.0" y1="581.0" x2="840.0" y2="581.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<line x1="744.0" y1="681.0" x2="840.0" y2="681.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<path d="M840.0,581.0 L924.0,581.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+</svg>
