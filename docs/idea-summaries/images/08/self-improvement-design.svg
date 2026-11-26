@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 604" width="1300" height="604" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Self-improvement under three rewards</title>
+<desc id="d">Three optimizers run under three rewards on development people only, with most seeds in the main arm; six checkpoints of each of the 45 runs are audited on sealed test people.</desc>
+<defs><marker id="m4b5563" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<rect x="0.75" y="0.75" width="1298.5" height="602.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<rect x="40.0" y="50.0" width="900.0" height="80.0" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="1.6"/>
+<text x="64.0" y="86.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Development people</text>
+<text x="64.0" y="112.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">optimizers run, select and train here</text>
+<rect x="960.0" y="50.0" width="300.0" height="80.0" rx="12" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<path d="M985.2,80.4 V77.2 a5.2,5.2 0 0 1 10.4,0 V80.4" fill="none" stroke="#4b5563" stroke-width="2.3400000000000003" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="982.0" y="80.4" width="16.9" height="11.7" rx="2.6" fill="#4b5563"/>
+<text x="1010.0" y="86.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Sealed test people</text>
+<text x="1010.0" y="112.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">audits only</text>
+<text x="200.0" y="176.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">3 optimizers × 15 seeds = 45 runs</text>
+<rect x="200.0" y="196.0" width="236.0" height="124.0" rx="12" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.6"/>
+<text x="214.0" y="225.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">(a) Accuracy</text>
+<text x="214.0" y="250.1" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">informative referral</text>
+<text x="214.0" y="272.9" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">main arm</text>
+<text x="214.0" y="295.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">8 seeds</text>
+<rect x="450.0" y="196.0" width="236.0" height="124.0" rx="12" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="464.0" y="225.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">(b) Approval judge</text>
+<text x="464.0" y="250.1" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">sees the referral</text>
+<text x="464.0" y="272.9" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">positive control</text>
+<text x="464.0" y="295.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">3 seeds</text>
+<rect x="700.0" y="196.0" width="236.0" height="124.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.6"/>
+<text x="714.0" y="225.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">(c) Accuracy</text>
+<text x="714.0" y="250.1" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">randomized referral</text>
+<text x="714.0" y="272.9" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">control</text>
+<text x="714.0" y="295.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">4 seeds</text>
+<text x="40.0" y="372.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">GEPA</text>
+<text x="40.0" y="396.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">prompt evolution</text>
+<rect x="200.0" y="340.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="234.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="258.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="282.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="306.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="330.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="354.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="378.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="402.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<rect x="450.0" y="340.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="544.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="568.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="592.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<rect x="700.0" y="340.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="782.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="806.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="830.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="854.0" cy="372.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<text x="40.0" y="450.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">ACE</text>
+<text x="40.0" y="474.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">playbook</text>
+<rect x="200.0" y="418.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="234.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="258.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="282.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="306.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="330.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="354.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="378.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="402.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<rect x="450.0" y="418.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="544.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="568.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="592.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<rect x="700.0" y="418.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="782.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="806.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="830.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="854.0" cy="450.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<text x="40.0" y="528.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">GRPO</text>
+<text x="40.0" y="552.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">weights</text>
+<rect x="200.0" y="496.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="234.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="258.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="282.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="306.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="330.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="354.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="378.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="402.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<rect x="450.0" y="496.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="544.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="568.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="592.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<rect x="700.0" y="496.0" width="236.0" height="64.0" rx="10" fill="#ffffff" stroke="#d6d9de" stroke-width="1.4"/>
+<circle cx="782.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="806.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="830.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<circle cx="854.0" cy="528.0" r="7" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+<path d="M950,340 L958,340 L958,560 L950,560" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1000.0" y="385.0" width="260.0" height="130.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.6"/>
+<text x="1016.0" y="425.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Audit 6 checkpoints</text>
+<text x="1016.0" y="451.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">per run</text>
+<text x="1016.0" y="485.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">on sealed test people</text>
+<path d="M958.0,450.0 L998.0,450.0" fill="none" stroke="#4b5563" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#m4b5563)"/>
+<path d="M1130.0,130.0 L1130.0,383.0" fill="none" stroke="#4b5563" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#m4b5563)"/>
+</svg>

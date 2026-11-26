@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 590" width="1240" height="590" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Four places where self-improvement can go wrong</title>
+<desc id="d">A phone video enters an editable harness made of tools, an encoding of tool outputs and a VLM agent, which reports a balance score. A referral or hypothesis can be given to the agent. Scores on development people feed an improver that proposes an edit; the candidate is scored, and an acceptance rule keeps or rejects it. Proposal 05 studies the editable harness code, 06 the acceptance rule, 07 the encoding of tool outputs and 08 the referral given to the agent.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="m6250d6" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6250d6"/></marker><marker id="meb6834" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#eb6834"/></marker></defs>
+<rect x="0.75" y="0.75" width="1238.5" height="588.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="48.0" font-size="22.4" font-weight="700" fill="#1f2328" text-anchor="start">Four places where self-improvement can go wrong</text>
+<rect x="700.0" y="80.0" width="300.0" height="62.0" rx="12" fill="#f0eefc" stroke="#6250d6" stroke-width="1.5"/>
+<text x="714.0" y="110.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Referral or hypothesis</text>
+<circle cx="970.0" cy="111.0" r="19" fill="#6250d6" stroke="#6250d6" stroke-width="1"/>
+<text x="970.0" y="117.0" font-size="16.5" font-weight="700" fill="#ffffff" text-anchor="middle">08</text>
+<rect x="222.0" y="184.0" width="806.0" height="196.0" rx="16" fill="#fbfcfd" stroke="#64748b" stroke-width="1.6" stroke-dasharray="7 6"/>
+<text x="246.0" y="218.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Editable harness code</text>
+<circle cx="490.0" cy="212.0" r="19" fill="#2a78d6" stroke="#2a78d6" stroke-width="1"/>
+<text x="490.0" y="218.0" font-size="16.5" font-weight="700" fill="#ffffff" text-anchor="middle">05</text>
+<rect x="40.0" y="246.0" width="140.0" height="104.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="54.0" y="276.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Phone</text>
+<text x="54.0" y="300.6" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">video</text>
+<rect x="242.0" y="246.0" width="210.0" height="104.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="256.0" y="276.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Tools</text>
+<text x="256.0" y="304.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Pose and 3D motion</text>
+<rect x="498.0" y="246.0" width="220.0" height="104.0" rx="12" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="512.0" y="276.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Tool-output</text>
+<text x="512.0" y="300.6" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">encoding</text>
+<text x="512.0" y="329.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Text, plot or overlay</text>
+<circle cx="688.0" cy="276.0" r="19" fill="#1baf7a" stroke="#1baf7a" stroke-width="1"/>
+<text x="688.0" y="282.0" font-size="16.5" font-weight="700" fill="#ffffff" text-anchor="middle">07</text>
+<rect x="764.0" y="246.0" width="244.0" height="104.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="778.0" y="276.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">VLM agent</text>
+<text x="778.0" y="304.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Reads the encoded</text>
+<text x="778.0" y="327.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">outputs</text>
+<rect x="1070.0" y="246.0" width="130.0" height="104.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="1084.0" y="276.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Balance</text>
+<text x="1084.0" y="300.6" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">score</text>
+<path d="M184.0,298.0 L236.0,298.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M456.0,298.0 L492.0,298.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M722.0,298.0 L758.0,298.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M1012.0,298.0 L1064.0,298.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M886.0,146.0 L886.0,240.0" fill="none" stroke="#6250d6" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#m6250d6)"/>
+<rect x="950.0" y="456.0" width="250.0" height="96.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="964.0" y="486.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Current harness</text>
+<text x="964.0" y="510.6" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">scores</text>
+<text x="964.0" y="539.2" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Dev people, by group</text>
+<rect x="660.0" y="456.0" width="250.0" height="96.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="674.0" y="486.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Improver proposes</text>
+<text x="674.0" y="514.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">An edit to the code</text>
+<rect x="370.0" y="456.0" width="250.0" height="96.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="384.0" y="486.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Score the candidate</text>
+<text x="384.0" y="514.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Same dev people</text>
+<rect x="40.0" y="456.0" width="290.0" height="96.0" rx="12" fill="#fdf0e9" stroke="#eb6834" stroke-width="1.5"/>
+<text x="54.0" y="486.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Edit acceptance rule</text>
+<text x="54.0" y="514.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Keeps or rejects it</text>
+<circle cx="300.0" cy="486.0" r="19" fill="#eb6834" stroke="#eb6834" stroke-width="1"/>
+<text x="300.0" y="492.0" font-size="16.5" font-weight="700" fill="#ffffff" text-anchor="middle">06</text>
+<path d="M1135.0,354.0 L1135.0,450.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M946.0,504.0 L916.0,504.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M656.0,504.0 L626.0,504.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M366.0,504.0 L336.0,504.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M290.0,452.0 L290.0,420.0 L475.0,420.0 L475.0,386.0" fill="none" stroke="#eb6834" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#meb6834)"/>
+<text x="490.0" y="412.0" font-size="16.5" font-weight="600" fill="#b9461a" text-anchor="start">accepted edits</text>
+</svg>

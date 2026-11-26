@@ -1,0 +1,183 @@
+OpenAI Codex v0.171.0
+--------
+workdir: /Users/theodoremui/dev/bioharness
+model: gpt-6.2-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a213c9-82db-7db0-9869-50d69ec42bb4
+--------
+user
+You are an adversarial reviewer of scientific figures for a research proposal. The attached PNGs are rendered at 2x from SVG and will be displayed about 850 px wide. Try hard to find reasons each figure should not ship. For EACH image, by file order, report: (a) overlapping or colliding text, (b) lines or arrows that cross text or other arrows confusingly, (c) arrows whose direction or endpoints are ambiguous, (d) text too small to read at display size, (e) excess text that belongs in a caption, (f) the one main point and whether a reader gets it in 5 seconds, (g) concrete fixes with coordinates or element names. Then give a verdict per figure: ship / fix / redraw. Focus: Proposal 07, 'Can a vision-language agent learn how to look at its own data?' (a VLM agent evolves the plotting code that renders its own biomechanics tool outputs; the question is whether gains transfer to other readers and people). Points, in file order: (1) one-output-four-encodings: one tandem-stance tool output (61,200 numbers) can reach the reader as printed numbers, summary statistics, a default plot or a stabilogram, each with a different token cost and different losses; (2) risk-decomposition: a reader's risk splits into tool floor R(o), information term I(e), and a perceptual term made of calibration and resolution, each boundary set by a different decoder; (3) oracle-learning-curve: preliminary simulation, with too few training renders the oracle is under-trained so the measured perceptual gap goes negative (-0.049 at 200 renders), and at 5,000 renders it nears the true gap; (4) renderer-evolution-loop: text-only mutator, frozen reader A, fitness on dev-select people, Pareto archive; sealed people, held-out readers and held-out tasks are scored only after the search ends; (5) reader-design-matrix: which readers set the fitness, which are held out within a family, which are unseen families or people; every condition leaves at least one VLM family out and no person scores renders during search; (6) transfer-decomposition-curve: illustrative, under single-reader fitness the reader-specific share widens over generations, under two-family ensemble fitness it stays narrow; (7) profile-predicts-transfer: illustrative, observed transfer near the diagonal of profile-predicted transfer, same-family high, other families and people lower; (8) co-adaptation-drift: illustrative, without a legibility term the co-adapted pair gains while fresh readers lose on the same renders (drift gap), with a frozen-reader term the gap stays small.. Do not run commands or modify files.
+
+codex
+I’d hold all eight for revision. Figure 2 reverses the calibration and resolution labels. Figures 4 and 8 need redraws because their layouts obscure experimental distinctions. The other five can keep their current layouts.
+
+I reviewed the supplied PNGs at an intended display width of about 850 px. Coordinates below refer to the original PNGs, measured from the upper-left corner.
+
+## 1. `one-output-four-encodings.png` · Fix
+
+- **(a) Text collisions.** None visible. The printed excerpt has enough padding, though its three columns look like the complete structure of a row.
+- **(b) Line and arrow crossings.** None. The four parallel arrows are easy to follow.
+- **(c) Direction and endpoints.** The arrows clearly fan out from one box. The ambiguity is what flows through them. The source lists both keypoints and center of mass (CoM), the count covers keypoints only, and the printed excerpt looks like time plus two CoM coordinates.
+- **(d) Readability at 850 px.** The excerpt and badges are roughly 10 px. The examples are legible at a glance as types of output, but their numeric details take effort. The two plot thumbnails lack scale cues at any size.
+- **(e) Caption material.** Move the illustrative-trace note and the assumptions behind token estimates into the caption. Keep the cost estimates and the information tradeoffs in the rows.
+- **(f) Five-second read.** **Yes** for “one trial, four ways to show it.” The cost comparison comes through. The information comparison is weaker because the reader cannot tell which signal each format preserves.
+- **(g) Concrete fixes.** In the source card, near `(128, 795)`, attach `61,200 coordinates` explicitly to `1,800 frames × 17 keypoints × 2` and label the CoM trajectory separately. At `(896, 274)`, label the excerpt’s columns to match the signal shown, and qualify “lossless” as preserving the serialized values at their printed precision. In the stabilogram thumbnail near `(872, 1118)`, show a physical scale and use equal spatial scaling. Change “autoscale hides size” to “autoscaling obscures size comparisons” so the claim matches the comparison being made.
+
+## 2. `risk-decomposition.png` · Fix
+
+- **(a) Text collisions.** None visible. The boundary labels and decoder descriptions have adequate spacing.
+- **(b) Line and arrow crossings.** None. The bracket cleanly spans the two blue segments.
+- **(c) Direction and endpoints.** The left-to-right risk ordering is clear. The bracket begins at \(R(e)\) and ends at \(R_\pi(e)\). The labels inside it reverse the meaning of the two intervals.
+- **(d) Readability at 850 px.** The decoder descriptions are roughly 10–11 px. The compact `Rπ(e)` also makes it easy to miss that \(\pi\) indexes the reader.
+- **(e) Caption material.** Keep a short decoder identifier at each boundary. Move the details of how the oracle and recalibration are fitted into the caption. State there that segment widths are schematic.
+- **(f) Five-second read.** **Yes**, but a reader will learn the wrong attribution. The distance from the oracle to the recalibrated reader is the residual resolution term. The distance from the recalibrated reader to the original reader is the calibration term.
+- **(g) Concrete fixes.** Swap the labels centered at `(1440, 440)` and `(1990, 440)`. The interval \(R(e)\) to \(R(h\circ\pi)\) should read **resolution**, and \(R(h\circ\pi)\) to \(R_\pi(e)\) should read **calibration**. Typeset \(R_\pi(e)\) with a visible subscript. Label the fitted oracle boundary as an estimate of \(R(e)\) if the figure is describing the measured decomposition. That distinction carries the argument in Figure 3.
+
+## 3. `oracle-learning-curve.png` · Fix
+
+- **(a) Text collisions.** None visible. The `0.0079` annotation is detached from the point it describes, so it looks like a label for the dashed floor.
+- **(b) Line and arrow crossings.** The orange curve crossing the blue reader-risk line is the main event. The red shading ends at that crossing, making a precise threshold appear observed between the 200- and 1,000-render runs.
+- **(c) Direction and endpoints.** There are no arrows. The legend identifies the three lines, but neither annotation shows that “gap” means reader risk minus oracle risk.
+- **(d) Readability at 850 px.** The ticks and legend are roughly 11 px and usable. The smaller `0.0079` versus `0.0087` distinction is readable once found, but the reader has to search for it.
+- **(e) Caption material.** Move the script path, sway-amplitude setup, and 20-pixel rendering detail into the caption. Keep “Preliminary simulation” in the figure.
+- **(f) Five-second read.** **Partly.** The oracle improves with more training. It takes longer to see that undertraining makes the estimated gap negative, while the 5,000-render estimate approaches the true gap.
+- **(g) Concrete fixes.** At the 200-render point near `(428, 359)`, mark the vertical difference to the blue line as **estimated gap −0.049 cm²**. At the 5,000-render point near `(1233, 872)`, put **estimated 0.0079 cm²** and **true 0.0087 cm²** side by side beside the point. Remove the red region ending at `x≈793` and use the annotation to identify the observed negative-gap run. Define the subtraction once in the figure or caption.
+
+## 4. `renderer-evolution-loop.png` · Redraw
+
+- **(a) Text collisions.** None visible. The dashed route label fits, but its length makes the bottom connector read like a footnote.
+- **(b) Line and arrow crossings.** No crossings inside the loop. The dashed route runs along the bottom and turns upward into a group outline. Its shape and red styling make it easy to read as a boundary marker.
+- **(c) Direction and endpoints.** The loop direction is clear. The archive-to-mutator arrow appears to be the mutator’s only input, leaving the source of dev-train failures implicit. The dashed arrow ends at the perimeter of the held-out group, so it never lands on a scoring operation.
+- **(d) Readability at 850 px.** Node headings hold up. Body copy is roughly 10–11 px, and `dev-train` versus `dev-select` is easy to miss even though that distinction is central.
+- **(e) Caption material.** Move the full model ID, the test participant count, and the held-out task inventory into the caption. Use the available space to label the development data flows and post-search scoring.
+- **(f) Five-second read.** **Partly.** The reader sees an optimization loop and a holdout area. They cannot reconstruct who supplies feedback, who sets fitness, or when each holdout is scored. The figure also promises fixed token cost and a token-cost Pareto front. A genuinely constant token cost gives the search no token tradeoff within that run.
+- **(g) Concrete fixes.** At the mutator near `(120, 860)`, show two named inputs, **archived renderer code** and **dev-train failure reports**, and explicitly call the mutator text-only. Label the feedback source **frozen Reader A** and the fitness node **dev-select participants**. Replace the route from `(1010, 1068)` to `(2280, 1068)` with a connector that lands on **post-search evaluation**, connected to sealed participants, held-out readers, and held-out tasks. If token cost varies only across budget arms, say so and place the Pareto comparison across arms. If one cost applies throughout, show error as the in-run objective.
+
+## 5. `reader-design-matrix.png` · Fix
+
+- **(a) Text collisions.** None visible. The longest row label ends before the first marker with adequate clearance.
+- **(b) Line and arrow crossings.** None. The dashed separator distinguishes one-reader and multi-reader conditions, though the grouping is only implicit.
+- **(c) Direction and endpoints.** There are no arrows. The ambiguous cell is the gray **crowd** dot in the last row. It shares a symbol with same-family model holdouts and relies on a legend parenthesis to explain a different role.
+- **(d) Readability at 850 px.** The model sizes and legend are roughly 10–11 px. The larger problem is decoding 77 marks whose statuses depend heavily on color and fill.
+- **(e) Caption material.** Put the full “at least one VLM family is held out” and “people score only after search” statements in the caption. Use short on-figure wording to explain what the crowd profile contributes in the legibility condition.
+- **(f) Five-second read.** **Yes** for which models set fitness. **No** for how to interpret the crowd cell or distinguish all evaluation roles without reading the full legend.
+- **(g) Concrete fixes.** Give the crowd profile cell at `(2240, 980)` a distinct symbol and the explicit legend label **profile only**. Shorten the other legend labels to **sets fitness**, **same-family holdout**, and **unseen family or people**. Use different shapes or fill treatments for the main statuses so the table remains usable in grayscale. Rename **Closed / frontier** to **Frontier VLM** if that column represents one reader.
+
+## 6. `transfer-decomposition-curve.png` · Fix
+
+- **(a) Text collisions.** None visible. The in-panel gain labels clear the curves but duplicate each other.
+- **(b) Line and arrow crossings.** No confusing crossings. At early generations the three traces nearly coincide, and the dashed people trace is hard to pick out until it diverges.
+- **(c) Direction and endpoints.** There are no arrows. The shaded interval ends at the held-out VLM curve and excludes the people curve. The legend does not make that reference explicit. It also labels the blue curve “reader A” in the two-family panel, where a reader could reasonably expect a score aggregated across the two source families.
+- **(d) Readability at 850 px.** Titles and axes hold up. The pale shading is more vulnerable than the text, especially in the right panel where the gap is narrow.
+- **(e) Caption material.** Move the H2/H3 references and the exact definition of gain into the caption. Keep an **Illustrative trajectories** label and identify the plotted gain on the axis.
+- **(f) Five-second read.** **Yes** for a widening gap on the left and a smaller gap on the right. It remains unclear whose gains define that gap and whether “share” means a fraction.
+- **(g) Concrete fixes.** Name the fill **source minus held-out VLM gain**, or change the plotted quantity if the intended claim is a fraction. Specify under each panel whether blue is Reader A or the fitness ensemble. State which held-out VLMs enter each green curve, especially if the pool changes between panels. Near generation 40, at `x≈1200` and `x≈2500`, add short brackets spanning the blue and solid green endpoints to make the two gaps legible without relying on tint.
+
+## 7. `profile-predicts-transfer.png` · Fix
+
+- **(a) Text collisions.** None. The actual collisions are between markers. Some same-family circles, other-family circles, and squares partially hide one another.
+- **(b) Line and arrow crossings.** The identity line appropriately passes through the point cloud. At overlapping markers, the line disappears for long enough that their position above or below it takes a second look.
+- **(c) Direction and endpoints.** There are no arrows. The dashed line reads as equality. The legend identifies reader groups, but the figure never says what one point represents.
+- **(d) Readability at 850 px.** Axis and legend text are readable. The overlap survives downscaling and can turn two points into one visible mark.
+- **(e) Caption material.** Put the H1 reference, meaning of one point, definition of gain, and eligibility rule for ratios with near-zero source gain in the caption. Keep the prominent **Illustrative** label.
+- **(f) Five-second read.** **Yes** for the illustrative diagonal and the ordering of the groups. The same ordering creates a scientific ambiguity. The picture could be driven mostly by reader group, even if profiles add little predictive value within groups.
+- **(g) Concrete fixes.** Reduce marker diameter and use visible outlines around the overlaps near `(550, 920)`, `(690, 805)`, `(830, 705)`, and `(1350, 440)`. Add a one-line definition of a point once the intended unit is confirmed. Label \(y=x\) directly near the upper-right end of the line. In the caption, state whether the planned prediction test compares against a baseline based on reader group alone.
+
+## 8. `co-adaptation-drift.png` · Redraw
+
+- **(a) Text collisions.** None. The open markers at round 0 sit directly over the filled markers of the same color, hiding the shared starting values.
+- **(b) Line and arrow crossings.** There are no arrows. Both dashed curves run through the shaded solid-line gap, so the reader has to infer which series define “drift gap.”
+- **(c) Direction and endpoints.** Round order is clear. The legend phrase “frozen-reader term” is the ambiguity. It can read as a measurement on a frozen reader or as a separate search condition that adds a frozen-reader term to fitness.
+- **(d) Readability at 850 px.** The legend is large enough to read, but its four similar labels force repeated lookups. The long x-axis label competes with the experimental comparison.
+- **(e) Caption material.** Move the H5 reference, the renderer-update/reader-update sequence, and the construction of the frozen-reader term into the caption. Keep **Illustrative trajectories** on the figure.
+- **(f) Five-second read.** **Yes** for the co-adapted pair rising while fresh readers fall. **No** for the second claim that adding the frozen-reader term narrows the gap. It is also possible to read the divergence as direct evidence of a private code, though the plotted outcome measures transfer loss.
+- **(g) Concrete fixes.** Split the current plot region at `(280, 280)`–`(1600, 960)` and the adjacent legend space into two matched panels titled **Standard fitness** and **Fitness with a frozen-reader term**. Use the same y-axis limits and two directly labeled traces per panel, **co-adapted pair** and **fresh readers on the same renders**. Mark the round-4 separation in both panels. The current illustration implies about **42 percentage points** and **12 percentage points**, respectively. A title such as **Does co-adaptation reduce transfer to fresh readers?** would describe the outcome the experiment measures.
+tokens used
+57,177
+I’d hold all eight for revision. Figure 2 reverses the calibration and resolution labels. Figures 4 and 8 need redraws because their layouts obscure experimental distinctions. The other five can keep their current layouts.
+
+I reviewed the supplied PNGs at an intended display width of about 850 px. Coordinates below refer to the original PNGs, measured from the upper-left corner.
+
+## 1. `one-output-four-encodings.png` · Fix
+
+- **(a) Text collisions.** None visible. The printed excerpt has enough padding, though its three columns look like the complete structure of a row.
+- **(b) Line and arrow crossings.** None. The four parallel arrows are easy to follow.
+- **(c) Direction and endpoints.** The arrows clearly fan out from one box. The ambiguity is what flows through them. The source lists both keypoints and center of mass (CoM), the count covers keypoints only, and the printed excerpt looks like time plus two CoM coordinates.
+- **(d) Readability at 850 px.** The excerpt and badges are roughly 10 px. The examples are legible at a glance as types of output, but their numeric details take effort. The two plot thumbnails lack scale cues at any size.
+- **(e) Caption material.** Move the illustrative-trace note and the assumptions behind token estimates into the caption. Keep the cost estimates and the information tradeoffs in the rows.
+- **(f) Five-second read.** **Yes** for “one trial, four ways to show it.” The cost comparison comes through. The information comparison is weaker because the reader cannot tell which signal each format preserves.
+- **(g) Concrete fixes.** In the source card, near `(128, 795)`, attach `61,200 coordinates` explicitly to `1,800 frames × 17 keypoints × 2` and label the CoM trajectory separately. At `(896, 274)`, label the excerpt’s columns to match the signal shown, and qualify “lossless” as preserving the serialized values at their printed precision. In the stabilogram thumbnail near `(872, 1118)`, show a physical scale and use equal spatial scaling. Change “autoscale hides size” to “autoscaling obscures size comparisons” so the claim matches the comparison being made.
+
+## 2. `risk-decomposition.png` · Fix
+
+- **(a) Text collisions.** None visible. The boundary labels and decoder descriptions have adequate spacing.
+- **(b) Line and arrow crossings.** None. The bracket cleanly spans the two blue segments.
+- **(c) Direction and endpoints.** The left-to-right risk ordering is clear. The bracket begins at \(R(e)\) and ends at \(R_\pi(e)\). The labels inside it reverse the meaning of the two intervals.
+- **(d) Readability at 850 px.** The decoder descriptions are roughly 10–11 px. The compact `Rπ(e)` also makes it easy to miss that \(\pi\) indexes the reader.
+- **(e) Caption material.** Keep a short decoder identifier at each boundary. Move the details of how the oracle and recalibration are fitted into the caption. State there that segment widths are schematic.
+- **(f) Five-second read.** **Yes**, but a reader will learn the wrong attribution. The distance from the oracle to the recalibrated reader is the residual resolution term. The distance from the recalibrated reader to the original reader is the calibration term.
+- **(g) Concrete fixes.** Swap the labels centered at `(1440, 440)` and `(1990, 440)`. The interval \(R(e)\) to \(R(h\circ\pi)\) should read **resolution**, and \(R(h\circ\pi)\) to \(R_\pi(e)\) should read **calibration**. Typeset \(R_\pi(e)\) with a visible subscript. Label the fitted oracle boundary as an estimate of \(R(e)\) if the figure is describing the measured decomposition. That distinction carries the argument in Figure 3.
+
+## 3. `oracle-learning-curve.png` · Fix
+
+- **(a) Text collisions.** None visible. The `0.0079` annotation is detached from the point it describes, so it looks like a label for the dashed floor.
+- **(b) Line and arrow crossings.** The orange curve crossing the blue reader-risk line is the main event. The red shading ends at that crossing, making a precise threshold appear observed between the 200- and 1,000-render runs.
+- **(c) Direction and endpoints.** There are no arrows. The legend identifies the three lines, but neither annotation shows that “gap” means reader risk minus oracle risk.
+- **(d) Readability at 850 px.** The ticks and legend are roughly 11 px and usable. The smaller `0.0079` versus `0.0087` distinction is readable once found, but the reader has to search for it.
+- **(e) Caption material.** Move the script path, sway-amplitude setup, and 20-pixel rendering detail into the caption. Keep “Preliminary simulation” in the figure.
+- **(f) Five-second read.** **Partly.** The oracle improves with more training. It takes longer to see that undertraining makes the estimated gap negative, while the 5,000-render estimate approaches the true gap.
+- **(g) Concrete fixes.** At the 200-render point near `(428, 359)`, mark the vertical difference to the blue line as **estimated gap −0.049 cm²**. At the 5,000-render point near `(1233, 872)`, put **estimated 0.0079 cm²** and **true 0.0087 cm²** side by side beside the point. Remove the red region ending at `x≈793` and use the annotation to identify the observed negative-gap run. Define the subtraction once in the figure or caption.
+
+## 4. `renderer-evolution-loop.png` · Redraw
+
+- **(a) Text collisions.** None visible. The dashed route label fits, but its length makes the bottom connector read like a footnote.
+- **(b) Line and arrow crossings.** No crossings inside the loop. The dashed route runs along the bottom and turns upward into a group outline. Its shape and red styling make it easy to read as a boundary marker.
+- **(c) Direction and endpoints.** The loop direction is clear. The archive-to-mutator arrow appears to be the mutator’s only input, leaving the source of dev-train failures implicit. The dashed arrow ends at the perimeter of the held-out group, so it never lands on a scoring operation.
+- **(d) Readability at 850 px.** Node headings hold up. Body copy is roughly 10–11 px, and `dev-train` versus `dev-select` is easy to miss even though that distinction is central.
+- **(e) Caption material.** Move the full model ID, the test participant count, and the held-out task inventory into the caption. Use the available space to label the development data flows and post-search scoring.
+- **(f) Five-second read.** **Partly.** The reader sees an optimization loop and a holdout area. They cannot reconstruct who supplies feedback, who sets fitness, or when each holdout is scored. The figure also promises fixed token cost and a token-cost Pareto front. A genuinely constant token cost gives the search no token tradeoff within that run.
+- **(g) Concrete fixes.** At the mutator near `(120, 860)`, show two named inputs, **archived renderer code** and **dev-train failure reports**, and explicitly call the mutator text-only. Label the feedback source **frozen Reader A** and the fitness node **dev-select participants**. Replace the route from `(1010, 1068)` to `(2280, 1068)` with a connector that lands on **post-search evaluation**, connected to sealed participants, held-out readers, and held-out tasks. If token cost varies only across budget arms, say so and place the Pareto comparison across arms. If one cost applies throughout, show error as the in-run objective.
+
+## 5. `reader-design-matrix.png` · Fix
+
+- **(a) Text collisions.** None visible. The longest row label ends before the first marker with adequate clearance.
+- **(b) Line and arrow crossings.** None. The dashed separator distinguishes one-reader and multi-reader conditions, though the grouping is only implicit.
+- **(c) Direction and endpoints.** There are no arrows. The ambiguous cell is the gray **crowd** dot in the last row. It shares a symbol with same-family model holdouts and relies on a legend parenthesis to explain a different role.
+- **(d) Readability at 850 px.** The model sizes and legend are roughly 10–11 px. The larger problem is decoding 77 marks whose statuses depend heavily on color and fill.
+- **(e) Caption material.** Put the full “at least one VLM family is held out” and “people score only after search” statements in the caption. Use short on-figure wording to explain what the crowd profile contributes in the legibility condition.
+- **(f) Five-second read.** **Yes** for which models set fitness. **No** for how to interpret the crowd cell or distinguish all evaluation roles without reading the full legend.
+- **(g) Concrete fixes.** Give the crowd profile cell at `(2240, 980)` a distinct symbol and the explicit legend label **profile only**. Shorten the other legend labels to **sets fitness**, **same-family holdout**, and **unseen family or people**. Use different shapes or fill treatments for the main statuses so the table remains usable in grayscale. Rename **Closed / frontier** to **Frontier VLM** if that column represents one reader.
+
+## 6. `transfer-decomposition-curve.png` · Fix
+
+- **(a) Text collisions.** None visible. The in-panel gain labels clear the curves but duplicate each other.
+- **(b) Line and arrow crossings.** No confusing crossings. At early generations the three traces nearly coincide, and the dashed people trace is hard to pick out until it diverges.
+- **(c) Direction and endpoints.** There are no arrows. The shaded interval ends at the held-out VLM curve and excludes the people curve. The legend does not make that reference explicit. It also labels the blue curve “reader A” in the two-family panel, where a reader could reasonably expect a score aggregated across the two source families.
+- **(d) Readability at 850 px.** Titles and axes hold up. The pale shading is more vulnerable than the text, especially in the right panel where the gap is narrow.
+- **(e) Caption material.** Move the H2/H3 references and the exact definition of gain into the caption. Keep an **Illustrative trajectories** label and identify the plotted gain on the axis.
+- **(f) Five-second read.** **Yes** for a widening gap on the left and a smaller gap on the right. It remains unclear whose gains define that gap and whether “share” means a fraction.
+- **(g) Concrete fixes.** Name the fill **source minus held-out VLM gain**, or change the plotted quantity if the intended claim is a fraction. Specify under each panel whether blue is Reader A or the fitness ensemble. State which held-out VLMs enter each green curve, especially if the pool changes between panels. Near generation 40, at `x≈1200` and `x≈2500`, add short brackets spanning the blue and solid green endpoints to make the two gaps legible without relying on tint.
+
+## 7. `profile-predicts-transfer.png` · Fix
+
+- **(a) Text collisions.** None. The actual collisions are between markers. Some same-family circles, other-family circles, and squares partially hide one another.
+- **(b) Line and arrow crossings.** The identity line appropriately passes through the point cloud. At overlapping markers, the line disappears for long enough that their position above or below it takes a second look.
+- **(c) Direction and endpoints.** There are no arrows. The dashed line reads as equality. The legend identifies reader groups, but the figure never says what one point represents.
+- **(d) Readability at 850 px.** Axis and legend text are readable. The overlap survives downscaling and can turn two points into one visible mark.
+- **(e) Caption material.** Put the H1 reference, meaning of one point, definition of gain, and eligibility rule for ratios with near-zero source gain in the caption. Keep the prominent **Illustrative** label.
+- **(f) Five-second read.** **Yes** for the illustrative diagonal and the ordering of the groups. The same ordering creates a scientific ambiguity. The picture could be driven mostly by reader group, even if profiles add little predictive value within groups.
+- **(g) Concrete fixes.** Reduce marker diameter and use visible outlines around the overlaps near `(550, 920)`, `(690, 805)`, `(830, 705)`, and `(1350, 440)`. Add a one-line definition of a point once the intended unit is confirmed. Label \(y=x\) directly near the upper-right end of the line. In the caption, state whether the planned prediction test compares against a baseline based on reader group alone.
+
+## 8. `co-adaptation-drift.png` · Redraw
+
+- **(a) Text collisions.** None. The open markers at round 0 sit directly over the filled markers of the same color, hiding the shared starting values.
+- **(b) Line and arrow crossings.** There are no arrows. Both dashed curves run through the shaded solid-line gap, so the reader has to infer which series define “drift gap.”
+- **(c) Direction and endpoints.** Round order is clear. The legend phrase “frozen-reader term” is the ambiguity. It can read as a measurement on a frozen reader or as a separate search condition that adds a frozen-reader term to fitness.
+- **(d) Readability at 850 px.** The legend is large enough to read, but its four similar labels force repeated lookups. The long x-axis label competes with the experimental comparison.
+- **(e) Caption material.** Move the H5 reference, the renderer-update/reader-update sequence, and the construction of the frozen-reader term into the caption. Keep **Illustrative trajectories** on the figure.
+- **(f) Five-second read.** **Yes** for the co-adapted pair rising while fresh readers fall. **No** for the second claim that adding the frozen-reader term narrows the gap. It is also possible to read the divergence as direct evidence of a private code, though the plotted outcome measures transfer loss.
+- **(g) Concrete fixes.** Split the current plot region at `(280, 280)`–`(1600, 960)` and the adjacent legend space into two matched panels titled **Standard fitness** and **Fitness with a frozen-reader term**. Use the same y-axis limits and two directly labeled traces per panel, **co-adapted pair** and **fresh readers on the same renders**. Mark the round-4 separation in both panels. The current illustration implies about **42 percentage points** and **12 percentage points**, respectively. A title such as **Does co-adaptation reduce transfer to fresh readers?** would describe the outcome the experiment measures.

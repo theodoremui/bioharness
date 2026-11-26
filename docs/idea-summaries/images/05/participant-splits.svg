@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="1100" height="500" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Split by participant before anything is built</title>
+<desc id="d">The 171 StaBLE participants with usable single-camera video are divided once, by person, into 85 development people, 43 selection people and the 43 sealed test people of the lab pilot. Normalization bounds come from development people only, and sealed people are scored once per loop.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker></defs>
+<rect x="0.75" y="0.75" width="1098.5" height="498.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="50.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">Split by person first; the sealed people are scored once per loop</text>
+<rect x="40.0" y="196.0" width="270.0" height="112.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="54.0" y="226.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">171 participants</text>
+<text x="54.0" y="254.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">2,968 single-camera task</text>
+<text x="54.0" y="277.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">examples (lab pilot)</text>
+<rect x="470.0" y="96.0" width="560.0" height="112.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="484.0" y="126.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Development: 85 people</text>
+<text x="484.0" y="154.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Scores and traces the proposer reads</text>
+<text x="484.0" y="182.6" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Normalization bounds fitted here only</text>
+<path d="M314.0,252.0 L410.0,252.0 L410.0,152.0 L464.0,152.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="470.0" y="226.0" width="560.0" height="112.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="484.0" y="256.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Selection: 43 people</text>
+<text x="484.0" y="284.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Defines single-edit success</text>
+<text x="484.0" y="312.6" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Picks each loop's final candidate</text>
+<path d="M314.0,252.0 L410.0,252.0 L410.0,282.0 L464.0,282.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="470.0" y="356.0" width="560.0" height="112.0" rx="12" fill="#f3f4f6" stroke="#64748b" stroke-width="1.5"/>
+<text x="484.0" y="386.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Sealed test: 43 people</text>
+<text x="484.0" y="414.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Never read by proposer or search</text>
+<text x="484.0" y="442.6" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Final candidate scored once per loop</text>
+<path d="M314.0,252.0 L410.0,252.0 L410.0,412.0 L464.0,412.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<path d="M1004.4,378.8 V376.1 a4.4,4.4 0 0 1 8.8,0 V378.8" fill="none" stroke="#334155" stroke-width="1.9800000000000002" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1001.6" y="378.8" width="14.3" height="9.9" rx="2.2" fill="#334155"/>
+</svg>

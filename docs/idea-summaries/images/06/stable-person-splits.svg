@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 520" width="1260" height="520" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Each person is dev, guard or test, and test exactly once</title>
+<desc id="d">StaBLE person-level folds. Grid of five outer folds by five blocks of about 34 people, stratified by fall-risk group and age. In each fold one block is sealed test people, the next block is guard people, and the other three blocks are dev people.</desc>
+<defs></defs>
+<rect x="0.75" y="0.75" width="1258.5" height="518.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="60.0" y="46.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">StaBLE folds, split by person</text>
+<text x="60.0" y="74.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">171 people in five blocks of about 34, stratified by fall-risk group and age; each block is sealed test once</text>
+<text x="238.0" y="124.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">block 1</text>
+<text x="384.0" y="124.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">block 2</text>
+<text x="530.0" y="124.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">block 3</text>
+<text x="676.0" y="124.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">block 4</text>
+<text x="822.0" y="124.0" font-size="15.3" font-weight="400" fill="#6b7280" text-anchor="middle">block 5</text>
+<text x="154.0" y="172.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">outer fold 1</text>
+<rect x="170.0" y="140.0" width="136.0" height="54.0" rx="8" fill="#e6f6f0" stroke="#1baf7a" stroke-width="2.2"/>
+<text x="238.0" y="173.0" font-size="17.7" font-weight="700" fill="#11805a" text-anchor="middle">sealed test</text>
+<rect x="316.0" y="140.0" width="136.0" height="54.0" rx="8" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="384.0" y="173.0" font-size="17.7" font-weight="600" fill="#334155" text-anchor="middle">guard</text>
+<rect x="462.0" y="140.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="530.0" y="173.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="608.0" y="140.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="676.0" y="173.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="754.0" y="140.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="822.0" y="173.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<text x="154.0" y="236.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">outer fold 2</text>
+<rect x="170.0" y="204.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="238.0" y="237.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="316.0" y="204.0" width="136.0" height="54.0" rx="8" fill="#e6f6f0" stroke="#1baf7a" stroke-width="2.2"/>
+<text x="384.0" y="237.0" font-size="17.7" font-weight="700" fill="#11805a" text-anchor="middle">sealed test</text>
+<rect x="462.0" y="204.0" width="136.0" height="54.0" rx="8" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="530.0" y="237.0" font-size="17.7" font-weight="600" fill="#334155" text-anchor="middle">guard</text>
+<rect x="608.0" y="204.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="676.0" y="237.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="754.0" y="204.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="822.0" y="237.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<text x="154.0" y="300.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">outer fold 3</text>
+<rect x="170.0" y="268.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="238.0" y="301.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="316.0" y="268.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="384.0" y="301.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="462.0" y="268.0" width="136.0" height="54.0" rx="8" fill="#e6f6f0" stroke="#1baf7a" stroke-width="2.2"/>
+<text x="530.0" y="301.0" font-size="17.7" font-weight="700" fill="#11805a" text-anchor="middle">sealed test</text>
+<rect x="608.0" y="268.0" width="136.0" height="54.0" rx="8" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="676.0" y="301.0" font-size="17.7" font-weight="600" fill="#334155" text-anchor="middle">guard</text>
+<rect x="754.0" y="268.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="822.0" y="301.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<text x="154.0" y="364.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">outer fold 4</text>
+<rect x="170.0" y="332.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="238.0" y="365.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="316.0" y="332.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="384.0" y="365.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="462.0" y="332.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="530.0" y="365.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="608.0" y="332.0" width="136.0" height="54.0" rx="8" fill="#e6f6f0" stroke="#1baf7a" stroke-width="2.2"/>
+<text x="676.0" y="365.0" font-size="17.7" font-weight="700" fill="#11805a" text-anchor="middle">sealed test</text>
+<rect x="754.0" y="332.0" width="136.0" height="54.0" rx="8" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="822.0" y="365.0" font-size="17.7" font-weight="600" fill="#334155" text-anchor="middle">guard</text>
+<text x="154.0" y="428.0" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="end">outer fold 5</text>
+<rect x="170.0" y="396.0" width="136.0" height="54.0" rx="8" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="238.0" y="429.0" font-size="17.7" font-weight="600" fill="#334155" text-anchor="middle">guard</text>
+<rect x="316.0" y="396.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="384.0" y="429.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="462.0" y="396.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="530.0" y="429.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="608.0" y="396.0" width="136.0" height="54.0" rx="8" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="676.0" y="429.0" font-size="17.7" font-weight="600" fill="#1c5cab" text-anchor="middle">dev</text>
+<rect x="754.0" y="396.0" width="136.0" height="54.0" rx="8" fill="#e6f6f0" stroke="#1baf7a" stroke-width="2.2"/>
+<text x="822.0" y="429.0" font-size="17.7" font-weight="700" fill="#11805a" text-anchor="middle">sealed test</text>
+<rect x="930.0" y="144.0" width="22.0" height="22.0" rx="5" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="964.0" y="160.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">dev</text>
+<text x="964.0" y="184.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">about 103 people per fold; the</text>
+<text x="964.0" y="205.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">loop scores and keeps edits</text>
+<rect x="930.0" y="240.4" width="22.0" height="22.0" rx="5" fill="#f3f4f6" stroke="#64748b" stroke-width="1.6"/>
+<text x="964.0" y="256.4" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">guard</text>
+<text x="964.0" y="280.4" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">about 34 per fold; scores every</text>
+<text x="964.0" y="301.6" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">candidate, never shown to the</text>
+<text x="964.0" y="322.8" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">loop</text>
+<rect x="930.0" y="358.0" width="22.0" height="22.0" rx="5" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="964.0" y="374.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">sealed test</text>
+<text x="964.0" y="398.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">about 34 per fold; measures the</text>
+<text x="964.0" y="419.2" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">forecast target</text>
+</svg>

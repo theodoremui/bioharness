@@ -1,0 +1,116 @@
+At 850 px wide, the figures are mostly free of literal collisions. The main reasons to hold them are labels that can make a reader misidentify what was preserved, what entered fitness, or what a bracket measures. Text sizes below are estimates from the supplied PNGs at the intended display width.
+
+### 1. `one-output-four-encodings` · **Fix**
+
+- **(a–c) Collisions and arrows.** The text clears its boxes. The arrows cross only the gutter and land cleanly on their rows. All four leave the same undifferentiated source box, so they conceal which rows use keypoints and which use the CoM path.
+- **(d–e) Size and copy.** The sample coordinate rows and `… 30,597 more rows` are around 10 px. The four encoding names and token costs deserve the space. Move the extra row count and unused `joint angles` detail to the caption.
+- **(f) Five seconds.** Yes for “four ways to show one trial.” The badges take longer to interpret because some describe a loss and others describe a feature. `Lossless up to rounding` reads as a claim about the entire source box.
+- **(g) Fix.** Tag the first row `Keypoint coordinates` and the three derived rows `CoM path`. Change the first badge to `Coordinates kept to shown precision`. Change `absolute size lost` to `Physical scale omitted` so the claim applies to the displayed thumbnail. For the stabilogram, use `Sway area visible · timing omitted` and keep the `1 cm` scale bar.
+
+### 2. `risk-decomposition` · **Fix**
+
+- **(a–c) Collisions and lines.** The blue bracket clears the labels, but its rule sits close to the subscript in \(P_\pi(e)\). Its endpoints align with \(R(e)\) and \(R_\pi(e)\). The figure is arrow-free, and the boundary ticks read clearly.
+- **(d–e) Size and copy.** The composition operator in \(R_{h\circ\pi}(e)\) is easy to lose at display size. The multi-line decoder descriptions also compete with the bar. Keep short labels under the ticks and move oracle estimation and recalibration fitting details into the caption.
+- **(f) Five seconds.** Yes for “four sources of error,” and the blue bracket groups resolution and calibration. The bar also reads like a quantitative stacked bar, so a reader could infer that resolution is the largest component.
+- **(g) Fix.** Add `Schematic widths` to the subtitle. Set the formulas with a legible composition operator and give the blue bracket a few more pixels of clearance under \(P_\pi(e)\). Use `Best raw-output decoder`, `Best render decoder`, `Recalibrated reader`, and `VLM reader` under the four risk ticks.
+
+### 3. `oracle-learning-curve` · **Fix**
+
+- **(a–c) Collisions and lines.** The red −0.049 annotation clears the 200-render marker, but only narrowly. Both dashed gap segments meet their intended curves cleanly. The plot is arrow-free. The weaker association is textual: `true gap 0.0087 cm²` sits inside the 5,000-render callout, which can make it look specific to that training size.
+- **(d–e) Size and copy.** The axes and values are readable at 850 px. The subtitle makes the reader process the simulation setup and subtraction rule in one line. Keep `Preliminary simulation` visible and move the 20-pixel setup to the caption.
+- **(f) Five seconds.** Yes for “the oracle improves as it gets more renders.” The sign reversal is visible, but its meaning takes longer because the title foregrounds beating Bayes and the subtraction rule sits in the subtitle.
+- **(g) Fix.** Title it `A weak oracle makes the estimated reader gap negative`. Move the red label a few pixels right of the first marker. Keep `Estimated gap +0.0079 cm²` beside the 5,000-render segment and put `True gap 0.0087 cm²` in the legend as the difference between the two horizontal references.
+
+### 4. `renderer-evolution-loop` · **Fix**
+
+- **(a–c) Collisions and arrows.** Box text clears the routes, and the elbow arrows do not cross. The dashed `saved renderers` arrow lands on the evaluation frame directly above `Sealed test people`, so it can read as feeding that card alone. Reader A’s two branches are distinguishable once the reader reaches the box subtitles.
+- **(d–e) Size and copy.** Most secondary text is about 11 px. Keep `dev-train` and `dev-select` visible because they explain the two branches. Move the canvas size, token cost, and examples of held-out readers and tasks to the caption.
+- **(f) Five seconds.** The main search cycle is visible, and the dashed enclosure signals evaluation after search. The two inputs to the mutator and the distinction between recorded participants and human readers take a second pass.
+- **(g) Fix.** Label the `Archive → Text-only mutator` edge `parent code`. Place `dev-train` and `dev-select` on the two Reader A branches. Land the archive’s dashed arrow on a shared `Post-search scoring` header above the three cards. Rename `Sealed test people` to `Sealed test participants` and identify human readers in the reader card.
+
+### 5. `reader-design-matrix` · **Fix**
+
+- **(a–c) Collisions and lines.** Symbols clear the row and column labels. The dashed divider and header rules cross neither text nor marks. The matrix is arrow-free.
+- **(d–e) Size and copy.** Column labels and legend terms are around 10–11 px but distinguishable. The subtitle makes a broad assurance about human scoring while the crowd diamond requires a more specific explanation. Keep the held-out-family claim visible and use the legend to explain the diamond.
+- **(f) Five seconds.** Yes for the blue fitness readers and the families left out. The exception is the diamond in the final row. `Crowd profile inside fitness` under `People → crowd` can imply that crowd readers scored renders during search.
+- **(g) Fix.** Relabel the diamond `Prior crowd profile used by predictor`. Rename the final row `Qwen 8B + InternVL + predicted legibility`. Give the diamond legend enough width to keep the explanation on one line.
+
+### 6. `transfer-decomposition-curve` · **Fix**
+
+- **(a–c) Collisions and lines.** The two panel gutters are clear. Each red bracket spans the blue and solid-green endpoints as intended. The plots are arrow-free. The repeated `gain over default plot` text hugs the top gridline without touching it.
+- **(d–e) Size and copy.** The axes and legend are readable, although the long legend makes readers scan across the full figure. Use one shared gain label. Reduce the subtitle to `Illustrative predictions for H2 and H3` and leave the full definition of the share to the caption.
+- **(f) Five seconds.** Yes for “the ensemble narrows the gap.” The title asks how much **survives**, so `share 0.55` invites a reader to interpret 55% as transferred. The bracket labels report the unshared fraction, while their heights show absolute gain differences.
+- **(g) Fix.** Change the right-edge labels to `55% unshared` and `11% unshared`. Identify reader A’s gain as the denominator in the caption. A title such as `Ensemble fitness narrows the gap on held-out readers` would agree with both the shading and the annotations.
+
+### 7. `profile-predicts-transfer` · **Ship**
+
+- **(a–c) Collisions and lines.** No text collides. The dashed parity line passes behind the points without obscuring their symbols. A few markers nearly touch in the central green cluster and upper gray cluster, but the categories remain distinguishable. The plot is arrow-free.
+- **(d–e) Size and copy.** The axes, parity label, and legend are readable. The subtitle can shorten to `Illustrative prediction for H1`. Use `held-out reader` in the axes and leave the definition of reader B to the caption.
+- **(f) Five seconds.** Yes for “predicted and observed gains roughly agree.” Negative gains are visible, though the lower-left quadrant takes longer to notice. The distinct ranges occupied by the three groups can also suggest a ranking that the illustrative figure does not need to establish.
+- **(g) Fix.** If editing, reduce marker diameter slightly in the plotted field while keeping the legend symbols large. Preserve the zero guides and negative ticks. Keep the illustrative status directly under the title.
+
+### 8. `co-adaptation-drift` · **Fix**
+
+- **(a–c) Collisions and lines.** The markers meet the left axis as expected, with clearance from the tick values. The brackets line up with both round-4 endpoints and clear adjacent labels. The plots are arrow-free.
+- **(d–e) Size and copy.** The curves and values are readable. The y measure is buried at the end of the subtitle. Move it to a shared label, `Accuracy on sealed test participants`, and shorten the subtitle to `Illustrative prediction for H5`. The legend can drop `labelled at round 4` once that wording sits with the brackets.
+- **(f) Five seconds.** Yes. Fresh-reader accuracy falls under standard fitness and rises with the frozen-reader term. The bare `0.42` and `0.12` take longer to decode, and both panels already have a gap at round 0.
+- **(g) Fix.** Label the brackets `42 pp at round 4` and `12 pp at round 4`. Name the shading `Accuracy gap` so readers can distinguish the gap at each round from the amount it grows after round 0. Give fresh readers a distinct marker shape so the two series also separate in grayscale.
+tokens used
+58,565
+At 850 px wide, the figures are mostly free of literal collisions. The main reasons to hold them are labels that can make a reader misidentify what was preserved, what entered fitness, or what a bracket measures. Text sizes below are estimates from the supplied PNGs at the intended display width.
+
+### 1. `one-output-four-encodings` · **Fix**
+
+- **(a–c) Collisions and arrows.** The text clears its boxes. The arrows cross only the gutter and land cleanly on their rows. All four leave the same undifferentiated source box, so they conceal which rows use keypoints and which use the CoM path.
+- **(d–e) Size and copy.** The sample coordinate rows and `… 30,597 more rows` are around 10 px. The four encoding names and token costs deserve the space. Move the extra row count and unused `joint angles` detail to the caption.
+- **(f) Five seconds.** Yes for “four ways to show one trial.” The badges take longer to interpret because some describe a loss and others describe a feature. `Lossless up to rounding` reads as a claim about the entire source box.
+- **(g) Fix.** Tag the first row `Keypoint coordinates` and the three derived rows `CoM path`. Change the first badge to `Coordinates kept to shown precision`. Change `absolute size lost` to `Physical scale omitted` so the claim applies to the displayed thumbnail. For the stabilogram, use `Sway area visible · timing omitted` and keep the `1 cm` scale bar.
+
+### 2. `risk-decomposition` · **Fix**
+
+- **(a–c) Collisions and lines.** The blue bracket clears the labels, but its rule sits close to the subscript in \(P_\pi(e)\). Its endpoints align with \(R(e)\) and \(R_\pi(e)\). The figure is arrow-free, and the boundary ticks read clearly.
+- **(d–e) Size and copy.** The composition operator in \(R_{h\circ\pi}(e)\) is easy to lose at display size. The multi-line decoder descriptions also compete with the bar. Keep short labels under the ticks and move oracle estimation and recalibration fitting details into the caption.
+- **(f) Five seconds.** Yes for “four sources of error,” and the blue bracket groups resolution and calibration. The bar also reads like a quantitative stacked bar, so a reader could infer that resolution is the largest component.
+- **(g) Fix.** Add `Schematic widths` to the subtitle. Set the formulas with a legible composition operator and give the blue bracket a few more pixels of clearance under \(P_\pi(e)\). Use `Best raw-output decoder`, `Best render decoder`, `Recalibrated reader`, and `VLM reader` under the four risk ticks.
+
+### 3. `oracle-learning-curve` · **Fix**
+
+- **(a–c) Collisions and lines.** The red −0.049 annotation clears the 200-render marker, but only narrowly. Both dashed gap segments meet their intended curves cleanly. The plot is arrow-free. The weaker association is textual: `true gap 0.0087 cm²` sits inside the 5,000-render callout, which can make it look specific to that training size.
+- **(d–e) Size and copy.** The axes and values are readable at 850 px. The subtitle makes the reader process the simulation setup and subtraction rule in one line. Keep `Preliminary simulation` visible and move the 20-pixel setup to the caption.
+- **(f) Five seconds.** Yes for “the oracle improves as it gets more renders.” The sign reversal is visible, but its meaning takes longer because the title foregrounds beating Bayes and the subtraction rule sits in the subtitle.
+- **(g) Fix.** Title it `A weak oracle makes the estimated reader gap negative`. Move the red label a few pixels right of the first marker. Keep `Estimated gap +0.0079 cm²` beside the 5,000-render segment and put `True gap 0.0087 cm²` in the legend as the difference between the two horizontal references.
+
+### 4. `renderer-evolution-loop` · **Fix**
+
+- **(a–c) Collisions and arrows.** Box text clears the routes, and the elbow arrows do not cross. The dashed `saved renderers` arrow lands on the evaluation frame directly above `Sealed test people`, so it can read as feeding that card alone. Reader A’s two branches are distinguishable once the reader reaches the box subtitles.
+- **(d–e) Size and copy.** Most secondary text is about 11 px. Keep `dev-train` and `dev-select` visible because they explain the two branches. Move the canvas size, token cost, and examples of held-out readers and tasks to the caption.
+- **(f) Five seconds.** The main search cycle is visible, and the dashed enclosure signals evaluation after search. The two inputs to the mutator and the distinction between recorded participants and human readers take a second pass.
+- **(g) Fix.** Label the `Archive → Text-only mutator` edge `parent code`. Place `dev-train` and `dev-select` on the two Reader A branches. Land the archive’s dashed arrow on a shared `Post-search scoring` header above the three cards. Rename `Sealed test people` to `Sealed test participants` and identify human readers in the reader card.
+
+### 5. `reader-design-matrix` · **Fix**
+
+- **(a–c) Collisions and lines.** Symbols clear the row and column labels. The dashed divider and header rules cross neither text nor marks. The matrix is arrow-free.
+- **(d–e) Size and copy.** Column labels and legend terms are around 10–11 px but distinguishable. The subtitle makes a broad assurance about human scoring while the crowd diamond requires a more specific explanation. Keep the held-out-family claim visible and use the legend to explain the diamond.
+- **(f) Five seconds.** Yes for the blue fitness readers and the families left out. The exception is the diamond in the final row. `Crowd profile inside fitness` under `People → crowd` can imply that crowd readers scored renders during search.
+- **(g) Fix.** Relabel the diamond `Prior crowd profile used by predictor`. Rename the final row `Qwen 8B + InternVL + predicted legibility`. Give the diamond legend enough width to keep the explanation on one line.
+
+### 6. `transfer-decomposition-curve` · **Fix**
+
+- **(a–c) Collisions and lines.** The two panel gutters are clear. Each red bracket spans the blue and solid-green endpoints as intended. The plots are arrow-free. The repeated `gain over default plot` text hugs the top gridline without touching it.
+- **(d–e) Size and copy.** The axes and legend are readable, although the long legend makes readers scan across the full figure. Use one shared gain label. Reduce the subtitle to `Illustrative predictions for H2 and H3` and leave the full definition of the share to the caption.
+- **(f) Five seconds.** Yes for “the ensemble narrows the gap.” The title asks how much **survives**, so `share 0.55` invites a reader to interpret 55% as transferred. The bracket labels report the unshared fraction, while their heights show absolute gain differences.
+- **(g) Fix.** Change the right-edge labels to `55% unshared` and `11% unshared`. Identify reader A’s gain as the denominator in the caption. A title such as `Ensemble fitness narrows the gap on held-out readers` would agree with both the shading and the annotations.
+
+### 7. `profile-predicts-transfer` · **Ship**
+
+- **(a–c) Collisions and lines.** No text collides. The dashed parity line passes behind the points without obscuring their symbols. A few markers nearly touch in the central green cluster and upper gray cluster, but the categories remain distinguishable. The plot is arrow-free.
+- **(d–e) Size and copy.** The axes, parity label, and legend are readable. The subtitle can shorten to `Illustrative prediction for H1`. Use `held-out reader` in the axes and leave the definition of reader B to the caption.
+- **(f) Five seconds.** Yes for “predicted and observed gains roughly agree.” Negative gains are visible, though the lower-left quadrant takes longer to notice. The distinct ranges occupied by the three groups can also suggest a ranking that the illustrative figure does not need to establish.
+- **(g) Fix.** If editing, reduce marker diameter slightly in the plotted field while keeping the legend symbols large. Preserve the zero guides and negative ticks. Keep the illustrative status directly under the title.
+
+### 8. `co-adaptation-drift` · **Fix**
+
+- **(a–c) Collisions and lines.** The markers meet the left axis as expected, with clearance from the tick values. The brackets line up with both round-4 endpoints and clear adjacent labels. The plots are arrow-free.
+- **(d–e) Size and copy.** The curves and values are readable. The y measure is buried at the end of the subtitle. Move it to a shared label, `Accuracy on sealed test participants`, and shorten the subtitle to `Illustrative prediction for H5`. The legend can drop `labelled at round 4` once that wording sits with the brackets.
+- **(f) Five seconds.** Yes. Fresh-reader accuracy falls under standard fitness and rises with the frozen-reader term. The bare `0.42` and `0.12` take longer to decode, and both panels already have a gap at round 0.
+- **(g) Fix.** Label the brackets `42 pp at round 4` and `12 pp at round 4`. Name the shading `Accuracy gap` so readers can distinguish the gap at each round from the amount it grows after round 0. Give fresh readers a distinct marker shape so the two series also separate in grayscale.

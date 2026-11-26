@@ -1,0 +1,55 @@
+OpenAI Codex v0.171.0
+--------
+workdir: /Users/theodoremui/dev/bioharness
+model: gpt-6.2-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: medium
+reasoning summaries: none
+session id: 01a214e4-a19d-7d81-9d18-43e05708cb74
+--------
+user
+You are an adversarial reviewer of scientific figures for a research proposal. The attached PNGs are rendered at 2x from SVG and will be displayed about 850 px wide. Try hard to find reasons each figure should not ship. For EACH image, by file order, report: (a) overlapping or colliding text, (b) lines or arrows that cross text or other arrows confusingly, (c) arrows whose direction or endpoints are ambiguous, (d) text too small to read at display size, (e) excess text that belongs in a caption, (f) the one main point and whether a reader gets it in 5 seconds, (g) concrete fixes with coordinates or element names. Then give a verdict per figure: ship / fix / redraw. Focus: Redrawn README overview figure (round 2). Single point: four places where a self-improving tool-using agent can go wrong, one per proposal: 05 the editable harness code, 07 the tool-output encoding the VLM reads, 08 the referral or hypothesis given to the agent, 06 the edit acceptance rule. Loop: scores on dev people, improver proposes an edit, candidate is scored, acceptance rule keeps or rejects, accepted edits change the code. Round 1 asked for a heading, uniform badges inside targets, input and output outside the editable frame, and an explicit scoring step.. Do not run commands or modify files.
+
+codex
+## `four-interfaces.png` — Fix
+
+**(a) Text collisions.** None. All labels clear their box edges and badges. The 05 badge is inside the dashed frame, but it sits far enough from “Editable harness code” that it can read as a floating marker above the green box.
+
+**(b) Line and arrow crossings.** No arrows cross text or each other. Three arrows cross the dashed frame as expected: video enters, the referral enters, and the balance score leaves. The orange return arrow stops just short of the frame, making that connection easier to miss.
+
+**(c) Direction and endpoints.** The arrowheads establish the clockwise loop. The orange arrow points at the frame’s lower edge directly beneath **Tools**, so it can imply that accepted edits change the tools specifically. The lower row also leaves readers to infer the difference between **Scores on dev people** and **Candidate is scored**. Labeling the first as scores from the current harness would clarify what the improver sees and what gets evaluated after the edit.
+
+**(d) Readability at 850 px.** Box titles are roughly 13 px and readable. The gray subtitles and orange return label are roughly 10–11 px. That is marginal for details that carry meaning, especially “Text, plot or overlay” and “Reported by group.” Aim for about 12 px at display size for any subtitle that stays.
+
+**(e) Caption material.** Delete “Input,” “Output,” and “Given to the agent.” The arrows already show those roles. Replace “Reads outputs, reports” with “Outputs balance score” only if the outgoing connection needs a label. Keep the encoding examples and group reporting in the figure if readers need them to distinguish the proposals or follow the loop.
+
+**(f) Five-second read.** The main point is that self-improvement can go wrong at four interfaces: editable harness code (05), tool-output encoding (07), the referral or hypothesis (08), and the edit acceptance rule (06). In five seconds, I get that there are four highlighted places, but I have to look again to bind 05 to the whole editable frame. The heading, external input and output, and explicit candidate-scoring step address the other round 1 requests.
+
+**(g) Concrete fixes.** Coordinates refer to the 2,480 × 1,180 PNG, measured from the top left.
+
+- Move badge **05** from center `(1008, 424)` to around `(943, 424)`, beside “Editable harness code.” Keep its size and position inside the frame.
+- Route the orange arrow to the **Editable harness code** header area, clear of **Tools**, and label the branch “Accepted edits.” The current tip near `(580, 768)` reads as a return to Tools.
+- Rename the lower-right box **Current harness scores**, with “Dev participants, by group” beneath it. Use **Score candidate** with “On the same dev participants” if both steps use the same cohort. This makes the two evaluations distinguishable on a quick scan.
+tokens used
+27,226
+## `four-interfaces.png` — Fix
+
+**(a) Text collisions.** None. All labels clear their box edges and badges. The 05 badge is inside the dashed frame, but it sits far enough from “Editable harness code” that it can read as a floating marker above the green box.
+
+**(b) Line and arrow crossings.** No arrows cross text or each other. Three arrows cross the dashed frame as expected: video enters, the referral enters, and the balance score leaves. The orange return arrow stops just short of the frame, making that connection easier to miss.
+
+**(c) Direction and endpoints.** The arrowheads establish the clockwise loop. The orange arrow points at the frame’s lower edge directly beneath **Tools**, so it can imply that accepted edits change the tools specifically. The lower row also leaves readers to infer the difference between **Scores on dev people** and **Candidate is scored**. Labeling the first as scores from the current harness would clarify what the improver sees and what gets evaluated after the edit.
+
+**(d) Readability at 850 px.** Box titles are roughly 13 px and readable. The gray subtitles and orange return label are roughly 10–11 px. That is marginal for details that carry meaning, especially “Text, plot or overlay” and “Reported by group.” Aim for about 12 px at display size for any subtitle that stays.
+
+**(e) Caption material.** Delete “Input,” “Output,” and “Given to the agent.” The arrows already show those roles. Replace “Reads outputs, reports” with “Outputs balance score” only if the outgoing connection needs a label. Keep the encoding examples and group reporting in the figure if readers need them to distinguish the proposals or follow the loop.
+
+**(f) Five-second read.** The main point is that self-improvement can go wrong at four interfaces: editable harness code (05), tool-output encoding (07), the referral or hypothesis (08), and the edit acceptance rule (06). In five seconds, I get that there are four highlighted places, but I have to look again to bind 05 to the whole editable frame. The heading, external input and output, and explicit candidate-scoring step address the other round 1 requests.
+
+**(g) Concrete fixes.** Coordinates refer to the 2,480 × 1,180 PNG, measured from the top left.
+
+- Move badge **05** from center `(1008, 424)` to around `(943, 424)`, beside “Editable harness code.” Keep its size and position inside the frame.
+- Route the orange arrow to the **Editable harness code** header area, clear of **Tools**, and label the branch “Accepted edits.” The current tip near `(580, 768)` reads as a return to Tools.
+- Rename the lower-right box **Current harness scores**, with “Dev participants, by group” beneath it. Use **Score candidate** with “On the same dev participants” if both steps use the same cohort. This makes the two evaluations distinguishable on a quick scan.

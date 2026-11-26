@@ -1,0 +1,116 @@
+I’d ship 1 and 7, fix 2–5, and redraw 6 and 8. Coordinates are approximate, measured from the top-left of each supplied PNG. Text sizes are estimates at 850 px display width.
+
+### 1. `same-outputs-different-futures` — Ship
+
+- **(a) Text collisions** None. **(b) Crossings** None. The curves meet at the shared start as intended. **(c) Arrow clarity** Both arrows clearly point into “Same outputs.” The gap bracket floats slightly inside the curve endpoints, making its comparison budget less precise than it could be.
+- **(d) Readability** The axis labels and gap annotation are about 10–11 px. They are secondary to the larger harness labels and curves. **(e) Caption material** The 400-line count and implementation details can move to the caption. Keep “illustrative” and “hypothesized” visible in the figure.
+- **(f) Five-second read** Yes. Two harnesses start with identical scores and could improve at different rates under the same optimizer and budget.
+- **(g) Concrete fixes** Move the gap bracket from x≈2262 to the shared curve endpoint x≈2300 and align its caps with both endpoints. Shorten the nearby text to “Hypothesized gap.”
+
+### 2. `pipeline-two-forms` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** None. The warning stems and dashed trace arrows stay clear of text. **(c) Arrow clarity** The warning stems read as associations. The dashed arrow from B’s score box makes it unclear whether the optimizer also receives score error or receives the trace alone. The shared input is explicit in A’s heading and B’s first box, but no common input label ties them together.
+- **(d) Readability** The warning badges above “Gap fill, filter” and “Reach window” are around 9 px. The lower-stage descriptions are around 10–11 px. **(e) Caption material** Move the literal threshold sequence and most of the trace examples. Keep one named parameter with its units visible.
+- **(f) Five-second read** Partial. One function versus a staged pipeline is immediate. The reader needs longer to connect the shared keypoints, identical scores, and extra optimizer feedback.
+- **(g) Concrete fixes** Shorten A’s code block at x≈80–1880 and use the recovered space for a shared “Same cached keypoints” label. At y≈912, label B’s feedback explicitly as “Score error + stage trace.” Enlarge the two warning badges and keep “Warn only” in both.
+
+### 3. `bpt-equivalence-gate` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The seed-to-gate chain and pass/fail branches are clear. The ambiguity is inside the factor group. M, O, P, and T show one example each, while N lists three levels. A quick reader could take the panel as a fixed recipe for four factors and a choice for naming alone.
+- **(d) Readability** Factor descriptions and gate criteria are around 10–11 px. **(e) Caption material** “One base, as written” and “Logged, discarded” can move to the caption. Keep equal token count, tested score agreement, and tool-call agreement in the figure.
+- **(f) Five-second read** Partial. Rewrite, match length, test, and admit are clear. Choosing one level independently for each of five factors takes a second read.
+- **(g) Concrete fixes** At the top of the dashed group, x≈524–1248, write “Choose one level for each of five factors.” Give all five rows the same treatment. Either show each factor’s available levels or show only the factor names and put the levels in the caption. In the gate, use two short lines, “Scores match on cached and fuzzed inputs” and “Tool calls match.”
+
+### 4. `single-edit-profile` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The left bracket distributes proposals across three sessions, but it leaves the return to the same parent implicit. The right arrow appears to derive all four metrics from the three colored outcomes. The grid shows enough to count valid edits and successes. It does not show the gain magnitudes needed for **g** or distinguish regressions within the white class for **r**.
+- **(d) Readability** The session labels, legend, and metric descriptions shrink to around 9–10 px. **(e) Caption material** Move “Base b, cell c” and the list of invalidity causes. Use the space for the profile labels.
+- **(f) Five-second read** Partial. The 3 × 10 pattern is easy to see. The reader has to work to establish that all edits start from the same code and what feeds the profile.
+- **(g) Concrete fixes** Above the grid at x≈1220, use “3 sessions × 10 edits, all from the same parent” and retain “illustrative.” Above the arrow into “Profile” at x≈2014, add “Outcomes + signed gains.” In the caption, define each metric’s denominator and which edits count as regressions.
+
+### 5. `refactor-first-break-even` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** The two curves intersect intentionally, and the B* guide clears the text. **(c) Endpoint clarity** The flat blue segment sits at y≈888 while the horizontal axis sits at y≈900. That visible offset weakens the claim of exactly zero gain during refactoring.
+- **(d) Readability** The curve labels and B* hold up. The axis descriptions are around 10–11 px. **(e) Caption material** Put the accept-if-better rule and the assumptions behind the illustrative curves in the caption. “Break-even budget” beside the dot duplicates the B* label if the axis label spells it out.
+- **(f) Five-second read** Yes. Refactoring spends budget upfront, then overtakes search alone.
+- **(g) Concrete fixes** Make both curves start at the plotted origin and align the blue flat segment with the zero-gain axis from x≈260 to 550. Extend the dashed guide from the intersection at x≈693 all the way to the axis and label it “B* · break-even budget.”
+
+### 6. `parent-selection-at-birth` — Redraw
+
+- **(a) Text collisions** None. **(b) Crossings** The blue branching connector clears the tree and rule boxes. **(c) Arrow clarity** The connector clearly points from the newborn to three rules. “Parent score (DGM)” can nevertheless read as the score of node **b**, the newborn’s parent. The shared “Newborn estimate” header also invites comparison across three panels even though the top panel measures a dev score and the lower two show densities on a clade-success scale.
+- **(d) Readability** The tree annotation, scale labels, and rule descriptions are around 10 px. **(e) Caption material** The sibling branch with **a**, **c**, and **d** adds little to the one-count premise. A single lineage ending in the newborn is enough.
+- **(f) Five-second read** No. The reader sees a tree and three plots. The intended distinction between a score, a broad one-count density, and a hypothesized concentrated prior takes longer. The different peak locations can also draw attention away from concentration.
+- **(g) Concrete fixes** Replace the tree at x≈80–860 with a short lineage and “New node · one evaluation · zero descendants.” Label the top rule “New node’s current dev score (DGM)” and keep its score strip distinct. Redraw the lower two panels at x≈1920–2520 on aligned 0–1 axes under “Clade success rate,” with both curves identified as illustrative densities. Label the structural prior’s concentration as hypothesized.
+
+### 7. `participant-splits` — Ship
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The trunk and three arrowheads clearly show one participant pool splitting into three groups. The lock is visually separate from the text.
+- **(d) Readability** The counts and split labels hold up. Supporting copy is around 12–13 px. **(e) Caption material** The 2,968 single-camera examples and “lab pilot” can move to the caption if space is needed. The three group roles belong in the figure.
+- **(f) Five-second read** Yes. Participants split 85/43/43, with the sealed set reserved for scoring the final candidate once per loop.
+- **(g) Concrete fixes** At x≈80, y≈70, change the headline to “Split by participant, then score each loop’s final candidate on the sealed set.” This names what gets scored and avoids the awkward phrase “sealed people.”
+
+### 8. `two-tier-design` — Redraw
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The left arrow starts in blank space beside the matrix around x≈820, y≈600. Its height makes it look associated with a middle row even though “All eight cells” describes the entire matrix. The “Cells 1 and 8 only” box has no visual link to those rows. On the right, both branches reach the comparison box, but their roles as predictors and measured outcome take effort to decode.
+- **(d) Readability** Matrix headers, the legend, and several box details are around 9–10 px. The reader needs those labels to decode the design. **(e) Caption material** Move the naming and control arm details and their edit subtotal to the caption. Keep the core Tier 1 design and the Tier 2 budgets visible.
+- **(f) Five-second read** Partial. Profiling followed by loop validation is clear. The eight-cell design and the comparison of two matched-budget predictors against loop outcomes are hard to reconstruct quickly.
+- **(g) Concrete fixes** Replace the side-by-side layout divided at x≈1460 with two full-width bands. In Tier 1, put “8 cells × 20 bases × 3 proposers × 30 edits” directly above the MOPT matrix and attach any cells 1 and 8 annotation to those rows. In Tier 2, start with “96 configurations,” then use two explicitly labeled branches, “Predictors at matched budget” and “Sealed-test gain from 10 loops per configuration.” Bring both into “Compare each predictor with sealed-test gain within base.”
+tokens used
+54,305
+I’d ship 1 and 7, fix 2–5, and redraw 6 and 8. Coordinates are approximate, measured from the top-left of each supplied PNG. Text sizes are estimates at 850 px display width.
+
+### 1. `same-outputs-different-futures` — Ship
+
+- **(a) Text collisions** None. **(b) Crossings** None. The curves meet at the shared start as intended. **(c) Arrow clarity** Both arrows clearly point into “Same outputs.” The gap bracket floats slightly inside the curve endpoints, making its comparison budget less precise than it could be.
+- **(d) Readability** The axis labels and gap annotation are about 10–11 px. They are secondary to the larger harness labels and curves. **(e) Caption material** The 400-line count and implementation details can move to the caption. Keep “illustrative” and “hypothesized” visible in the figure.
+- **(f) Five-second read** Yes. Two harnesses start with identical scores and could improve at different rates under the same optimizer and budget.
+- **(g) Concrete fixes** Move the gap bracket from x≈2262 to the shared curve endpoint x≈2300 and align its caps with both endpoints. Shorten the nearby text to “Hypothesized gap.”
+
+### 2. `pipeline-two-forms` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** None. The warning stems and dashed trace arrows stay clear of text. **(c) Arrow clarity** The warning stems read as associations. The dashed arrow from B’s score box makes it unclear whether the optimizer also receives score error or receives the trace alone. The shared input is explicit in A’s heading and B’s first box, but no common input label ties them together.
+- **(d) Readability** The warning badges above “Gap fill, filter” and “Reach window” are around 9 px. The lower-stage descriptions are around 10–11 px. **(e) Caption material** Move the literal threshold sequence and most of the trace examples. Keep one named parameter with its units visible.
+- **(f) Five-second read** Partial. One function versus a staged pipeline is immediate. The reader needs longer to connect the shared keypoints, identical scores, and extra optimizer feedback.
+- **(g) Concrete fixes** Shorten A’s code block at x≈80–1880 and use the recovered space for a shared “Same cached keypoints” label. At y≈912, label B’s feedback explicitly as “Score error + stage trace.” Enlarge the two warning badges and keep “Warn only” in both.
+
+### 3. `bpt-equivalence-gate` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The seed-to-gate chain and pass/fail branches are clear. The ambiguity is inside the factor group. M, O, P, and T show one example each, while N lists three levels. A quick reader could take the panel as a fixed recipe for four factors and a choice for naming alone.
+- **(d) Readability** Factor descriptions and gate criteria are around 10–11 px. **(e) Caption material** “One base, as written” and “Logged, discarded” can move to the caption. Keep equal token count, tested score agreement, and tool-call agreement in the figure.
+- **(f) Five-second read** Partial. Rewrite, match length, test, and admit are clear. Choosing one level independently for each of five factors takes a second read.
+- **(g) Concrete fixes** At the top of the dashed group, x≈524–1248, write “Choose one level for each of five factors.” Give all five rows the same treatment. Either show each factor’s available levels or show only the factor names and put the levels in the caption. In the gate, use two short lines, “Scores match on cached and fuzzed inputs” and “Tool calls match.”
+
+### 4. `single-edit-profile` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The left bracket distributes proposals across three sessions, but it leaves the return to the same parent implicit. The right arrow appears to derive all four metrics from the three colored outcomes. The grid shows enough to count valid edits and successes. It does not show the gain magnitudes needed for **g** or distinguish regressions within the white class for **r**.
+- **(d) Readability** The session labels, legend, and metric descriptions shrink to around 9–10 px. **(e) Caption material** Move “Base b, cell c” and the list of invalidity causes. Use the space for the profile labels.
+- **(f) Five-second read** Partial. The 3 × 10 pattern is easy to see. The reader has to work to establish that all edits start from the same code and what feeds the profile.
+- **(g) Concrete fixes** Above the grid at x≈1220, use “3 sessions × 10 edits, all from the same parent” and retain “illustrative.” Above the arrow into “Profile” at x≈2014, add “Outcomes + signed gains.” In the caption, define each metric’s denominator and which edits count as regressions.
+
+### 5. `refactor-first-break-even` — Fix
+
+- **(a) Text collisions** None. **(b) Crossings** The two curves intersect intentionally, and the B* guide clears the text. **(c) Endpoint clarity** The flat blue segment sits at y≈888 while the horizontal axis sits at y≈900. That visible offset weakens the claim of exactly zero gain during refactoring.
+- **(d) Readability** The curve labels and B* hold up. The axis descriptions are around 10–11 px. **(e) Caption material** Put the accept-if-better rule and the assumptions behind the illustrative curves in the caption. “Break-even budget” beside the dot duplicates the B* label if the axis label spells it out.
+- **(f) Five-second read** Yes. Refactoring spends budget upfront, then overtakes search alone.
+- **(g) Concrete fixes** Make both curves start at the plotted origin and align the blue flat segment with the zero-gain axis from x≈260 to 550. Extend the dashed guide from the intersection at x≈693 all the way to the axis and label it “B* · break-even budget.”
+
+### 6. `parent-selection-at-birth` — Redraw
+
+- **(a) Text collisions** None. **(b) Crossings** The blue branching connector clears the tree and rule boxes. **(c) Arrow clarity** The connector clearly points from the newborn to three rules. “Parent score (DGM)” can nevertheless read as the score of node **b**, the newborn’s parent. The shared “Newborn estimate” header also invites comparison across three panels even though the top panel measures a dev score and the lower two show densities on a clade-success scale.
+- **(d) Readability** The tree annotation, scale labels, and rule descriptions are around 10 px. **(e) Caption material** The sibling branch with **a**, **c**, and **d** adds little to the one-count premise. A single lineage ending in the newborn is enough.
+- **(f) Five-second read** No. The reader sees a tree and three plots. The intended distinction between a score, a broad one-count density, and a hypothesized concentrated prior takes longer. The different peak locations can also draw attention away from concentration.
+- **(g) Concrete fixes** Replace the tree at x≈80–860 with a short lineage and “New node · one evaluation · zero descendants.” Label the top rule “New node’s current dev score (DGM)” and keep its score strip distinct. Redraw the lower two panels at x≈1920–2520 on aligned 0–1 axes under “Clade success rate,” with both curves identified as illustrative densities. Label the structural prior’s concentration as hypothesized.
+
+### 7. `participant-splits` — Ship
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The trunk and three arrowheads clearly show one participant pool splitting into three groups. The lock is visually separate from the text.
+- **(d) Readability** The counts and split labels hold up. Supporting copy is around 12–13 px. **(e) Caption material** The 2,968 single-camera examples and “lab pilot” can move to the caption if space is needed. The three group roles belong in the figure.
+- **(f) Five-second read** Yes. Participants split 85/43/43, with the sealed set reserved for scoring the final candidate once per loop.
+- **(g) Concrete fixes** At x≈80, y≈70, change the headline to “Split by participant, then score each loop’s final candidate on the sealed set.” This names what gets scored and avoids the awkward phrase “sealed people.”
+
+### 8. `two-tier-design` — Redraw
+
+- **(a) Text collisions** None. **(b) Crossings** None. **(c) Arrow clarity** The left arrow starts in blank space beside the matrix around x≈820, y≈600. Its height makes it look associated with a middle row even though “All eight cells” describes the entire matrix. The “Cells 1 and 8 only” box has no visual link to those rows. On the right, both branches reach the comparison box, but their roles as predictors and measured outcome take effort to decode.
+- **(d) Readability** Matrix headers, the legend, and several box details are around 9–10 px. The reader needs those labels to decode the design. **(e) Caption material** Move the naming and control arm details and their edit subtotal to the caption. Keep the core Tier 1 design and the Tier 2 budgets visible.
+- **(f) Five-second read** Partial. Profiling followed by loop validation is clear. The eight-cell design and the comparison of two matched-budget predictors against loop outcomes are hard to reconstruct quickly.
+- **(g) Concrete fixes** Replace the side-by-side layout divided at x≈1460 with two full-width bands. In Tier 1, put “8 cells × 20 bases × 3 proposers × 30 edits” directly above the MOPT matrix and attach any cells 1 and 8 annotation to those rows. In Tier 2, start with “96 configurations,” then use two explicitly labeled branches, “Predictors at matched budget” and “Sealed-test gain from 10 loops per configuration.” Bring both into “Compare each predictor with sealed-test gain within base.”

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 560" width="1360" height="560" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Behavior-preserving transformations pass an equivalence gate</title>
+<desc id="d">A base harness is rewritten with one level of each of five structural factors, matched to a common token count, and admitted to the study only if differential testing finds identical task scores and identical tool calls on cached development and selection inputs and on fuzzed inputs.</desc>
+<defs><marker id="m64748b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="m1baf7a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1baf7a"/></marker></defs>
+<rect x="0.75" y="0.75" width="1358.5" height="558.5" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="40.0" y="50.0" font-size="20.1" font-weight="700" fill="#1f2328" text-anchor="start">Rewrite the structure, then test that the behavior did not change</text>
+<rect x="40.0" y="252.0" width="180.0" height="104.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="54.0" y="282.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Base harness</text>
+<text x="54.0" y="310.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">As written</text>
+<rect x="262.0" y="84.0" width="362.0" height="440.0" rx="14" fill="#fbfcfd" stroke="#64748b" stroke-width="1.5" stroke-dasharray="7 6"/>
+<text x="280.0" y="116.0" font-size="16.5" font-weight="700" fill="#4b5563" text-anchor="start">Rewrite using one level per factor</text>
+<rect x="280.0" y="134.0" width="326.0" height="62.0" rx="10" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="304.0" y="173.0" font-size="21.2" font-weight="700" fill="#1c5cab" text-anchor="middle">M</text>
+<text x="330.0" y="161.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Modularity</text>
+<text x="330.0" y="184.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">one function or typed stages</text>
+<rect x="280.0" y="210.0" width="326.0" height="62.0" rx="10" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="304.0" y="249.0" font-size="21.2" font-weight="700" fill="#1c5cab" text-anchor="middle">O</text>
+<text x="330.0" y="237.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Observability</text>
+<text x="330.0" y="260.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">outputs only or logged stages</text>
+<rect x="280.0" y="286.0" width="326.0" height="62.0" rx="10" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="304.0" y="325.0" font-size="21.2" font-weight="700" fill="#1c5cab" text-anchor="middle">P</text>
+<text x="330.0" y="313.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Parameters</text>
+<text x="330.0" y="336.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">inline or named config</text>
+<rect x="280.0" y="362.0" width="326.0" height="62.0" rx="10" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="304.0" y="401.0" font-size="21.2" font-weight="700" fill="#1c5cab" text-anchor="middle">T</text>
+<text x="330.0" y="389.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Checks</text>
+<text x="330.0" y="412.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">none or warning-only</text>
+<rect x="280.0" y="438.0" width="326.0" height="62.0" rx="10" fill="#eaf2fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="304.0" y="477.0" font-size="21.2" font-weight="700" fill="#1c5cab" text-anchor="middle">N</text>
+<text x="330.0" y="465.0" font-size="17.7" font-weight="700" fill="#1f2328" text-anchor="start">Naming</text>
+<text x="330.0" y="488.0" font-size="15.3" font-weight="400" fill="#4b5563" text-anchor="start">opaque, generic or physical</text>
+<path d="M224.0,304.0 L259.0,304.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="668.0" y="252.0" width="190.0" height="104.0" rx="12" fill="#f3f4f6" stroke="#64748b" stroke-width="1.5"/>
+<text x="682.0" y="282.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Pad to length</text>
+<text x="682.0" y="310.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Same token count</text>
+<text x="682.0" y="333.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">for every variant</text>
+<path d="M627.0,304.0 L663.0,304.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="902.0" y="222.0" width="214.0" height="164.0" rx="12" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="916.0" y="252.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Equivalence gate</text>
+<text x="916.0" y="280.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Scores and tool calls</text>
+<text x="916.0" y="303.5" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">match the base on</text>
+<text x="916.0" y="326.3" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">cached and fuzzed</text>
+<text x="916.0" y="349.1" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">inputs</text>
+<path d="M862.0,304.0 L897.0,304.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+<rect x="1164.0" y="154.0" width="160.0" height="96.0" rx="12" fill="#e6f6f0" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="1178.0" y="184.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Pass</text>
+<text x="1178.0" y="212.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Enters study</text>
+<rect x="1164.0" y="358.0" width="160.0" height="96.0" rx="12" fill="#ffffff" stroke="#d6d9de" stroke-width="1.5"/>
+<text x="1178.0" y="388.0" font-size="18.9" font-weight="700" fill="#1f2328" text-anchor="start">Fail</text>
+<text x="1178.0" y="416.7" font-size="16.5" font-weight="400" fill="#4b5563" text-anchor="start">Discarded</text>
+<path d="M1120.0,270.0 L1159.0,210.0" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" marker-end="url(#m1baf7a)"/>
+<path d="M1120.0,338.0 L1159.0,398.0" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#m64748b)"/>
+</svg>
