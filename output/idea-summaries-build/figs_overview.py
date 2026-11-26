@@ -1,4 +1,4 @@
-"""Overview figure for docs/idea-summaries/README.md: where proposals 05 to 08 act in a self-improving agent."""
+"""Overview figure for docs/research-overview.md: where proposals 05 to 08 act in a self-improving agent."""
 import os
 import sys
 
@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from svglib import Fig, C, INK, INK2  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-OUT = os.path.join(ROOT, 'docs', 'idea-summaries', 'images', 'overview')
+OUT = os.path.join(ROOT, 'docs', 'research-plans', 'images', 'overview')
 os.makedirs(OUT, exist_ok=True)
 
 

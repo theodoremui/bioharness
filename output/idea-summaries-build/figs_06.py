@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from svglib import Fig, C, INK, INK2, MUTED, RULE, WHITE, FS, esc, tw  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-OUT = os.path.join(ROOT, 'docs', 'idea-summaries', 'images', '06')
+OUT = os.path.join(ROOT, 'docs', 'research-plans', 'images', '06')
 os.makedirs(OUT, exist_ok=True)
 
 BLUE, ORANGE, AQUA, SLATE = C['blue'], C['orange'], C['aqua'], C['slate']
