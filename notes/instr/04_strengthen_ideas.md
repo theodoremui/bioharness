@@ -17,3 +17,7 @@ Illustrate frequently and abundantly with vector graphics and flowcharts to illu
 After your careful revision, thoughtfully consider how you could make the revision even better and clearer with concrete and specific suggestions. Based on these suggestions, thoroughly and systematically revise the draft to a final version that greatly improves the readability and conceptual clarity of the different proposals. Provide clear and referenceable citations to key papers from arxiv and other authoritative sources. Do not use em-dashes in your writing.
 
 Fan out subagents. Use dynamic workflow orchestration.
+
+---
+
+Carefully and systematically move proposals 05 through 08 in `docs/idea-summaries` into a new folder, `docs/research-plans`. The file `docs/idea-summaries/README.md` should be renamed to `research-overview.md`, and act as an index linking across all eight proposals.

@@ -15,7 +15,7 @@ The aim was four directions in recursive self-improvement and agent tool use tha
 | Subgroup drift under accept-if-better loops | 3.5, 3.5 | SAGE, item-level transitions in prompt optimization, CVaR-RMD, classical correlated-response theory | Kept after reframing as a forecastable correlated-response law with a dose-response test (proposal 6); reviewer estimate about 4.5 if reframed |
 | Context steering an agent's measurement | 3.0, 3.5 | Agentic forking paths and the m-value, Epistemic Blinding, stage-resolved bias in search agents | Kept after reframing as "calibration bug or information bug" with path splicing (proposal 8); reviewer estimate about 4.3 and 4.4 if reframed |
 
-The red-team reviewer also proposed a replacement in which label-free agreement rewards teach an agent to pick instruments that fail together. It was not adopted because it reuses the shared-error mechanism of [proposal 1](01-learning-with-biased-references.md).
+The red-team reviewer also proposed a replacement in which label-free agreement rewards teach an agent to pick instruments that fail together. It was not adopted because it reuses the shared-error mechanism of [proposal 1](../idea-summaries/01-learning-with-biased-references.md).
 
 ## What the theory checks established
 

@@ -2,7 +2,7 @@
 
 This evidence map covers all 52 works in the supplied reading list. It draws on the primary manuscripts, including their experimental designs, ablations and stated assumptions. Each entry pairs the authors’ question and evidence with an inference for this collection. The links identify the manuscript or proceedings record used. A withdrawn manuscript is retained for its status and historical context. Reported findings belong to their authors. The four proposals contain no new empirical results.
 
-[Proposal overview](README.md) · [Independent review and revision record](adversarial-review.md)
+[Proposal overview](../research-overview.md) · [Independent review and revision record](adversarial-review.md)
 
 ## When the reference can misrank the tools
 

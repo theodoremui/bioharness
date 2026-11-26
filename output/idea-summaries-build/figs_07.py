@@ -1,7 +1,7 @@
 """Figures for proposal 07 (how a VLM agent should look at its own tool outputs).
 
 Run: python3 -B output/idea-summaries-build/figs_07.py
-Writes SVGs to docs/idea-summaries/images/07/.
+Writes SVGs to docs/research-plans/images/07/.
 
 Color meaning, shared by every figure:
   slate  = neutral scaffolding and raw tool output
@@ -19,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from svglib import Fig, C, FS, INK, INK2, MUTED, RULE, WHITE, MONO  # noqa: E402
 
-OUT = os.path.normpath(os.path.join(HERE, '..', '..', 'docs', 'idea-summaries', 'images', '07'))
+OUT = os.path.normpath(os.path.join(HERE, '..', '..', 'docs', 'research-plans', 'images', '07'))
 os.makedirs(OUT, exist_ok=True)
 
 BL, BLF, BLD = C['blue']

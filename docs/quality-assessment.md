@@ -1,6 +1,6 @@
 **Research-idea quality assessment**
 
-Assessment date: **26 November 2026**. Scope: the eight numbered proposals in this directory, evaluated as research plans in their current form.
+Assessment date: **26 November 2026**. Scope: the eight numbered proposals in [idea-summaries](idea-summaries/README.md) and [research-plans](research-plans/README.md), evaluated as research plans in their current form. The [research overview](research-overview.md) indexes both collections.
 
 **Recommendation:** prioritize proposal **8** for scientific impact, proposal **3** for a tractable first project, and proposal **1** as the shared measurement-validity foundation. Proposal **6** is a strong alternative if subgroup monitoring is the central research interest. Proposal **7** has substantial novelty potential but needs a much smaller validation study before its full program. Proposal **5** remains worthwhile, but additional prior work narrows its novelty. Proposal **4** needs better paired data; proposal **2** needs a clearer advantage over existing active calibration methods.
 
@@ -34,7 +34,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **1. Learning with biased references**
 
-[Proposal](01-learning-with-biased-references.md)
+[Proposal](idea-summaries/01-learning-with-biased-references.md)
 
 **What deserves credit.** The proposal identifies a concrete way that a benchmark can reward a physically worse measurement route. Its strongest contribution would be demonstrating that recorded component sharing predicts these ranking errors on unseen pipeline combinations, under a fixed budget of independent audits.
 
@@ -51,7 +51,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **2. Learning numerical tool behavior**
 
-[Proposal](02-learning-numerical-tool-behavior.md)
+[Proposal](idea-summaries/02-learning-numerical-tool-behavior.md)
 
 **What deserves credit.** Calibration is tied to the later routing decision, rather than to reducing average tool error. The slow-step/fast-step example clearly distinguishes informative from uninformative probes.
 
@@ -68,7 +68,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **3. Learning what to reexecute**
 
-[Proposal](03-learning-what-to-reexecute.md)
+[Proposal](idea-summaries/03-learning-what-to-reexecute.md)
 
 **What deserves credit.** The proposal targets uncertainty in the decision between updates. It distinguishes an edit's large predictable effect from an effect that is difficult to predict, and explicitly gives every method exact caching before testing learned replay allocation.
 
@@ -85,7 +85,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **4. Learning to measure change**
 
-[Proposal](04-learning-to-measure-change.md)
+[Proposal](idea-summaries/04-learning-to-measure-change.md)
 
 **What deserves credit.** The target is an individual's change, and the intervention is buying another view before its output is visible. Freezing the terminal estimator prevents a better change regressor from masquerading as a better acquisition policy.
 
@@ -102,7 +102,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **5. What makes a harness improvable**
 
-[Proposal](05-what-makes-a-harness-improvable.md)
+[Proposal](research-plans/05-what-makes-a-harness-improvable.md)
 
 **What deserves credit.** Equal starting task behavior makes this a much cleaner experiment than comparing unrelated harnesses. The strongest result would connect a verified change in code representation to later improvement, then predict that gain for new parents at a budget that includes obtaining the prediction.
 
@@ -124,7 +124,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **6. Who self-improvement leaves behind**
 
-[Proposal](06-who-self-improvement-leaves-behind.md)
+[Proposal](research-plans/06-who-self-improvement-leaves-behind.md)
 
 **What deserves credit.** The project asks about a predefined group's fate over time and proposes to predict it before observing the future. Logging rejected candidates is particularly valuable: an accepted-only record cannot reveal the distribution selection acts on.
 
@@ -143,7 +143,7 @@ The four-dimensional ratings are more useful than a single average: an ambitious
 
 **7. Learning how to display tool outputs**
 
-[Proposal](07-learning-how-to-look-at-tool-outputs.md)
+[Proposal](research-plans/07-learning-how-to-look-at-tool-outputs.md)
 
 **What deserves credit.** Predicting which readers benefit from a newly optimized display is more distinctive than improving one VLM's accuracy. Separating numerical computation from presentation, and testing transfer to readers that never supplied fitness, are strong design choices.
 
@@ -167,7 +167,7 @@ The permutation-label control also needs cautious interpretation: an improvement
 
 **8. Blind analysis for agents**
 
-[Proposal](08-blind-analysis-for-agents.md)
+[Proposal](research-plans/08-blind-analysis-for-agents.md)
 
 **What deserves credit.** The strongest insight is the distinction between a reversible context-dependent transformation and lost decision-relevant information. Coupling that distinction to a randomized path/report factorial is more informative than showing that referrals change answers.
 

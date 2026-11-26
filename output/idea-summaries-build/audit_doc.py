@@ -1,6 +1,6 @@
 """Audit a proposal markdown file against the drafting guide.
 
-Usage: python3 -B output/idea-summaries-build/audit_doc.py docs/idea-summaries/05-*.md [...]
+Usage: python3 -B output/idea-summaries-build/audit_doc.py docs/research-plans/05-*.md [...]
 
 Checks: em-dashes and en-dashes, ' -- ', \\operatorname, banned words, image links that do
 not resolve, citation links [n](#ref-n) without a matching anchor, anchors never cited,

@@ -1,7 +1,7 @@
 """Figures for proposal 08 (blind analysis for measurement agents).
 
 Run: python3 -B output/idea-summaries-build/figs_08.py
-Writes SVGs to docs/idea-summaries/images/08/.
+Writes SVGs to docs/research-plans/images/08/.
 
 Color meaning, fixed across all figures:
   blue   = blind measurement / neutral
@@ -20,7 +20,7 @@ import svglib as S  # noqa: E402
 from svglib import C, INK, INK2, MUTED, RULE, WHITE  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
-OUT = os.path.join(ROOT, 'docs', 'idea-summaries', 'images', '08')
+OUT = os.path.join(ROOT, 'docs', 'research-plans', 'images', '08')
 SIM = os.path.join(HERE, 'sim', 'b1_double_counting_results.json')
 os.makedirs(OUT, exist_ok=True)
 
